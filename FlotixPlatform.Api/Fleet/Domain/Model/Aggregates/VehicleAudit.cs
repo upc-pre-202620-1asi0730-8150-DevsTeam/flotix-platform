@@ -1,6 +1,6 @@
-﻿using FlotixPlatform.API.Shared.Domain.Model;
+﻿using FlotixPlatform.Api.Shared.Domain.Model;
 
-namespace FlotixPlatform.API.Fleet.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Audit extension for Vehicle aggregate.

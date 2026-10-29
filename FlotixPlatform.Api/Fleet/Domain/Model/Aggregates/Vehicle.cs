@@ -1,7 +1,7 @@
-﻿using FlotixPlatform.API.Fleet.Domain.Model.Commands;
-using FlotixPlatform.API.Fleet.Domain.Model.ValueObjects;
+﻿using FlotixPlatform.Api.Fleet.Domain.Model.Commands;
+using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Fleet.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Represents a vehicle of a fleet, owned by an owner user and optionally assigned to a driver.

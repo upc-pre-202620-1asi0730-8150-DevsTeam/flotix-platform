@@ -1,6 +1,6 @@
-﻿using FlotixPlatform.API.Fleet.Domain.Model.Aggregates;
-using FlotixPlatform.API.Fleet.Domain.Model.ValueObjects;
-using FlotixPlatform.API.Shared.Domain.Repositories;
+﻿using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Shared.Domain.Repositories;
 
 namespace FlotixPlatform.API.Fleet.Domain.Repositories;
 
