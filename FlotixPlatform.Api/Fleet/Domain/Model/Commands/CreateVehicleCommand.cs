@@ -1,4 +1,4 @@
-﻿using FlotixPlatform.API.Fleet.Domain.Model.ValueObjects;
+﻿using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 
 namespace FlotixPlatform.API.Fleet.Domain.Model.Commands;
 

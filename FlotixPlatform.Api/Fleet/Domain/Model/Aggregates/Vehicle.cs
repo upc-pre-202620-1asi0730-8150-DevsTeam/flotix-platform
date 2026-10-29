@@ -1,4 +1,5 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.Commands;
+using FlotixPlatform.API.Fleet.Domain.Model.Commands;
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 
 namespace FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
