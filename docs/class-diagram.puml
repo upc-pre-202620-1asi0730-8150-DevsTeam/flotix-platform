@@ -1,0 +1,39 @@
+﻿@startuml flotix-container-diagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_LEFT_RIGHT()
+title Container View: Flotix Platform
+
+' ---------- Personas ----------
+Person(owner, "Owner (Dueño)", "Administra la flota, aprueba presupuestos, monitorea métricas y adquiere hardware.")
+Person(driver, "Driver (Conductor)", "Conduce el vehículo, registra combustible y reporta incidencias.")
+Person(mechanic, "Mechanic (Mecánica)", "Recibe solicitudes, emite diagnósticos y repara vehículos.")
+
+' ---------- Sistema Flotix ----------
+System_Boundary(flotix, "Flotix Platform") {
+    Container(landing, "Landing Page Web", "HTML5, Tailwind CSS", "Presenta la propuesta de valor y captura nuevos clientes.")
+    Container(webapp, "Web Application", "Vue.js, Tailwind CSS", "Proporciona la interfaz principal (Dashboard) para todos los roles y tienda de hardware.")
+    Container(api, "API Application", "C#, .NET Core, Minimal APIs", "Maneja toda la lógica de negocio, seguridad, comercio IoT, pagos y persistencia.")
+    ContainerDb(db, "Database", "PostgreSQL", "Almacena información relacional de usuarios, vehículos, mantenimientos, telemetría y órdenes de compra.")
+}
+
+' ---------- Sistemas externos ----------
+System_Ext(email, "Email System", "Servicio externo (ej. SendGrid) para notificaciones y recuperación de cuentas.")
+System_Ext(payment, "Payment Gateway", "Pasarela externa (ej. Stripe / Culqi) para procesamiento seguro de pagos de hardware IoT.")
+System_Ext(iot, "IoT Device", "Hardware externo que envía datos de telemetría (GPS, Odómetro, Sensor Combustible).")
+
+' ---------- Relaciones ----------
+Rel(owner, landing, "Visita para conocer el producto")
+Rel(owner, webapp, "Administra operaciones y compra dispositivos IoT")
+Rel(driver, webapp, "Accede vía smartphone")
+Rel(mechanic, webapp, "Revisa bandeja de solicitudes")
+
+Rel(landing, api, "Consume información pública", "JSON/HTTPS")
+Rel(webapp, api, "Realiza peticiones autenticadas", "JSON/HTTPS")
+Rel(api, db, "Lee y escribe datos del dominio", "SQL/TCP")
+Rel(api, email, "Envía correos a usuarios", "HTTPS")
+Rel(api, payment, "Ejecuta cargos y verifica transacciones", "HTTPS")
+Rel(iot, api, "Ingesta de datos operativos", "MQTT/HTTPS")
+
+SHOW_LEGEND()
+@enduml
