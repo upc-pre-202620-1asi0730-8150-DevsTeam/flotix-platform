@@ -1,0 +1,1915 @@
+{
+  "users": [
+    {
+      "id": "u-owner-demo",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Renzo Dueño",
+      "email": "owner@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Owner",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": "Transportes Renzo S.A.C.",
+      "workshopName": null
+    },
+    {
+      "id": "u-owner-2",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Carla Mendoza",
+      "email": "carla.mendoza@andinalogistica.pe",
+      "passwordHash": "1234",
+      "role": "Owner",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": "Andina Logística E.I.R.L.",
+      "workshopName": null
+    },
+    {
+      "id": "u-driver-demo",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Luis Conductor",
+      "email": "driver@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Driver",
+      "licenseNumber": "Q12345678",
+      "licenseExpiry": "2027-05-10",
+      "companyName": null,
+      "workshopName": null
+    },
+    {
+      "id": "u-driver-2",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Jorge Quispe",
+      "email": "jorge.quispe@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Driver",
+      "licenseNumber": "Q23456789",
+      "licenseExpiry": "2026-12-15",
+      "companyName": null,
+      "workshopName": null
+    },
+    {
+      "id": "u-driver-3",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Marco Huamán",
+      "email": "marco.huaman@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Driver",
+      "licenseNumber": "Q34567890",
+      "licenseExpiry": "2028-02-20",
+      "companyName": null,
+      "workshopName": null
+    },
+    {
+      "id": "u-driver-4",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Ana Rojas",
+      "email": "ana.rojas@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Driver",
+      "licenseNumber": "Q45678901",
+      "licenseExpiry": "2027-09-30",
+      "companyName": null,
+      "workshopName": null
+    },
+    {
+      "id": "u-driver-5",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Pedro Salazar",
+      "email": "pedro.salazar@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Driver",
+      "licenseNumber": "Q56789012",
+      "licenseExpiry": "2026-11-30",
+      "companyName": null,
+      "workshopName": null
+    },
+    {
+      "id": "u-driver-6",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Rosa Flores",
+      "email": "rosa.flores@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Driver",
+      "licenseNumber": "Q67890123",
+      "licenseExpiry": "2029-01-18",
+      "companyName": null,
+      "workshopName": null
+    },
+    {
+      "id": "u-mechanic-demo",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Miguel Mecánico",
+      "email": "mechanic@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Taller Miguel"
+    },
+    {
+      "id": "u-mechanic-2",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Hugo Paredes",
+      "email": "hugo.paredes@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Mecánica Paredes"
+    },
+    {
+      "id": "u-mechanic-3",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Elena Vargas",
+      "email": "elena.vargas@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Taller Vargas Diesel"
+    },
+    {
+      "id": "u-mechanic-4",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Daniel Ccori",
+      "email": "daniel.ccori@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Auto Eléctrico Ccori"
+    },
+    {
+      "id": "u-mechanic-5",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Raúl Medina",
+      "email": "raul.medina@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Llantas y Frenos Medina"
+    },
+    {
+      "id": "u-mechanic-6",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Sofía Cáceres",
+      "email": "sofia.caceres@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Transmisiones Cáceres"
+    },
+    {
+      "id": "u-mechanic-7",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Víctor Landa",
+      "email": "victor.landa@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Servicio Automotriz Landa"
+    },
+    {
+      "id": "u-mechanic-8",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Julia Ramos",
+      "email": "julia.ramos@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Taller Ramos Hermanos"
+    },
+    {
+      "id": "u-mechanic-9",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Carlos Tello",
+      "email": "carlos.tello@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Motores Tello"
+    },
+    {
+      "id": "u-mechanic-10",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "name": "Lucía Benítez",
+      "email": "lucia.benitez@flotix.pe",
+      "passwordHash": "1234",
+      "role": "Mechanic",
+      "licenseNumber": null,
+      "licenseExpiry": null,
+      "companyName": null,
+      "workshopName": "Centro Técnico Benítez"
+    }
+  ],
+  "workshops": [
+    {
+      "id": "w-1",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-demo",
+      "city": "Lima",
+      "district": "Miraflores",
+      "address": "Av. Angamos Este 1420, Miraflores",
+      "phone": "+51 1 445 8820",
+      "rating": 4.8,
+      "tags": [
+        "Frenos",
+        "Motor",
+        "Transmisión",
+        "Eléctrico"
+      ]
+    },
+    {
+      "id": "w-2",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-2",
+      "city": "Lima",
+      "district": "San Juan de Lurigancho",
+      "address": "Av. Próceres de la Independencia 2210",
+      "phone": "+51 1 458 3317",
+      "rating": 4.5,
+      "tags": [
+        "Mantenimiento general",
+        "Suspensión"
+      ]
+    },
+    {
+      "id": "w-3",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-3",
+      "city": "Lima",
+      "district": "Ate",
+      "address": "Av. Nicolás Ayllón 3890, Ate",
+      "phone": "+51 1 351 7740",
+      "rating": 4.7,
+      "tags": [
+        "Motor diésel",
+        "Camiones",
+        "Inyección"
+      ]
+    },
+    {
+      "id": "w-4",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-4",
+      "city": "Lima",
+      "district": "Surquillo",
+      "address": "Jr. Tomás Marsano 780, Surquillo",
+      "phone": "+51 1 447 2915",
+      "rating": 4.6,
+      "tags": [
+        "Eléctrico",
+        "Baterías",
+        "Aire acondicionado"
+      ]
+    },
+    {
+      "id": "w-5",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-5",
+      "city": "Lima",
+      "district": "Callao",
+      "address": "Av. Argentina 1650, Callao",
+      "phone": "+51 1 429 6608",
+      "rating": 4.4,
+      "tags": [
+        "Frenos",
+        "Llantas",
+        "Alineamiento"
+      ]
+    },
+    {
+      "id": "w-6",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-6",
+      "city": "Lima",
+      "district": "San Martín de Porres",
+      "address": "Av. Perú 3120, San Martín de Porres",
+      "phone": "+51 1 481 2276",
+      "rating": 4.9,
+      "tags": [
+        "Transmisión",
+        "Caja de cambios",
+        "Embrague"
+      ]
+    },
+    {
+      "id": "w-7",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-7",
+      "city": "Lima",
+      "district": "Los Olivos",
+      "address": "Av. Alfredo Mendiola 5400, Los Olivos",
+      "phone": "+51 1 522 1043",
+      "rating": 4.3,
+      "tags": [
+        "Mantenimiento general",
+        "Afinamiento"
+      ]
+    },
+    {
+      "id": "w-8",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-8",
+      "city": "Lima",
+      "district": "Villa El Salvador",
+      "address": "Av. Pachacútec 940, Villa El Salvador",
+      "phone": "+51 1 287 9951",
+      "rating": 4.2,
+      "tags": [
+        "Mototaxis",
+        "Motor",
+        "Frenos"
+      ]
+    },
+    {
+      "id": "w-9",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-9",
+      "city": "Lima",
+      "district": "Chorrillos",
+      "address": "Av. Huaylas 1120, Chorrillos",
+      "phone": "+51 1 254 7782",
+      "rating": 4.6,
+      "tags": [
+        "Motor",
+        "Refrigeración",
+        "Escape"
+      ]
+    },
+    {
+      "id": "w-10",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "mechanicId": "u-mechanic-10",
+      "city": "Lima",
+      "district": "La Victoria",
+      "address": "Av. Aviación 2750, La Victoria",
+      "phone": "+51 1 330 4419",
+      "rating": 4.7,
+      "tags": [
+        "Diagnóstico computarizado",
+        "Suspensión",
+        "Dirección"
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "v-1",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": "u-driver-demo",
+      "plate": "V4A-123",
+      "vehicleType": "Camión de carga",
+      "currentMileage": 49120,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-2",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": null,
+      "plate": "ABC-908",
+      "vehicleType": "Camioneta",
+      "currentMileage": 21750,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-3",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": "u-driver-demo",
+      "plate": "MTX-556",
+      "vehicleType": "Mototaxi",
+      "currentMileage": 15320,
+      "status": "En mantenimiento"
+    },
+    {
+      "id": "v-4",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": "u-driver-2",
+      "plate": "BKT-412",
+      "vehicleType": "Automóvil",
+      "currentMileage": 33480,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-5",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": "u-driver-3",
+      "plate": "D7F-831",
+      "vehicleType": "Van de pasajeros",
+      "currentMileage": 72300,
+      "status": "En mantenimiento"
+    },
+    {
+      "id": "v-6",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": "u-driver-4",
+      "plate": "CGH-275",
+      "vehicleType": "Camión de carga",
+      "currentMileage": 91250,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-7",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": null,
+      "plate": "MTX-902",
+      "vehicleType": "Mototaxi",
+      "currentMileage": 8640,
+      "status": "Inactivo"
+    },
+    {
+      "id": "v-8",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "driverId": "u-driver-5",
+      "plate": "F2K-649",
+      "vehicleType": "Camioneta",
+      "currentMileage": 56780,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-9",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "driverId": "u-driver-6",
+      "plate": "B9L-317",
+      "vehicleType": "Camión de carga",
+      "currentMileage": 103400,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-10",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "driverId": null,
+      "plate": "AXR-584",
+      "vehicleType": "Automóvil",
+      "currentMileage": 27900,
+      "status": "Disponible"
+    },
+    {
+      "id": "v-11",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "driverId": null,
+      "plate": "T3P-760",
+      "vehicleType": "Van de pasajeros",
+      "currentMileage": 64150,
+      "status": "En mantenimiento"
+    },
+    {
+      "id": "v-12",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "driverId": null,
+      "plate": "H5N-198",
+      "vehicleType": "Camioneta",
+      "currentMileage": 38020,
+      "status": "Disponible"
+    }
+  ],
+  "fuel-records": [
+    {
+      "id": "f-1",
+      "createdAt": "2026-08-20T18:00:00.000Z",
+      "vehicleId": "v-1",
+      "driverId": "u-driver-demo",
+      "liters": 45,
+      "totalCost": 288.5,
+      "mileageAtRefuel": 47800,
+      "date": "2026-08-20"
+    },
+    {
+      "id": "f-2",
+      "createdAt": "2026-09-01T18:00:00.000Z",
+      "vehicleId": "v-1",
+      "driverId": "u-driver-demo",
+      "liters": 42,
+      "totalCost": 269.1,
+      "mileageAtRefuel": 48200,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "f-3",
+      "createdAt": "2026-09-14T18:00:00.000Z",
+      "vehicleId": "v-1",
+      "driverId": "u-driver-demo",
+      "liters": 48.5,
+      "totalCost": 307.97,
+      "mileageAtRefuel": 48650,
+      "date": "2026-09-14"
+    },
+    {
+      "id": "f-4",
+      "createdAt": "2026-09-30T18:00:00.000Z",
+      "vehicleId": "v-1",
+      "driverId": "u-driver-demo",
+      "liters": 50.3,
+      "totalCost": 334.5,
+      "mileageAtRefuel": 49120,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "f-5",
+      "createdAt": "2026-08-10T18:00:00.000Z",
+      "vehicleId": "v-10",
+      "driverId": "u-driver-3",
+      "liters": 31.1,
+      "totalCost": 202.15,
+      "mileageAtRefuel": 26800,
+      "date": "2026-08-10"
+    },
+    {
+      "id": "f-6",
+      "createdAt": "2026-09-08T18:00:00.000Z",
+      "vehicleId": "v-10",
+      "driverId": "u-driver-3",
+      "liters": 41.0,
+      "totalCost": 278.8,
+      "mileageAtRefuel": 27350,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "f-7",
+      "createdAt": "2026-10-06T18:00:00.000Z",
+      "vehicleId": "v-10",
+      "driverId": "u-driver-3",
+      "liters": 41.8,
+      "totalCost": 277.97,
+      "mileageAtRefuel": 27900,
+      "date": "2026-10-06"
+    },
+    {
+      "id": "f-8",
+      "createdAt": "2026-08-14T18:00:00.000Z",
+      "vehicleId": "v-12",
+      "driverId": "u-driver-6",
+      "liters": 40.4,
+      "totalCost": 250.48,
+      "mileageAtRefuel": 37100,
+      "date": "2026-08-14"
+    },
+    {
+      "id": "f-9",
+      "createdAt": "2026-09-12T18:00:00.000Z",
+      "vehicleId": "v-12",
+      "driverId": "u-driver-6",
+      "liters": 44.2,
+      "totalCost": 280.67,
+      "mileageAtRefuel": 37560,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "f-10",
+      "createdAt": "2026-10-10T18:00:00.000Z",
+      "vehicleId": "v-12",
+      "driverId": "u-driver-6",
+      "liters": 46.2,
+      "totalCost": 318.78,
+      "mileageAtRefuel": 38020,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "f-11",
+      "createdAt": "2026-08-05T18:00:00.000Z",
+      "vehicleId": "v-2",
+      "driverId": "u-driver-2",
+      "liters": 44.6,
+      "totalCost": 303.28,
+      "mileageAtRefuel": 21100,
+      "date": "2026-08-05"
+    },
+    {
+      "id": "f-12",
+      "createdAt": "2026-09-02T18:00:00.000Z",
+      "vehicleId": "v-2",
+      "driverId": "u-driver-2",
+      "liters": 35.6,
+      "totalCost": 245.64,
+      "mileageAtRefuel": 21420,
+      "date": "2026-09-02"
+    },
+    {
+      "id": "f-13",
+      "createdAt": "2026-10-01T18:00:00.000Z",
+      "vehicleId": "v-2",
+      "driverId": "u-driver-2",
+      "liters": 36.4,
+      "totalCost": 231.14,
+      "mileageAtRefuel": 21750,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "f-14",
+      "createdAt": "2026-07-28T18:00:00.000Z",
+      "vehicleId": "v-3",
+      "driverId": "u-driver-demo",
+      "liters": 11.4,
+      "totalCost": 70.68,
+      "mileageAtRefuel": 14680,
+      "date": "2026-07-28"
+    },
+    {
+      "id": "f-15",
+      "createdAt": "2026-08-17T18:00:00.000Z",
+      "vehicleId": "v-3",
+      "driverId": "u-driver-demo",
+      "liters": 12.2,
+      "totalCost": 81.13,
+      "mileageAtRefuel": 15010,
+      "date": "2026-08-17"
+    },
+    {
+      "id": "f-16",
+      "createdAt": "2026-09-05T18:00:00.000Z",
+      "vehicleId": "v-3",
+      "driverId": "u-driver-demo",
+      "liters": 12,
+      "totalCost": 79.9,
+      "mileageAtRefuel": 15320,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "f-17",
+      "createdAt": "2026-08-08T18:00:00.000Z",
+      "vehicleId": "v-4",
+      "driverId": "u-driver-2",
+      "liters": 49.7,
+      "totalCost": 330.51,
+      "mileageAtRefuel": 32550,
+      "date": "2026-08-08"
+    },
+    {
+      "id": "f-18",
+      "createdAt": "2026-09-06T18:00:00.000Z",
+      "vehicleId": "v-4",
+      "driverId": "u-driver-2",
+      "liters": 37.5,
+      "totalCost": 238.12,
+      "mileageAtRefuel": 32990,
+      "date": "2026-09-06"
+    },
+    {
+      "id": "f-19",
+      "createdAt": "2026-10-04T18:00:00.000Z",
+      "vehicleId": "v-4",
+      "driverId": "u-driver-2",
+      "liters": 42.0,
+      "totalCost": 260.4,
+      "mileageAtRefuel": 33480,
+      "date": "2026-10-04"
+    },
+    {
+      "id": "f-20",
+      "createdAt": "2026-07-30T18:00:00.000Z",
+      "vehicleId": "v-5",
+      "driverId": "u-driver-3",
+      "liters": 43.3,
+      "totalCost": 274.95,
+      "mileageAtRefuel": 70900,
+      "date": "2026-07-30"
+    },
+    {
+      "id": "f-21",
+      "createdAt": "2026-08-26T18:00:00.000Z",
+      "vehicleId": "v-5",
+      "driverId": "u-driver-3",
+      "liters": 90.4,
+      "totalCost": 574.04,
+      "mileageAtRefuel": 71650,
+      "date": "2026-08-26"
+    },
+    {
+      "id": "f-22",
+      "createdAt": "2026-09-20T18:00:00.000Z",
+      "vehicleId": "v-5",
+      "driverId": "u-driver-3",
+      "liters": 82.0,
+      "totalCost": 545.3,
+      "mileageAtRefuel": 72300,
+      "date": "2026-09-20"
+    },
+    {
+      "id": "f-23",
+      "createdAt": "2026-08-01T18:00:00.000Z",
+      "vehicleId": "v-6",
+      "driverId": "u-driver-4",
+      "liters": 37.3,
+      "totalCost": 253.64,
+      "mileageAtRefuel": 89400,
+      "date": "2026-08-01"
+    },
+    {
+      "id": "f-24",
+      "createdAt": "2026-08-28T18:00:00.000Z",
+      "vehicleId": "v-6",
+      "driverId": "u-driver-4",
+      "liters": 139.3,
+      "totalCost": 961.17,
+      "mileageAtRefuel": 90350,
+      "date": "2026-08-28"
+    },
+    {
+      "id": "f-25",
+      "createdAt": "2026-09-25T18:00:00.000Z",
+      "vehicleId": "v-6",
+      "driverId": "u-driver-4",
+      "liters": 257.6,
+      "totalCost": 1751.68,
+      "mileageAtRefuel": 91250,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "f-26",
+      "createdAt": "2026-08-12T18:00:00.000Z",
+      "vehicleId": "v-8",
+      "driverId": "u-driver-5",
+      "liters": 40.7,
+      "totalCost": 276.76,
+      "mileageAtRefuel": 55420,
+      "date": "2026-08-12"
+    },
+    {
+      "id": "f-27",
+      "createdAt": "2026-09-09T18:00:00.000Z",
+      "vehicleId": "v-8",
+      "driverId": "u-driver-5",
+      "liters": 66.3,
+      "totalCost": 411.06,
+      "mileageAtRefuel": 56080,
+      "date": "2026-09-09"
+    },
+    {
+      "id": "f-28",
+      "createdAt": "2026-10-07T18:00:00.000Z",
+      "vehicleId": "v-8",
+      "driverId": "u-driver-5",
+      "liters": 73.4,
+      "totalCost": 506.46,
+      "mileageAtRefuel": 56780,
+      "date": "2026-10-07"
+    },
+    {
+      "id": "f-29",
+      "createdAt": "2026-08-03T18:00:00.000Z",
+      "vehicleId": "v-9",
+      "driverId": "u-driver-6",
+      "liters": 41.2,
+      "totalCost": 267.8,
+      "mileageAtRefuel": 100900,
+      "date": "2026-08-03"
+    },
+    {
+      "id": "f-30",
+      "createdAt": "2026-08-31T18:00:00.000Z",
+      "vehicleId": "v-9",
+      "driverId": "u-driver-6",
+      "liters": 207.0,
+      "totalCost": 1376.55,
+      "mileageAtRefuel": 102100,
+      "date": "2026-08-31"
+    },
+    {
+      "id": "f-31",
+      "createdAt": "2026-09-28T18:00:00.000Z",
+      "vehicleId": "v-9",
+      "driverId": "u-driver-6",
+      "liters": 215.2,
+      "totalCost": 1484.88,
+      "mileageAtRefuel": 103400,
+      "date": "2026-09-28"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "i-1",
+      "createdAt": "2026-10-21T10:00:00.000Z",
+      "vehicleId": "v-1",
+      "driverId": "u-driver-demo",
+      "description": "Luz de check engine encendida en ruta",
+      "status": "Abierto",
+      "reportedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "i-2",
+      "createdAt": "2026-10-12T08:00:00.000Z",
+      "vehicleId": "v-5",
+      "driverId": "u-driver-3",
+      "description": "Frenos con vibración al descender pendientes",
+      "status": "En revisión",
+      "reportedAt": "2026-10-12T08:00:00.000Z"
+    },
+    {
+      "id": "i-3",
+      "createdAt": "2026-10-19T07:00:00.000Z",
+      "vehicleId": "v-6",
+      "driverId": "u-driver-4",
+      "description": "Pérdida de presión de aire en el sistema de frenos",
+      "status": "Abierto",
+      "reportedAt": "2026-10-19T07:00:00.000Z"
+    },
+    {
+      "id": "i-4",
+      "createdAt": "2026-10-08T15:00:00.000Z",
+      "vehicleId": "v-3",
+      "driverId": "u-driver-demo",
+      "description": "Motor se apaga al detenerse en semáforo",
+      "status": "En revisión",
+      "reportedAt": "2026-10-08T15:00:00.000Z"
+    },
+    {
+      "id": "i-5",
+      "createdAt": "2026-09-18T06:00:00.000Z",
+      "vehicleId": "v-4",
+      "driverId": "u-driver-2",
+      "description": "Neumático delantero derecho pinchado en la Panamericana Sur",
+      "status": "Resuelto",
+      "reportedAt": "2026-09-18T06:00:00.000Z"
+    },
+    {
+      "id": "i-6",
+      "createdAt": "2026-09-05T11:00:00.000Z",
+      "vehicleId": "v-8",
+      "driverId": "u-driver-5",
+      "description": "Parabrisas trizado por impacto de piedra",
+      "status": "Resuelto",
+      "reportedAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "i-7",
+      "createdAt": "2026-10-15T17:00:00.000Z",
+      "vehicleId": "v-9",
+      "driverId": "u-driver-6",
+      "description": "Sobrecalentamiento del motor en subida a Ticlio",
+      "status": "En revisión",
+      "reportedAt": "2026-10-15T17:00:00.000Z"
+    },
+    {
+      "id": "i-8",
+      "createdAt": "2026-08-27T09:00:00.000Z",
+      "vehicleId": "v-1",
+      "driverId": "u-driver-demo",
+      "description": "Retrovisor lateral izquierdo dañado en maniobra de estacionamiento",
+      "status": "Resuelto",
+      "reportedAt": "2026-08-27T09:00:00.000Z"
+    },
+    {
+      "id": "i-9",
+      "createdAt": "2026-10-22T13:00:00.000Z",
+      "vehicleId": "v-6",
+      "driverId": "u-driver-4",
+      "description": "Fuga de combustible visible bajo el tanque",
+      "status": "Abierto",
+      "reportedAt": "2026-10-22T13:00:00.000Z"
+    },
+    {
+      "id": "i-10",
+      "createdAt": "2026-09-22T16:00:00.000Z",
+      "vehicleId": "v-5",
+      "driverId": "u-driver-3",
+      "description": "Puerta lateral de pasajeros no cierra correctamente",
+      "status": "Resuelto",
+      "reportedAt": "2026-09-22T16:00:00.000Z"
+    }
+  ],
+  "maintenance-requests": [
+    {
+      "id": "m-1",
+      "createdAt": "2026-10-14T10:00:00.000Z",
+      "vehicleId": "v-3",
+      "mechanicId": "u-mechanic-demo",
+      "faultDescription": "Cambio de aceite y filtro por cumplimiento de kilometraje",
+      "estimatedCost": 180,
+      "status": "En reparación"
+    },
+    {
+      "id": "m-2",
+      "createdAt": "2026-10-20T10:00:00.000Z",
+      "vehicleId": "v-1",
+      "mechanicId": null,
+      "faultDescription": "Ruido en la suspensión delantera",
+      "estimatedCost": 0,
+      "status": "Pendiente"
+    },
+    {
+      "id": "m-3",
+      "createdAt": "2026-10-13T10:00:00.000Z",
+      "vehicleId": "v-5",
+      "mechanicId": "u-mechanic-2",
+      "faultDescription": "Cambio de pastillas de freno y rectificado de discos",
+      "estimatedCost": 420,
+      "status": "En reparación"
+    },
+    {
+      "id": "m-4",
+      "createdAt": "2026-10-09T10:00:00.000Z",
+      "vehicleId": "v-11",
+      "mechanicId": "u-mechanic-3",
+      "faultDescription": "Fuga de aceite en el cárter",
+      "estimatedCost": 650,
+      "status": "En reparación"
+    },
+    {
+      "id": "m-5",
+      "createdAt": "2026-10-17T10:00:00.000Z",
+      "vehicleId": "v-4",
+      "mechanicId": "u-mechanic-4",
+      "faultDescription": "Revisión del sistema eléctrico y cambio de batería",
+      "estimatedCost": 380,
+      "status": "Presupuestado"
+    },
+    {
+      "id": "m-6",
+      "createdAt": "2026-10-16T10:00:00.000Z",
+      "vehicleId": "v-6",
+      "mechanicId": "u-mechanic-5",
+      "faultDescription": "Alineamiento, balanceo y cambio de llantas traseras",
+      "estimatedCost": 1450,
+      "status": "Aprobado"
+    },
+    {
+      "id": "m-7",
+      "createdAt": "2026-09-10T10:00:00.000Z",
+      "vehicleId": "v-8",
+      "mechanicId": "u-mechanic-2",
+      "faultDescription": "Cambio de correa de distribución",
+      "estimatedCost": 520,
+      "status": "Completado"
+    },
+    {
+      "id": "m-8",
+      "createdAt": "2026-10-02T10:00:00.000Z",
+      "vehicleId": "v-9",
+      "mechanicId": "u-mechanic-6",
+      "faultDescription": "Reparación de caja de cambios",
+      "estimatedCost": 2800,
+      "status": "Rechazado"
+    },
+    {
+      "id": "m-9",
+      "createdAt": "2026-10-21T10:00:00.000Z",
+      "vehicleId": "v-10",
+      "mechanicId": null,
+      "faultDescription": "Falla del aire acondicionado",
+      "estimatedCost": 0,
+      "status": "Pendiente"
+    },
+    {
+      "id": "m-10",
+      "createdAt": "2026-09-24T10:00:00.000Z",
+      "vehicleId": "v-12",
+      "mechanicId": "u-mechanic-7",
+      "faultDescription": "Mantenimiento preventivo de 40,000 km",
+      "estimatedCost": 340,
+      "status": "Completado"
+    },
+    {
+      "id": "m-11",
+      "createdAt": "2026-10-18T10:00:00.000Z",
+      "vehicleId": "v-2",
+      "mechanicId": "u-mechanic-demo",
+      "faultDescription": "Cambio de amortiguadores traseros",
+      "estimatedCost": 760,
+      "status": "Presupuestado"
+    }
+  ],
+  "iot-devices": [
+    {
+      "id": "d-1",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-1",
+      "serialNumber": "FLX-GPS-0001",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-2",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-3",
+      "serialNumber": "FLX-GPS-0002",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-3",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-4",
+      "serialNumber": "FLX-GPS-0003",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-4",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-5",
+      "serialNumber": "FLX-GPS-0004",
+      "connectionStatus": "Desconectado"
+    },
+    {
+      "id": "d-5",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-6",
+      "serialNumber": "FLX-GPS-0005",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-6",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-8",
+      "serialNumber": "FLX-GPS-0006",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-7",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-9",
+      "serialNumber": "FLX-GPS-0007",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-8",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-10",
+      "serialNumber": "FLX-GPS-0008",
+      "connectionStatus": "Conectado"
+    },
+    {
+      "id": "d-9",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-11",
+      "serialNumber": "FLX-GPS-0009",
+      "connectionStatus": "Desconectado"
+    },
+    {
+      "id": "d-10",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "vehicleId": "v-12",
+      "serialNumber": "FLX-GPS-0010",
+      "connectionStatus": "Conectado"
+    }
+  ],
+  "telemetry-data": [
+    {
+      "id": "t-1",
+      "createdAt": "2026-10-23T08:10:00.000Z",
+      "deviceId": "d-1",
+      "latitude": -12.07318,
+      "longitude": -77.05992,
+      "speed": 37,
+      "timestamp": "2026-10-23T08:10:00.000Z"
+    },
+    {
+      "id": "t-2",
+      "createdAt": "2026-10-23T08:30:00.000Z",
+      "deviceId": "d-1",
+      "latitude": -12.02913,
+      "longitude": -77.01357,
+      "speed": 104,
+      "timestamp": "2026-10-23T08:30:00.000Z"
+    },
+    {
+      "id": "t-3",
+      "createdAt": "2026-10-23T09:05:00.000Z",
+      "deviceId": "d-1",
+      "latitude": -12.02474,
+      "longitude": -77.05339,
+      "speed": 35,
+      "timestamp": "2026-10-23T09:05:00.000Z"
+    },
+    {
+      "id": "t-4",
+      "createdAt": "2026-10-23T08:11:00.000Z",
+      "deviceId": "d-2",
+      "latitude": -12.02898,
+      "longitude": -77.01647,
+      "speed": 61,
+      "timestamp": "2026-10-23T08:11:00.000Z"
+    },
+    {
+      "id": "t-5",
+      "createdAt": "2026-10-23T08:31:00.000Z",
+      "deviceId": "d-2",
+      "latitude": -12.04856,
+      "longitude": -77.06851,
+      "speed": 80,
+      "timestamp": "2026-10-23T08:31:00.000Z"
+    },
+    {
+      "id": "t-6",
+      "createdAt": "2026-10-23T09:06:00.000Z",
+      "deviceId": "d-2",
+      "latitude": -12.07022,
+      "longitude": -77.05862,
+      "speed": 52,
+      "timestamp": "2026-10-23T09:06:00.000Z"
+    },
+    {
+      "id": "t-7",
+      "createdAt": "2026-10-23T08:12:00.000Z",
+      "deviceId": "d-3",
+      "latitude": -12.01833,
+      "longitude": -77.03228,
+      "speed": 40,
+      "timestamp": "2026-10-23T08:12:00.000Z"
+    },
+    {
+      "id": "t-8",
+      "createdAt": "2026-10-23T08:32:00.000Z",
+      "deviceId": "d-3",
+      "latitude": -12.05512,
+      "longitude": -77.01859,
+      "speed": 52,
+      "timestamp": "2026-10-23T08:32:00.000Z"
+    },
+    {
+      "id": "t-9",
+      "createdAt": "2026-10-23T09:07:00.000Z",
+      "deviceId": "d-3",
+      "latitude": -12.0397,
+      "longitude": -77.01545,
+      "speed": 78,
+      "timestamp": "2026-10-23T09:07:00.000Z"
+    },
+    {
+      "id": "t-10",
+      "createdAt": "2026-10-20T17:40:00.000Z",
+      "deviceId": "d-4",
+      "latitude": -12.03508,
+      "longitude": -77.04682,
+      "speed": 0,
+      "timestamp": "2026-10-20T17:40:00.000Z"
+    },
+    {
+      "id": "t-11",
+      "createdAt": "2026-10-20T17:45:00.000Z",
+      "deviceId": "d-4",
+      "latitude": -12.04473,
+      "longitude": -77.03682,
+      "speed": 0,
+      "timestamp": "2026-10-20T17:45:00.000Z"
+    },
+    {
+      "id": "t-12",
+      "createdAt": "2026-10-23T08:14:00.000Z",
+      "deviceId": "d-5",
+      "latitude": -12.07406,
+      "longitude": -77.07035,
+      "speed": 80,
+      "timestamp": "2026-10-23T08:14:00.000Z"
+    },
+    {
+      "id": "t-13",
+      "createdAt": "2026-10-23T08:34:00.000Z",
+      "deviceId": "d-5",
+      "latitude": -12.07551,
+      "longitude": -77.06631,
+      "speed": 97,
+      "timestamp": "2026-10-23T08:34:00.000Z"
+    },
+    {
+      "id": "t-14",
+      "createdAt": "2026-10-23T09:09:00.000Z",
+      "deviceId": "d-5",
+      "latitude": -12.01931,
+      "longitude": -77.03172,
+      "speed": 69,
+      "timestamp": "2026-10-23T09:09:00.000Z"
+    },
+    {
+      "id": "t-15",
+      "createdAt": "2026-10-23T08:15:00.000Z",
+      "deviceId": "d-6",
+      "latitude": -12.04108,
+      "longitude": -77.02407,
+      "speed": 37,
+      "timestamp": "2026-10-23T08:15:00.000Z"
+    },
+    {
+      "id": "t-16",
+      "createdAt": "2026-10-23T08:35:00.000Z",
+      "deviceId": "d-6",
+      "latitude": -12.03432,
+      "longitude": -77.02452,
+      "speed": 101,
+      "timestamp": "2026-10-23T08:35:00.000Z"
+    },
+    {
+      "id": "t-17",
+      "createdAt": "2026-10-23T09:10:00.000Z",
+      "deviceId": "d-6",
+      "latitude": -12.05847,
+      "longitude": -77.04731,
+      "speed": 33,
+      "timestamp": "2026-10-23T09:10:00.000Z"
+    },
+    {
+      "id": "t-18",
+      "createdAt": "2026-10-23T08:16:00.000Z",
+      "deviceId": "d-7",
+      "latitude": -12.0585,
+      "longitude": -77.01907,
+      "speed": 39,
+      "timestamp": "2026-10-23T08:16:00.000Z"
+    },
+    {
+      "id": "t-19",
+      "createdAt": "2026-10-23T08:36:00.000Z",
+      "deviceId": "d-7",
+      "latitude": -12.03948,
+      "longitude": -77.07102,
+      "speed": 112,
+      "timestamp": "2026-10-23T08:36:00.000Z"
+    },
+    {
+      "id": "t-20",
+      "createdAt": "2026-10-23T09:11:00.000Z",
+      "deviceId": "d-7",
+      "latitude": -12.02533,
+      "longitude": -77.01788,
+      "speed": 31,
+      "timestamp": "2026-10-23T09:11:00.000Z"
+    },
+    {
+      "id": "t-21",
+      "createdAt": "2026-10-23T08:17:00.000Z",
+      "deviceId": "d-8",
+      "latitude": -12.07463,
+      "longitude": -77.01657,
+      "speed": 69,
+      "timestamp": "2026-10-23T08:17:00.000Z"
+    },
+    {
+      "id": "t-22",
+      "createdAt": "2026-10-23T08:37:00.000Z",
+      "deviceId": "d-8",
+      "latitude": -12.02684,
+      "longitude": -77.0537,
+      "speed": 95,
+      "timestamp": "2026-10-23T08:37:00.000Z"
+    },
+    {
+      "id": "t-23",
+      "createdAt": "2026-10-23T09:12:00.000Z",
+      "deviceId": "d-8",
+      "latitude": -12.04318,
+      "longitude": -77.04929,
+      "speed": 70,
+      "timestamp": "2026-10-23T09:12:00.000Z"
+    },
+    {
+      "id": "t-24",
+      "createdAt": "2026-10-20T17:40:00.000Z",
+      "deviceId": "d-9",
+      "latitude": -12.06996,
+      "longitude": -77.01505,
+      "speed": 0,
+      "timestamp": "2026-10-20T17:40:00.000Z"
+    },
+    {
+      "id": "t-25",
+      "createdAt": "2026-10-20T17:45:00.000Z",
+      "deviceId": "d-9",
+      "latitude": -12.04962,
+      "longitude": -77.05463,
+      "speed": 0,
+      "timestamp": "2026-10-20T17:45:00.000Z"
+    },
+    {
+      "id": "t-26",
+      "createdAt": "2026-10-23T08:19:00.000Z",
+      "deviceId": "d-10",
+      "latitude": -12.0257,
+      "longitude": -77.04299,
+      "speed": 44,
+      "timestamp": "2026-10-23T08:19:00.000Z"
+    },
+    {
+      "id": "t-27",
+      "createdAt": "2026-10-23T08:39:00.000Z",
+      "deviceId": "d-10",
+      "latitude": -12.05189,
+      "longitude": -77.02458,
+      "speed": 59,
+      "timestamp": "2026-10-23T08:39:00.000Z"
+    },
+    {
+      "id": "t-28",
+      "createdAt": "2026-10-23T09:14:00.000Z",
+      "deviceId": "d-10",
+      "latitude": -12.07111,
+      "longitude": -77.0178,
+      "speed": 74,
+      "timestamp": "2026-10-23T09:14:00.000Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "al-1",
+      "createdAt": "2026-10-20T08:00:00.000Z",
+      "vehicleId": "v-3",
+      "alertType": "Mantenimiento próximo (90% de kilometraje)",
+      "activatedAt": "2026-10-20T08:00:00.000Z"
+    },
+    {
+      "id": "al-2",
+      "createdAt": "2026-10-23T08:00:00.000Z",
+      "vehicleId": "v-1",
+      "alertType": "Exceso de velocidad (104 km/h)",
+      "activatedAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": "al-3",
+      "createdAt": "2026-10-23T08:00:00.000Z",
+      "vehicleId": "v-6",
+      "alertType": "Exceso de velocidad (97 km/h)",
+      "activatedAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": "al-4",
+      "createdAt": "2026-10-23T08:00:00.000Z",
+      "vehicleId": "v-9",
+      "alertType": "Exceso de velocidad (112 km/h)",
+      "activatedAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": "al-5",
+      "createdAt": "2026-10-22T16:00:00.000Z",
+      "vehicleId": "v-10",
+      "alertType": "Exceso de velocidad (95 km/h)",
+      "activatedAt": "2026-10-22T16:00:00.000Z"
+    },
+    {
+      "id": "al-6",
+      "createdAt": "2026-10-22T11:00:00.000Z",
+      "vehicleId": "v-8",
+      "alertType": "Exceso de velocidad (101 km/h)",
+      "activatedAt": "2026-10-22T11:00:00.000Z"
+    },
+    {
+      "id": "al-7",
+      "createdAt": "2026-10-15T09:00:00.000Z",
+      "vehicleId": "v-6",
+      "alertType": "Mantenimiento próximo (94% de kilometraje)",
+      "activatedAt": "2026-10-15T09:00:00.000Z"
+    },
+    {
+      "id": "al-8",
+      "createdAt": "2026-10-12T09:00:00.000Z",
+      "vehicleId": "v-9",
+      "alertType": "Mantenimiento próximo (97% de kilometraje)",
+      "activatedAt": "2026-10-12T09:00:00.000Z"
+    },
+    {
+      "id": "al-9",
+      "createdAt": "2026-10-05T09:00:00.000Z",
+      "vehicleId": "v-5",
+      "alertType": "Mantenimiento próximo (92% de kilometraje)",
+      "activatedAt": "2026-10-05T09:00:00.000Z"
+    },
+    {
+      "id": "al-10",
+      "createdAt": "2026-10-18T09:00:00.000Z",
+      "vehicleId": "v-1",
+      "alertType": "Mantenimiento próximo (91% de kilometraje)",
+      "activatedAt": "2026-10-18T09:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-1",
+      "createdAt": "2026-10-20T08:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-1",
+      "message": "El vehículo MTX-556 está próximo a alcanzar el 90% del kilometraje para su revisión preventiva.",
+      "isRead": false,
+      "sentAt": "2026-10-20T08:00:00.000Z"
+    },
+    {
+      "id": "n-2",
+      "createdAt": "2026-10-23T08:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-2",
+      "message": "El vehículo V4A-123 superó el límite de velocidad: 104 km/h.",
+      "isRead": false,
+      "sentAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": "n-3",
+      "createdAt": "2026-10-23T08:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-3",
+      "message": "El vehículo CGH-275 superó el límite de velocidad: 97 km/h.",
+      "isRead": false,
+      "sentAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": "n-4",
+      "createdAt": "2026-10-23T08:00:00.000Z",
+      "userId": "u-owner-2",
+      "alertId": "al-4",
+      "message": "El vehículo B9L-317 superó el límite de velocidad: 112 km/h.",
+      "isRead": true,
+      "sentAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": "n-5",
+      "createdAt": "2026-10-22T16:00:00.000Z",
+      "userId": "u-owner-2",
+      "alertId": "al-5",
+      "message": "El vehículo AXR-584 superó el límite de velocidad: 95 km/h.",
+      "isRead": true,
+      "sentAt": "2026-10-22T16:00:00.000Z"
+    },
+    {
+      "id": "n-6",
+      "createdAt": "2026-10-22T11:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-6",
+      "message": "El vehículo F2K-649 superó el límite de velocidad: 101 km/h.",
+      "isRead": false,
+      "sentAt": "2026-10-22T11:00:00.000Z"
+    },
+    {
+      "id": "n-7",
+      "createdAt": "2026-10-15T09:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-7",
+      "message": "El vehículo CGH-275 alcanzó el 94% del kilometraje de revisión preventiva.",
+      "isRead": true,
+      "sentAt": "2026-10-15T09:00:00.000Z"
+    },
+    {
+      "id": "n-8",
+      "createdAt": "2026-10-12T09:00:00.000Z",
+      "userId": "u-owner-2",
+      "alertId": "al-8",
+      "message": "El vehículo B9L-317 alcanzó el 97% del kilometraje de revisión preventiva.",
+      "isRead": true,
+      "sentAt": "2026-10-12T09:00:00.000Z"
+    },
+    {
+      "id": "n-9",
+      "createdAt": "2026-10-05T09:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-9",
+      "message": "El vehículo D7F-831 alcanzó el 92% del kilometraje de revisión preventiva.",
+      "isRead": true,
+      "sentAt": "2026-10-05T09:00:00.000Z"
+    },
+    {
+      "id": "n-10",
+      "createdAt": "2026-10-18T09:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": "al-10",
+      "message": "El vehículo V4A-123 alcanzó el 91% del kilometraje de revisión preventiva.",
+      "isRead": false,
+      "sentAt": "2026-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "n-11",
+      "createdAt": "2026-10-21T10:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": null,
+      "message": "Nueva incidencia reportada: Luz de check engine encendida en ruta",
+      "isRead": false,
+      "sentAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "n-12",
+      "createdAt": "2026-10-22T13:00:00.000Z",
+      "userId": "u-owner-demo",
+      "alertId": null,
+      "message": "Nueva incidencia reportada: Fuga de combustible visible bajo el tanque",
+      "isRead": false,
+      "sentAt": "2026-10-22T13:00:00.000Z"
+    }
+  ],
+  "iot-catalog": [
+    {
+      "id": "gps",
+      "sku": "gps",
+      "name": "Rastreador GPS Flotix",
+      "unitPrice": 149.9,
+      "iconName": "pin"
+    },
+    {
+      "id": "odometer",
+      "sku": "odometer",
+      "name": "Odómetro digital Flotix",
+      "unitPrice": 89.9,
+      "iconName": "signal"
+    },
+    {
+      "id": "fuel-sensor",
+      "sku": "fuel-sensor",
+      "name": "Sensor de combustible Flotix",
+      "unitPrice": 119.9,
+      "iconName": "fuel"
+    },
+    {
+      "id": "obd-ii",
+      "sku": "obd-ii",
+      "name": "Lector de diagnóstico OBD-II Flotix",
+      "unitPrice": 99.9,
+      "iconName": "chip"
+    },
+    {
+      "id": "dashcam",
+      "sku": "dashcam",
+      "name": "Cámara de cabina Flotix",
+      "unitPrice": 189.9,
+      "iconName": "camera"
+    },
+    {
+      "id": "tpms",
+      "sku": "tpms",
+      "name": "Sensor de presión de llantas Flotix",
+      "unitPrice": 129.9,
+      "iconName": "gear"
+    },
+    {
+      "id": "immobilizer",
+      "sku": "immobilizer",
+      "name": "Inmovilizador remoto Flotix",
+      "unitPrice": 169.9,
+      "iconName": "shield"
+    },
+    {
+      "id": "panic-button",
+      "sku": "panic-button",
+      "name": "Botón de pánico Flotix",
+      "unitPrice": 59.9,
+      "iconName": "bell"
+    },
+    {
+      "id": "temp-sensor",
+      "sku": "temp-sensor",
+      "name": "Sensor de temperatura de carga Flotix",
+      "unitPrice": 109.9,
+      "iconName": "chart"
+    },
+    {
+      "id": "driver-id",
+      "sku": "driver-id",
+      "name": "Lector de identificación de conductor Flotix",
+      "unitPrice": 79.9,
+      "iconName": "users"
+    }
+  ],
+  "iot-orders": [
+    {
+      "id": "o-1",
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "sku": "gps",
+      "deviceQuantity": 2,
+      "totalAmount": 299.8,
+      "status": "Entregado",
+      "orderDate": "2026-07-15"
+    },
+    {
+      "id": "o-2",
+      "createdAt": "2026-08-02T12:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "sku": "fuel-sensor",
+      "deviceQuantity": 3,
+      "totalAmount": 359.7,
+      "status": "Entregado",
+      "orderDate": "2026-08-02"
+    },
+    {
+      "id": "o-3",
+      "createdAt": "2026-10-18T12:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "sku": "dashcam",
+      "deviceQuantity": 4,
+      "totalAmount": 759.6,
+      "status": "En preparación",
+      "orderDate": "2026-10-18"
+    },
+    {
+      "id": "o-4",
+      "createdAt": "2026-08-20T12:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "sku": "gps",
+      "deviceQuantity": 5,
+      "totalAmount": 749.5,
+      "status": "Entregado",
+      "orderDate": "2026-08-20"
+    },
+    {
+      "id": "o-5",
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "sku": "immobilizer",
+      "deviceQuantity": 2,
+      "totalAmount": 339.8,
+      "status": "Entregado",
+      "orderDate": "2026-09-04"
+    },
+    {
+      "id": "o-6",
+      "createdAt": "2026-09-12T12:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "sku": "odometer",
+      "deviceQuantity": 1,
+      "totalAmount": 89.9,
+      "status": "Cancelado",
+      "orderDate": "2026-09-12"
+    },
+    {
+      "id": "o-7",
+      "createdAt": "2026-10-20T12:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "sku": "tpms",
+      "deviceQuantity": 6,
+      "totalAmount": 779.4,
+      "status": "En preparación",
+      "orderDate": "2026-10-20"
+    },
+    {
+      "id": "o-8",
+      "createdAt": "2026-10-22T12:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "sku": "panic-button",
+      "deviceQuantity": 8,
+      "totalAmount": 479.2,
+      "status": "Pendiente de pago",
+      "orderDate": "2026-10-22"
+    },
+    {
+      "id": "o-9",
+      "createdAt": "2026-09-25T12:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "sku": "obd-ii",
+      "deviceQuantity": 3,
+      "totalAmount": 299.7,
+      "status": "Entregado",
+      "orderDate": "2026-09-25"
+    },
+    {
+      "id": "o-10",
+      "createdAt": "2026-10-21T12:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "sku": "temp-sensor",
+      "deviceQuantity": 2,
+      "totalAmount": 219.8,
+      "status": "En preparación",
+      "orderDate": "2026-10-21"
+    }
+  ],
+  "reports": [
+    {
+      "id": "r-1",
+      "createdAt": "2026-07-31T15:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "reportType": "Reporte de rendimiento de flota",
+      "generatedAt": "2026-07-31T15:00:00.000Z",
+      "filterParams": {}
+    },
+    {
+      "id": "r-2",
+      "createdAt": "2026-09-01T15:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "reportType": "Reporte de rendimiento de flota",
+      "generatedAt": "2026-09-01T15:00:00.000Z",
+      "filterParams": {
+        "from": "2026-08-01",
+        "to": "2026-08-31"
+      }
+    },
+    {
+      "id": "r-3",
+      "createdAt": "2026-09-15T15:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "reportType": "Reporte de consumo de combustible",
+      "generatedAt": "2026-09-15T15:00:00.000Z",
+      "filterParams": {
+        "vehicleId": "v-1"
+      }
+    },
+    {
+      "id": "r-4",
+      "createdAt": "2026-10-01T15:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "reportType": "Reporte de costos de mantenimiento",
+      "generatedAt": "2026-10-01T15:00:00.000Z",
+      "filterParams": {
+        "from": "2026-09-01",
+        "to": "2026-09-30"
+      }
+    },
+    {
+      "id": "r-5",
+      "createdAt": "2026-10-10T15:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "reportType": "Reporte de incidencias",
+      "generatedAt": "2026-10-10T15:00:00.000Z",
+      "filterParams": {
+        "status": "Abierto"
+      }
+    },
+    {
+      "id": "r-6",
+      "createdAt": "2026-10-02T15:00:00.000Z",
+      "ownerId": "u-owner-demo",
+      "reportType": "Reporte de rendimiento de flota",
+      "generatedAt": "2026-10-02T15:00:00.000Z",
+      "filterParams": {
+        "from": "2026-09-01",
+        "to": "2026-09-30"
+      }
+    },
+    {
+      "id": "r-7",
+      "createdAt": "2026-08-05T15:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "reportType": "Reporte de rendimiento de flota",
+      "generatedAt": "2026-08-05T15:00:00.000Z",
+      "filterParams": {}
+    },
+    {
+      "id": "r-8",
+      "createdAt": "2026-09-30T15:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "reportType": "Reporte de consumo de combustible",
+      "generatedAt": "2026-09-30T15:00:00.000Z",
+      "filterParams": {
+        "vehicleId": "v-9"
+      }
+    },
+    {
+      "id": "r-9",
+      "createdAt": "2026-10-16T15:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "reportType": "Reporte de costos de mantenimiento",
+      "generatedAt": "2026-10-16T15:00:00.000Z",
+      "filterParams": {
+        "from": "2026-08-01",
+        "to": "2026-10-15"
+      }
+    },
+    {
+      "id": "r-10",
+      "createdAt": "2026-10-17T15:00:00.000Z",
+      "ownerId": "u-owner-2",
+      "reportType": "Reporte de incidencias",
+      "generatedAt": "2026-10-17T15:00:00.000Z",
+      "filterParams": {
+        "vehicleId": "v-9"
+      }
+    }
+  ],
+  "notification-preferences": [
+    {
+      "id": "np-1",
+      "userId": "u-owner-demo",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-2",
+      "userId": "u-owner-2",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-3",
+      "userId": "u-driver-demo",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-4",
+      "userId": "u-driver-2",
+      "maintenance": true,
+      "speed": false,
+      "incidents": true
+    },
+    {
+      "id": "np-5",
+      "userId": "u-driver-3",
+      "maintenance": true,
+      "speed": true,
+      "incidents": false
+    },
+    {
+      "id": "np-6",
+      "userId": "u-driver-4",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-7",
+      "userId": "u-driver-5",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-8",
+      "userId": "u-driver-6",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-9",
+      "userId": "u-mechanic-demo",
+      "maintenance": true,
+      "speed": false,
+      "incidents": true
+    },
+    {
+      "id": "np-10",
+      "userId": "u-mechanic-2",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-11",
+      "userId": "u-mechanic-3",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-12",
+      "userId": "u-mechanic-4",
+      "maintenance": true,
+      "speed": true,
+      "incidents": false
+    },
+    {
+      "id": "np-13",
+      "userId": "u-mechanic-5",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-14",
+      "userId": "u-mechanic-6",
+      "maintenance": true,
+      "speed": false,
+      "incidents": true
+    },
+    {
+      "id": "np-15",
+      "userId": "u-mechanic-7",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-16",
+      "userId": "u-mechanic-8",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-17",
+      "userId": "u-mechanic-9",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    },
+    {
+      "id": "np-18",
+      "userId": "u-mechanic-10",
+      "maintenance": true,
+      "speed": true,
+      "incidents": true
+    }
+  ],
+  "fleet-preferences": {
+    "speedLimitKmh": 90,
+    "maintenanceIntervalKm": 10000,
+    "fuelAnomalyDropPct": 30
+  }
+}
