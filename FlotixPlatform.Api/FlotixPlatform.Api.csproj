@@ -26,4 +26,8 @@
       <Content Include="Incidents\Application\.DS_Store" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Shared\Infrastructure\Interfaces\" />
+    </ItemGroup>
+
 </Project>
