@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Fuel.Domain.Model.Aggregates;
-using FlotixPlatform.API.Fuel.Domain.Model.Commands;
-using FlotixPlatform.API.Fuel.Application.Errors;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Fuel.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Fuel.Domain.Model.Commands;
+using FlotixPlatform.Api.Fuel.Application.Errors;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 
 namespace FlotixPlatform.Api.Fuel.Application.Services;
 

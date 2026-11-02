@@ -1,5 +1,5 @@
-using FlotixPlatform.API.Fuel.Domain.Model.Aggregates;
-using FlotixPlatform.API.Fuel.Domain.Model.Queries;
+using FlotixPlatform.Api.Fuel.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Fuel.Domain.Model.Queries;
 
 namespace FlotixPlatform.Api.Fuel.Application.Services;
 
