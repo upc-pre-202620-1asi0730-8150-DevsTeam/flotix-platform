@@ -1,0 +1,1023 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="UnexpectedServerError" xml:space="preserve">
+        <value>Error inesperado del servidor</value>
+    </data>
+    <data name="UnexpectedErrorProcessingRequest" xml:space="preserve">
+        <value>Ocurrió un error inesperado al procesar su solicitud.</value>
+    </data>
+    <data name="InvalidModelStateTitle" xml:space="preserve">
+        <value>La solicitud contiene valores no válidos.</value>
+    </data>
+    <data name="RangeField" xml:space="preserve">
+        <value>El campo {0} debe estar entre {1} y {2}.</value>
+    </data>
+    <data name="StringLengthField" xml:space="preserve">
+        <value>El campo {0} debe ser una cadena con una longitud máxima de {1}.</value>
+    </data>
+    <data name="MaxLengthField" xml:space="preserve">
+        <value>El campo {0} debe tener como máximo {1} elementos.</value>
+    </data>
+    <data name="EmailAddressField" xml:space="preserve">
+        <value>El campo {0} no es un correo electrónico válido.</value>
+    </data>
+    <data name="MinLengthField" xml:space="preserve">
+        <value>El campo {0} debe tener al menos {1} caracteres.</value>
+    </data>
+    <data name="Response200" xml:space="preserve">
+        <value>La solicitud se completó correctamente.</value>
+    </data>
+    <data name="Response201" xml:space="preserve">
+        <value>Se creó el recurso.</value>
+    </data>
+    <data name="Response204" xml:space="preserve">
+        <value>Se eliminó el recurso.</value>
+    </data>
+    <data name="Response400" xml:space="preserve">
+        <value>La solicitud contiene valores no válidos.</value>
+    </data>
+    <data name="Response401" xml:space="preserve">
+        <value>Las credenciales o el token no son válidos.</value>
+    </data>
+    <data name="Response404" xml:space="preserve">
+        <value>No se encontró el recurso.</value>
+    </data>
+    <data name="Response409" xml:space="preserve">
+        <value>La solicitud entra en conflicto con el estado actual del recurso.</value>
+    </data>
+    <data name="Response500" xml:space="preserve">
+        <value>Ocurrió un error inesperado en el servidor.</value>
+    </data>
+    <data name="SignUpSummary" xml:space="preserve">
+        <value>Registra un usuario</value>
+    </data>
+    <data name="SignUpDescription" xml:space="preserve">
+        <value>Registra una cuenta de usuario con su perfil y rol.</value>
+    </data>
+    <data name="SignInSummary" xml:space="preserve">
+        <value>Iniciar sesión</value>
+    </data>
+    <data name="SignInDescription" xml:space="preserve">
+        <value>Valida las credenciales y devuelve un token bearer.</value>
+    </data>
+    <data name="GetAllUsersSummary" xml:space="preserve">
+        <value>Obtener todos los usuarios</value>
+    </data>
+    <data name="GetAllUsersDescription" xml:space="preserve">
+        <value>Obtiene todos los usuarios, opcionalmente filtrados por tipo de rol.</value>
+    </data>
+    <data name="GetUserByIdSummary" xml:space="preserve">
+        <value>Obtener un usuario por ID</value>
+    </data>
+    <data name="GetUserByIdDescription" xml:space="preserve">
+        <value>Obtiene un usuario mediante su identificador.</value>
+    </data>
+    <data name="UpdateUserProfileSummary" xml:space="preserve">
+        <value>Actualizar el perfil de un usuario</value>
+    </data>
+    <data name="UpdateUserProfileDescription" xml:space="preserve">
+        <value>Actualiza los datos del perfil de un usuario.</value>
+    </data>
+    <data name="DeleteUserSummary" xml:space="preserve">
+        <value>Eliminar un usuario</value>
+    </data>
+    <data name="DeleteUserDescription" xml:space="preserve">
+        <value>Elimina un usuario mediante su identificador.</value>
+    </data>
+    <data name="SignUpSchema" xml:space="preserve">
+        <value>Datos de la solicitud para registrar un usuario.</value>
+    </data>
+    <data name="SignInSchema" xml:space="preserve">
+        <value>Datos de la solicitud para iniciar sesión.</value>
+    </data>
+    <data name="AuthenticatedUserSchema" xml:space="preserve">
+        <value>Un usuario autenticado con su token bearer.</value>
+    </data>
+    <data name="UserSchema" xml:space="preserve">
+        <value>Un usuario devuelto por la API.</value>
+    </data>
+    <data name="UpdateUserProfileSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar el perfil de un usuario.</value>
+    </data>
+    <data name="UserId" xml:space="preserve">
+        <value>El identificador del usuario generado por el servidor.</value>
+    </data>
+    <data name="UserEmail" xml:space="preserve">
+        <value>El correo electrónico del usuario.</value>
+    </data>
+    <data name="UserPassword" xml:space="preserve">
+        <value>La contraseña del usuario (al menos 8 caracteres).</value>
+    </data>
+    <data name="UserRoleType" xml:space="preserve">
+        <value>El rol del usuario: Owner, Driver o Mechanic.</value>
+    </data>
+    <data name="UserName" xml:space="preserve">
+        <value>El nombre completo del usuario.</value>
+    </data>
+    <data name="UserLicenseNumber" xml:space="preserve">
+        <value>El número de licencia de conducir (obligatorio para conductores).</value>
+    </data>
+    <data name="UserLicenseExpiration" xml:space="preserve">
+        <value>La fecha de vencimiento de la licencia de conducir.</value>
+    </data>
+    <data name="UserCompanyName" xml:space="preserve">
+        <value>La razón social de un propietario de flota.</value>
+    </data>
+    <data name="UserWorkshopName" xml:space="preserve">
+        <value>El nombre del taller de un mecánico.</value>
+    </data>
+    <data name="UserToken" xml:space="preserve">
+        <value>El token bearer para autorizar las siguientes solicitudes.</value>
+    </data>
+    <data name="RequiredEmail" xml:space="preserve">
+        <value>El campo correo electrónico es obligatorio.</value>
+    </data>
+    <data name="RequiredPassword" xml:space="preserve">
+        <value>El campo contraseña es obligatorio.</value>
+    </data>
+    <data name="RequiredName" xml:space="preserve">
+        <value>El campo nombre es obligatorio.</value>
+    </data>
+    <data name="InvalidSignUpRequest" xml:space="preserve">
+        <value>La solicitud de registro contiene valores no válidos.</value>
+    </data>
+    <data name="InvalidSignInRequest" xml:space="preserve">
+        <value>La solicitud de inicio de sesión contiene valores no válidos.</value>
+    </data>
+    <data name="InvalidUserRequest" xml:space="preserve">
+        <value>La solicitud de usuario contiene valores no válidos.</value>
+    </data>
+    <data name="DuplicateUserEmail" xml:space="preserve">
+        <value>Ya existe un usuario con este correo electrónico.</value>
+    </data>
+    <data name="DriverLicenseRequired" xml:space="preserve">
+        <value>Un conductor debe tener un número de licencia y su fecha de vencimiento.</value>
+    </data>
+    <data name="UserHasDependents" xml:space="preserve">
+        <value>El usuario tiene registros relacionados y no se puede eliminar.</value>
+    </data>
+    <data name="InvalidCredentials" xml:space="preserve">
+        <value>El correo electrónico o la contraseña son incorrectos.</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>No se encontró el usuario.</value>
+    </data>
+    <data name="UnexpectedErrorSigningUp" xml:space="preserve">
+        <value>Ocurrió un error inesperado al registrar el usuario.</value>
+    </data>
+    <data name="UnexpectedErrorSigningIn" xml:space="preserve">
+        <value>Ocurrió un error inesperado al iniciar sesión.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingUser" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar el usuario.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingUser" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar el usuario.</value>
+    </data>
+    <data name="CreateVehicleSummary" xml:space="preserve">
+        <value>Crear un vehículo</value>
+    </data>
+    <data name="CreateVehicleDescription" xml:space="preserve">
+        <value>Registra un nuevo vehículo.</value>
+    </data>
+    <data name="GetAllVehiclesSummary" xml:space="preserve">
+        <value>Obtener todos los vehículos</value>
+    </data>
+    <data name="GetAllVehiclesDescription" xml:space="preserve">
+        <value>Obtiene todos los vehículos, opcionalmente filtrados por ID del propietario o ID del conductor.</value>
+    </data>
+    <data name="GetVehicleByIdSummary" xml:space="preserve">
+        <value>Obtener un vehículo por ID</value>
+    </data>
+    <data name="GetVehicleByIdDescription" xml:space="preserve">
+        <value>Obtiene un vehículo mediante su identificador.</value>
+    </data>
+    <data name="UpdateVehicleSummary" xml:space="preserve">
+        <value>Actualizar un vehículo</value>
+    </data>
+    <data name="UpdateVehicleDescription" xml:space="preserve">
+        <value>Actualiza los datos de un vehículo.</value>
+    </data>
+    <data name="DeleteVehicleSummary" xml:space="preserve">
+        <value>Eliminar un vehículo</value>
+    </data>
+    <data name="DeleteVehicleDescription" xml:space="preserve">
+        <value>Elimina un vehículo mediante su identificador.</value>
+    </data>
+    <data name="CreateVehicleSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear un vehículo.</value>
+    </data>
+    <data name="UpdateVehicleSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar un vehículo.</value>
+    </data>
+    <data name="VehicleSchema" xml:space="preserve">
+        <value>Un vehículo devuelto por la API.</value>
+    </data>
+    <data name="VehicleId" xml:space="preserve">
+        <value>El identificador del vehículo generado por el servidor.</value>
+    </data>
+    <data name="VehicleOwnerId" xml:space="preserve">
+        <value>El identificador del usuario propietario.</value>
+    </data>
+    <data name="VehicleDriverId" xml:space="preserve">
+        <value>El identificador del usuario conductor.</value>
+    </data>
+    <data name="VehicleLicensePlate" xml:space="preserve">
+        <value>La placa del vehículo.</value>
+    </data>
+    <data name="VehicleVehicleType" xml:space="preserve">
+        <value>El tipo de vehículo (p. ej. Camión de carga).</value>
+    </data>
+    <data name="VehicleCurrentMileage" xml:space="preserve">
+        <value>El kilometraje actual del vehículo en kilómetros.</value>
+    </data>
+    <data name="VehicleStatus" xml:space="preserve">
+        <value>El estado actual del vehículo.</value>
+    </data>
+    <data name="InvalidVehicleRequest" xml:space="preserve">
+        <value>La solicitud de vehículo contiene valores no válidos.</value>
+    </data>
+    <data name="VehicleNotFound" xml:space="preserve">
+        <value>No se encontró el vehículo.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingVehicle" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear el vehículo.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingVehicle" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar el vehículo.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingVehicle" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar el vehículo.</value>
+    </data>
+    <data name="DuplicateVehicleLicensePlate" xml:space="preserve">
+        <value>Ya existe un vehículo con ese valor de placa.</value>
+    </data>
+    <data name="MileageCannotDecrease" xml:space="preserve">
+        <value>El kilometraje de un vehículo no puede disminuir.</value>
+    </data>
+    <data name="VehicleReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por el vehículo.</value>
+    </data>
+    <data name="VehicleHasDependents" xml:space="preserve">
+        <value>El vehículo tiene registros relacionados y no se puede eliminar.</value>
+    </data>
+    <data name="RequiredLicensePlate" xml:space="preserve">
+        <value>El campo placa es obligatorio.</value>
+    </data>
+    <data name="RequiredVehicleType" xml:space="preserve">
+        <value>El campo tipo de vehículo es obligatorio.</value>
+    </data>
+    <data name="CreateFuelRecordSummary" xml:space="preserve">
+        <value>Crear un registro de combustible</value>
+    </data>
+    <data name="CreateFuelRecordDescription" xml:space="preserve">
+        <value>Registra un nuevo registro de combustible.</value>
+    </data>
+    <data name="GetAllFuelRecordsSummary" xml:space="preserve">
+        <value>Obtener todos los registros de combustible</value>
+    </data>
+    <data name="GetAllFuelRecordsDescription" xml:space="preserve">
+        <value>Obtiene todos los registros de combustible, opcionalmente filtrados por ID del vehículo o ID del conductor.</value>
+    </data>
+    <data name="GetFuelRecordByIdSummary" xml:space="preserve">
+        <value>Obtener un registro de combustible por ID</value>
+    </data>
+    <data name="GetFuelRecordByIdDescription" xml:space="preserve">
+        <value>Obtiene un registro de combustible mediante su identificador.</value>
+    </data>
+    <data name="UpdateFuelRecordSummary" xml:space="preserve">
+        <value>Actualizar un registro de combustible</value>
+    </data>
+    <data name="UpdateFuelRecordDescription" xml:space="preserve">
+        <value>Actualiza los datos de un registro de combustible.</value>
+    </data>
+    <data name="DeleteFuelRecordSummary" xml:space="preserve">
+        <value>Eliminar un registro de combustible</value>
+    </data>
+    <data name="DeleteFuelRecordDescription" xml:space="preserve">
+        <value>Elimina un registro de combustible mediante su identificador.</value>
+    </data>
+    <data name="CreateFuelRecordSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear un registro de combustible.</value>
+    </data>
+    <data name="UpdateFuelRecordSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar un registro de combustible.</value>
+    </data>
+    <data name="FuelRecordSchema" xml:space="preserve">
+        <value>Un registro de combustible devuelto por la API.</value>
+    </data>
+    <data name="FuelRecordId" xml:space="preserve">
+        <value>El identificador del registro de combustible generado por el servidor.</value>
+    </data>
+    <data name="FuelRecordVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="FuelRecordDriverId" xml:space="preserve">
+        <value>El identificador del usuario conductor.</value>
+    </data>
+    <data name="FuelRecordLiters" xml:space="preserve">
+        <value>La cantidad cargada en litros.</value>
+    </data>
+    <data name="FuelRecordCost" xml:space="preserve">
+        <value>El costo total de la carga de combustible.</value>
+    </data>
+    <data name="FuelRecordMileageAtRefill" xml:space="preserve">
+        <value>El kilometraje del vehículo al cargar combustible.</value>
+    </data>
+    <data name="FuelRecordRecordedDate" xml:space="preserve">
+        <value>La fecha y hora de la carga de combustible.</value>
+    </data>
+    <data name="InvalidFuelRecordRequest" xml:space="preserve">
+        <value>La solicitud de registro de combustible contiene valores no válidos.</value>
+    </data>
+    <data name="FuelRecordNotFound" xml:space="preserve">
+        <value>No se encontró el registro de combustible.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingFuelRecord" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear el registro de combustible.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingFuelRecord" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar el registro de combustible.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingFuelRecord" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar el registro de combustible.</value>
+    </data>
+    <data name="FuelRecordReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por el registro de combustible.</value>
+    </data>
+    <data name="GetAllMaintenanceRequestsSummary" xml:space="preserve">
+        <value>Obtener todas las solicitudes de mantenimiento</value>
+    </data>
+    <data name="GetAllMaintenanceRequestsDescription" xml:space="preserve">
+        <value>Obtiene todas las solicitudes de mantenimiento, opcionalmente filtradas por ID del vehículo o ID del mecánico.</value>
+    </data>
+    <data name="GetMaintenanceRequestByIdSummary" xml:space="preserve">
+        <value>Obtener una solicitud de mantenimiento por ID</value>
+    </data>
+    <data name="GetMaintenanceRequestByIdDescription" xml:space="preserve">
+        <value>Obtiene una solicitud de mantenimiento mediante su identificador.</value>
+    </data>
+    <data name="DeleteMaintenanceRequestSummary" xml:space="preserve">
+        <value>Eliminar una solicitud de mantenimiento</value>
+    </data>
+    <data name="DeleteMaintenanceRequestDescription" xml:space="preserve">
+        <value>Elimina una solicitud de mantenimiento mediante su identificador.</value>
+    </data>
+    <data name="MaintenanceRequestSchema" xml:space="preserve">
+        <value>Una solicitud de mantenimiento devuelta por la API.</value>
+    </data>
+    <data name="MaintenanceRequestId" xml:space="preserve">
+        <value>El identificador de la solicitud de mantenimiento generado por el servidor.</value>
+    </data>
+    <data name="MaintenanceRequestVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="MaintenanceRequestMechanicId" xml:space="preserve">
+        <value>El identificador del usuario mecánico.</value>
+    </data>
+    <data name="MaintenanceRequestDescription" xml:space="preserve">
+        <value>La descripción de la falla a reparar.</value>
+    </data>
+    <data name="MaintenanceRequestEstimatedCost" xml:space="preserve">
+        <value>El costo estimado cotizado por el taller.</value>
+    </data>
+    <data name="MaintenanceRequestStatus" xml:space="preserve">
+        <value>El estado actual de la solicitud de mantenimiento.</value>
+    </data>
+    <data name="MaintenanceRequestRequestDate" xml:space="preserve">
+        <value>El momento en que se solicitó el mantenimiento.</value>
+    </data>
+    <data name="InvalidMaintenanceRequestRequest" xml:space="preserve">
+        <value>La solicitud de solicitud de mantenimiento contiene valores no válidos.</value>
+    </data>
+    <data name="MaintenanceRequestNotFound" xml:space="preserve">
+        <value>No se encontró la solicitud de mantenimiento.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingMaintenanceRequest" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar la solicitud de mantenimiento.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingMaintenanceRequest" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar la solicitud de mantenimiento.</value>
+    </data>
+    <data name="MaintenanceRequestReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por la solicitud de mantenimiento.</value>
+    </data>
+    <data name="RequiredDescription" xml:space="preserve">
+        <value>El campo descripción es obligatorio.</value>
+    </data>
+    <data name="CreateIncidentSummary" xml:space="preserve">
+        <value>Crear una incidencia</value>
+    </data>
+    <data name="CreateIncidentDescription" xml:space="preserve">
+        <value>Registra una nueva incidencia.</value>
+    </data>
+    <data name="GetAllIncidentsSummary" xml:space="preserve">
+        <value>Obtener todas las incidencias</value>
+    </data>
+    <data name="GetAllIncidentsDescription" xml:space="preserve">
+        <value>Obtiene todas las incidencias, opcionalmente filtradas por ID del vehículo o ID del conductor.</value>
+    </data>
+    <data name="GetIncidentByIdSummary" xml:space="preserve">
+        <value>Obtener una incidencia por ID</value>
+    </data>
+    <data name="GetIncidentByIdDescription" xml:space="preserve">
+        <value>Obtiene una incidencia mediante su identificador.</value>
+    </data>
+    <data name="UpdateIncidentSummary" xml:space="preserve">
+        <value>Actualizar una incidencia</value>
+    </data>
+    <data name="UpdateIncidentDescription" xml:space="preserve">
+        <value>Actualiza los datos de una incidencia.</value>
+    </data>
+    <data name="DeleteIncidentSummary" xml:space="preserve">
+        <value>Eliminar una incidencia</value>
+    </data>
+    <data name="DeleteIncidentDescription" xml:space="preserve">
+        <value>Elimina una incidencia mediante su identificador.</value>
+    </data>
+    <data name="CreateIncidentSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear una incidencia.</value>
+    </data>
+    <data name="UpdateIncidentSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar una incidencia.</value>
+    </data>
+    <data name="IncidentSchema" xml:space="preserve">
+        <value>Una incidencia devuelta por la API.</value>
+    </data>
+    <data name="IncidentId" xml:space="preserve">
+        <value>El identificador de la incidencia generado por el servidor.</value>
+    </data>
+    <data name="IncidentVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="IncidentDriverId" xml:space="preserve">
+        <value>El identificador del usuario conductor.</value>
+    </data>
+    <data name="IncidentDescription" xml:space="preserve">
+        <value>La descripción de la incidencia.</value>
+    </data>
+    <data name="IncidentStatus" xml:space="preserve">
+        <value>El estado actual de la incidencia.</value>
+    </data>
+    <data name="IncidentReportedDate" xml:space="preserve">
+        <value>El momento en que se reportó la incidencia.</value>
+    </data>
+    <data name="InvalidIncidentRequest" xml:space="preserve">
+        <value>La solicitud de incidencia contiene valores no válidos.</value>
+    </data>
+    <data name="IncidentNotFound" xml:space="preserve">
+        <value>No se encontró la incidencia.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingIncident" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear la incidencia.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingIncident" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar la incidencia.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingIncident" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar la incidencia.</value>
+    </data>
+    <data name="IncidentReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por la incidencia.</value>
+    </data>
+    <data name="CreateIotDeviceSummary" xml:space="preserve">
+        <value>Crear un dispositivo IoT</value>
+    </data>
+    <data name="CreateIotDeviceDescription" xml:space="preserve">
+        <value>Registra un nuevo dispositivo IoT.</value>
+    </data>
+    <data name="GetAllIotDevicesSummary" xml:space="preserve">
+        <value>Obtener todos los dispositivos IoT</value>
+    </data>
+    <data name="GetAllIotDevicesDescription" xml:space="preserve">
+        <value>Obtiene todos los dispositivos IoT, opcionalmente filtrados por ID del vehículo.</value>
+    </data>
+    <data name="GetIotDeviceByIdSummary" xml:space="preserve">
+        <value>Obtener un dispositivo IoT por ID</value>
+    </data>
+    <data name="GetIotDeviceByIdDescription" xml:space="preserve">
+        <value>Obtiene un dispositivo IoT mediante su identificador.</value>
+    </data>
+    <data name="UpdateIotDeviceSummary" xml:space="preserve">
+        <value>Actualizar un dispositivo IoT</value>
+    </data>
+    <data name="UpdateIotDeviceDescription" xml:space="preserve">
+        <value>Actualiza los datos de un dispositivo IoT.</value>
+    </data>
+    <data name="DeleteIotDeviceSummary" xml:space="preserve">
+        <value>Eliminar un dispositivo IoT</value>
+    </data>
+    <data name="DeleteIotDeviceDescription" xml:space="preserve">
+        <value>Elimina un dispositivo IoT mediante su identificador.</value>
+    </data>
+    <data name="GetAllTelemetryDataSummary" xml:space="preserve">
+        <value>Obtener todos los registros de telemetría</value>
+    </data>
+    <data name="GetAllTelemetryDataDescription" xml:space="preserve">
+        <value>Obtiene todos los registros de telemetría, opcionalmente filtrados por ID del dispositivo desde la lectura más reciente.</value>
+    </data>
+    <data name="GetTelemetryDataByIdSummary" xml:space="preserve">
+        <value>Obtener un registro de telemetría por ID</value>
+    </data>
+    <data name="GetTelemetryDataByIdDescription" xml:space="preserve">
+        <value>Obtiene un registro de telemetría mediante su identificador.</value>
+    </data>
+    <data name="CreateIotDeviceSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear un dispositivo IoT.</value>
+    </data>
+    <data name="UpdateIotDeviceSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar un dispositivo IoT.</value>
+    </data>
+    <data name="IotDeviceSchema" xml:space="preserve">
+        <value>Un dispositivo IoT devuelto por la API.</value>
+    </data>
+    <data name="TelemetryDataSchema" xml:space="preserve">
+        <value>Un registro de telemetría devuelto por la API.</value>
+    </data>
+    <data name="IotDeviceId" xml:space="preserve">
+        <value>El identificador del dispositivo IoT generado por el servidor.</value>
+    </data>
+    <data name="IotDeviceVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="IotDeviceSerialNumber" xml:space="preserve">
+        <value>El número de serie del dispositivo IoT.</value>
+    </data>
+    <data name="IotDeviceIsConnected" xml:space="preserve">
+        <value>Indica si el dispositivo IoT está conectado.</value>
+    </data>
+    <data name="TelemetryDataId" xml:space="preserve">
+        <value>El identificador del registro de telemetría generado por el servidor.</value>
+    </data>
+    <data name="TelemetryDataDeviceId" xml:space="preserve">
+        <value>El identificador del dispositivo IoT que reporta.</value>
+    </data>
+    <data name="TelemetryDataLatitude" xml:space="preserve">
+        <value>La latitud de la posición reportada.</value>
+    </data>
+    <data name="TelemetryDataLongitude" xml:space="preserve">
+        <value>La longitud de la posición reportada.</value>
+    </data>
+    <data name="TelemetryDataSpeed" xml:space="preserve">
+        <value>La velocidad reportada en km/h.</value>
+    </data>
+    <data name="TelemetryDataRecordedAt" xml:space="preserve">
+        <value>El momento en que el dispositivo tomó la lectura.</value>
+    </data>
+    <data name="InvalidIotDeviceRequest" xml:space="preserve">
+        <value>La solicitud de dispositivo IoT contiene valores no válidos.</value>
+    </data>
+    <data name="IotDeviceNotFound" xml:space="preserve">
+        <value>No se encontró el dispositivo IoT.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingIotDevice" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear el dispositivo IoT.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingIotDevice" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar el dispositivo IoT.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingIotDevice" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar el dispositivo IoT.</value>
+    </data>
+    <data name="DuplicateIotDeviceVehicleId" xml:space="preserve">
+        <value>Ya existe un dispositivo IoT con ese valor de ID del vehículo.</value>
+    </data>
+    <data name="DuplicateIotDeviceSerialNumber" xml:space="preserve">
+        <value>Ya existe un dispositivo IoT con ese valor de número de serie.</value>
+    </data>
+    <data name="IotDeviceReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por el dispositivo IoT.</value>
+    </data>
+    <data name="IotDeviceHasDependents" xml:space="preserve">
+        <value>El dispositivo IoT tiene registros relacionados y no se puede eliminar.</value>
+    </data>
+    <data name="RequiredSerialNumber" xml:space="preserve">
+        <value>El campo número de serie es obligatorio.</value>
+    </data>
+    <data name="InvalidTelemetryDataRequest" xml:space="preserve">
+        <value>El paquete de telemetría no cumple el esquema esperado y fue descartado.</value>
+    </data>
+    <data name="TelemetryDataNotFound" xml:space="preserve">
+        <value>No se encontró el registro de telemetría.</value>
+    </data>
+    <data name="CreateAlertSummary" xml:space="preserve">
+        <value>Crear una alerta</value>
+    </data>
+    <data name="CreateAlertDescription" xml:space="preserve">
+        <value>Registra una nueva alerta.</value>
+    </data>
+    <data name="GetAllAlertsSummary" xml:space="preserve">
+        <value>Obtener todas las alertas</value>
+    </data>
+    <data name="GetAllAlertsDescription" xml:space="preserve">
+        <value>Obtiene todas las alertas, opcionalmente filtradas por ID del vehículo.</value>
+    </data>
+    <data name="GetAlertByIdSummary" xml:space="preserve">
+        <value>Obtener una alerta por ID</value>
+    </data>
+    <data name="GetAlertByIdDescription" xml:space="preserve">
+        <value>Obtiene una alerta mediante su identificador.</value>
+    </data>
+    <data name="CreateNotificationSummary" xml:space="preserve">
+        <value>Crear una notificación</value>
+    </data>
+    <data name="CreateNotificationDescription" xml:space="preserve">
+        <value>Registra una nueva notificación.</value>
+    </data>
+    <data name="GetAllNotificationsSummary" xml:space="preserve">
+        <value>Obtener todas las notificaciones</value>
+    </data>
+    <data name="GetAllNotificationsDescription" xml:space="preserve">
+        <value>Obtiene todas las notificaciones, opcionalmente filtradas por ID del usuario.</value>
+    </data>
+    <data name="GetNotificationByIdSummary" xml:space="preserve">
+        <value>Obtener una notificación por ID</value>
+    </data>
+    <data name="GetNotificationByIdDescription" xml:space="preserve">
+        <value>Obtiene una notificación mediante su identificador.</value>
+    </data>
+    <data name="UpdateNotificationSummary" xml:space="preserve">
+        <value>Actualizar una notificación</value>
+    </data>
+    <data name="UpdateNotificationDescription" xml:space="preserve">
+        <value>Actualiza los datos de una notificación.</value>
+    </data>
+    <data name="DeleteNotificationSummary" xml:space="preserve">
+        <value>Eliminar una notificación</value>
+    </data>
+    <data name="DeleteNotificationDescription" xml:space="preserve">
+        <value>Elimina una notificación mediante su identificador.</value>
+    </data>
+    <data name="CreateAlertSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear una alerta.</value>
+    </data>
+    <data name="AlertSchema" xml:space="preserve">
+        <value>Una alerta devuelta por la API.</value>
+    </data>
+    <data name="CreateNotificationSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear una notificación.</value>
+    </data>
+    <data name="UpdateNotificationSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar una notificación.</value>
+    </data>
+    <data name="NotificationSchema" xml:space="preserve">
+        <value>Una notificación devuelta por la API.</value>
+    </data>
+    <data name="AlertId" xml:space="preserve">
+        <value>El identificador de la alerta generado por el servidor.</value>
+    </data>
+    <data name="AlertVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="AlertAlertType" xml:space="preserve">
+        <value>El tipo de alerta (p. ej. Exceso de velocidad).</value>
+    </data>
+    <data name="AlertTriggerDate" xml:space="preserve">
+        <value>El momento en que se activó la alerta.</value>
+    </data>
+    <data name="NotificationId" xml:space="preserve">
+        <value>El identificador de la notificación generado por el servidor.</value>
+    </data>
+    <data name="NotificationUserId" xml:space="preserve">
+        <value>El identificador del usuario destinatario.</value>
+    </data>
+    <data name="NotificationAlertId" xml:space="preserve">
+        <value>El identificador de la alerta relacionada, si existe.</value>
+    </data>
+    <data name="NotificationMessage" xml:space="preserve">
+        <value>El mensaje de la notificación.</value>
+    </data>
+    <data name="NotificationIsRead" xml:space="preserve">
+        <value>Indica si la notificación fue leída.</value>
+    </data>
+    <data name="NotificationSentDate" xml:space="preserve">
+        <value>El momento en que se envió la notificación.</value>
+    </data>
+    <data name="InvalidAlertRequest" xml:space="preserve">
+        <value>La solicitud de alerta contiene valores no válidos.</value>
+    </data>
+    <data name="AlertNotFound" xml:space="preserve">
+        <value>No se encontró la alerta.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingAlert" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear la alerta.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingAlert" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar la alerta.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingAlert" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar la alerta.</value>
+    </data>
+    <data name="AlertReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por la alerta.</value>
+    </data>
+    <data name="AlertHasDependents" xml:space="preserve">
+        <value>La alerta tiene registros relacionados y no se puede eliminar.</value>
+    </data>
+    <data name="RequiredAlertType" xml:space="preserve">
+        <value>El campo tipo de alerta es obligatorio.</value>
+    </data>
+    <data name="InvalidNotificationRequest" xml:space="preserve">
+        <value>La solicitud de notificación contiene valores no válidos.</value>
+    </data>
+    <data name="NotificationNotFound" xml:space="preserve">
+        <value>No se encontró la notificación.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingNotification" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear la notificación.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingNotification" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar la notificación.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingNotification" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar la notificación.</value>
+    </data>
+    <data name="NotificationReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por la notificación.</value>
+    </data>
+    <data name="RequiredMessage" xml:space="preserve">
+        <value>El campo mensaje es obligatorio.</value>
+    </data>
+    <data name="CreateIotOrderSummary" xml:space="preserve">
+        <value>Crear un pedido IoT</value>
+    </data>
+    <data name="CreateIotOrderDescription" xml:space="preserve">
+        <value>Registra un nuevo pedido IoT.</value>
+    </data>
+    <data name="GetAllIotOrdersSummary" xml:space="preserve">
+        <value>Obtener todos los pedidos IoT</value>
+    </data>
+    <data name="GetAllIotOrdersDescription" xml:space="preserve">
+        <value>Obtiene todos los pedidos IoT, opcionalmente filtrados por ID del propietario.</value>
+    </data>
+    <data name="GetIotOrderByIdSummary" xml:space="preserve">
+        <value>Obtener un pedido IoT por ID</value>
+    </data>
+    <data name="GetIotOrderByIdDescription" xml:space="preserve">
+        <value>Obtiene un pedido IoT mediante su identificador.</value>
+    </data>
+    <data name="UpdateIotOrderSummary" xml:space="preserve">
+        <value>Actualizar un pedido IoT</value>
+    </data>
+    <data name="UpdateIotOrderDescription" xml:space="preserve">
+        <value>Actualiza los datos de un pedido IoT.</value>
+    </data>
+    <data name="CreateIotOrderSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear un pedido IoT.</value>
+    </data>
+    <data name="UpdateIotOrderSchema" xml:space="preserve">
+        <value>Datos de la solicitud para actualizar un pedido IoT.</value>
+    </data>
+    <data name="IotOrderSchema" xml:space="preserve">
+        <value>Un pedido IoT devuelto por la API.</value>
+    </data>
+    <data name="IotOrderId" xml:space="preserve">
+        <value>El identificador del pedido IoT generado por el servidor.</value>
+    </data>
+    <data name="IotOrderOwnerId" xml:space="preserve">
+        <value>El identificador del usuario propietario.</value>
+    </data>
+    <data name="IotOrderQuantity" xml:space="preserve">
+        <value>La cantidad de dispositivos pedidos.</value>
+    </data>
+    <data name="IotOrderTotalAmount" xml:space="preserve">
+        <value>El monto total, calculado desde el catálogo.</value>
+    </data>
+    <data name="IotOrderStatus" xml:space="preserve">
+        <value>El estado actual del pedido IoT.</value>
+    </data>
+    <data name="IotOrderOrderDate" xml:space="preserve">
+        <value>La fecha en que se realizó el pedido.</value>
+    </data>
+    <data name="InvalidIotOrderRequest" xml:space="preserve">
+        <value>La solicitud de pedido IoT contiene valores no válidos.</value>
+    </data>
+    <data name="IotOrderNotFound" xml:space="preserve">
+        <value>No se encontró el pedido IoT.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingIotOrder" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear el pedido IoT.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingIotOrder" xml:space="preserve">
+        <value>Ocurrió un error inesperado al actualizar el pedido IoT.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingIotOrder" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar el pedido IoT.</value>
+    </data>
+    <data name="IotOrderAlreadyClosed" xml:space="preserve">
+        <value>Un pedido entregado o cancelado no puede cambiar de estado.</value>
+    </data>
+    <data name="IotOrderReferencedResourceNotFound" xml:space="preserve">
+        <value>No existe un vehículo, usuario u otro recurso referenciado por el pedido IoT.</value>
+    </data>
+    <data name="GetAllReportsSummary" xml:space="preserve">
+        <value>Obtener todos los reportes</value>
+    </data>
+    <data name="GetAllReportsDescription" xml:space="preserve">
+        <value>Obtiene todos los reportes, opcionalmente filtrados por ID del propietario.</value>
+    </data>
+    <data name="GetReportByIdSummary" xml:space="preserve">
+        <value>Obtener un reporte por ID</value>
+    </data>
+    <data name="GetReportByIdDescription" xml:space="preserve">
+        <value>Obtiene un reporte mediante su identificador.</value>
+    </data>
+    <data name="DeleteReportSummary" xml:space="preserve">
+        <value>Eliminar un reporte</value>
+    </data>
+    <data name="DeleteReportDescription" xml:space="preserve">
+        <value>Elimina un reporte mediante su identificador.</value>
+    </data>
+    <data name="ReportSchema" xml:space="preserve">
+        <value>Un reporte devuelto por la API.</value>
+    </data>
+    <data name="ReportId" xml:space="preserve">
+        <value>El identificador del reporte generado por el servidor.</value>
+    </data>
+    <data name="ReportOwnerId" xml:space="preserve">
+        <value>El identificador del usuario propietario.</value>
+    </data>
+    <data name="ReportReportType" xml:space="preserve">
+        <value>El tipo de reporte.</value>
+    </data>
+    <data name="ReportGeneratedDate" xml:space="preserve">
+        <value>El momento en que se generó el reporte.</value>
+    </data>
+    <data name="ReportFilterParams" xml:space="preserve">
+        <value>Los filtros aplicados al reporte (p. ej. rango de fechas).</value>
+    </data>
+    <data name="InvalidReportRequest" xml:space="preserve">
+        <value>El tipo de reporte no está soportado o el periodo no es válido.</value>
+    </data>
+    <data name="ReportNotFound" xml:space="preserve">
+        <value>No se encontró el reporte.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingReport" xml:space="preserve">
+        <value>Ocurrió un error inesperado al eliminar el reporte.</value>
+    </data>
+    <data name="ReportReferencedResourceNotFound" xml:space="preserve">
+        <value>El dueño del reporte no existe.</value>
+    </data>
+    <data name="RequiredReportType" xml:space="preserve">
+        <value>El campo tipo de reporte es obligatorio.</value>
+    </data>
+    <data name="RequiredFilterParams" xml:space="preserve">
+        <value>El campo parámetros de filtro es obligatorio.</value>
+    </data>
+    <data name="Response202" xml:space="preserve">
+        <value>La solicitud fue aceptada para su procesamiento.</value>
+    </data>
+    <data name="ReceiveTelemetryDataSummary" xml:space="preserve">
+        <value>Recibir un paquete de telemetría</value>
+    </data>
+    <data name="ReceiveTelemetryDataDescription" xml:space="preserve">
+        <value>Recibe un paquete de telemetría de un dispositivo IoT y lo encola para el IoT Telemetry Processor, que almacena la lectura y publica la ubicación del vehículo. Los paquetes corruptos se descartan y se registran en el registro de errores.</value>
+    </data>
+    <data name="UnexpectedErrorReceivingTelemetryData" xml:space="preserve">
+        <value>Ocurrió un error inesperado al recibir el paquete de telemetría.</value>
+    </data>
+    <data name="ReceiveTelemetryDataSchema" xml:space="preserve">
+        <value>Paquete de telemetría enviado por un dispositivo IoT.</value>
+    </data>
+    <data name="VehicleLocationSchema" xml:space="preserve">
+        <value>Última ubicación de un vehículo, publicada en tiempo real.</value>
+    </data>
+    <data name="VehicleLocationVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="VehicleLocationDeviceId" xml:space="preserve">
+        <value>El identificador del dispositivo IoT que reporta.</value>
+    </data>
+    <data name="VehicleLocationLatitude" xml:space="preserve">
+        <value>La latitud del vehículo.</value>
+    </data>
+    <data name="VehicleLocationLongitude" xml:space="preserve">
+        <value>La longitud del vehículo.</value>
+    </data>
+    <data name="VehicleLocationSpeed" xml:space="preserve">
+        <value>La velocidad del vehículo en km/h.</value>
+    </data>
+    <data name="VehicleLocationRecordedAt" xml:space="preserve">
+        <value>El momento en que el dispositivo tomó la lectura.</value>
+    </data>
+    <data name="SubmitMaintenanceRequestSummary" xml:space="preserve">
+        <value>Enviar una solicitud de mantenimiento</value>
+    </data>
+    <data name="SubmitMaintenanceRequestDescription" xml:space="preserve">
+        <value>Envía una solicitud de mantenimiento de un vehículo a un mecánico; la solicitud inicia en estado "Pendiente".</value>
+    </data>
+    <data name="RegisterDiagnosticAndQuoteSummary" xml:space="preserve">
+        <value>Registrar el diagnóstico y la cotización</value>
+    </data>
+    <data name="RegisterDiagnosticAndQuoteDescription" xml:space="preserve">
+        <value>El taller registra el costo estimado de una solicitud pendiente, que pasa a "Presupuestado".</value>
+    </data>
+    <data name="ApproveOrRejectBudgetSummary" xml:space="preserve">
+        <value>Aprobar o rechazar el presupuesto</value>
+    </data>
+    <data name="ApproveOrRejectBudgetDescription" xml:space="preserve">
+        <value>El dueño aprueba o rechaza un presupuesto; la solicitud pasa a "Aprobado" o "Rechazado".</value>
+    </data>
+    <data name="UpdateRepairStatusSummary" xml:space="preserve">
+        <value>Iniciar la reparación</value>
+    </data>
+    <data name="UpdateRepairStatusDescription" xml:space="preserve">
+        <value>El taller registra el inicio de una reparación aprobada; la solicitud pasa a "En reparación".</value>
+    </data>
+    <data name="CompleteMaintenanceSummary" xml:space="preserve">
+        <value>Completar el mantenimiento</value>
+    </data>
+    <data name="CompleteMaintenanceDescription" xml:space="preserve">
+        <value>El taller registra la finalización de la reparación; la solicitud pasa a "Completado".</value>
+    </data>
+    <data name="SubmitMaintenanceRequestSchema" xml:space="preserve">
+        <value>Datos de la solicitud para enviar una solicitud de mantenimiento.</value>
+    </data>
+    <data name="RegisterDiagnosticAndQuoteSchema" xml:space="preserve">
+        <value>Diagnóstico y cotización registrados por el taller.</value>
+    </data>
+    <data name="ApproveOrRejectBudgetSchema" xml:space="preserve">
+        <value>Decisión del dueño sobre el presupuesto cotizado.</value>
+    </data>
+    <data name="MaintenanceRequestIsApproved" xml:space="preserve">
+        <value>Verdadero para aprobar el presupuesto, falso para rechazarlo.</value>
+    </data>
+    <data name="InvalidMaintenanceRequestStatusTransition" xml:space="preserve">
+        <value>La solicitud de mantenimiento no está en el estado que requiere este paso, o ya está cerrada.</value>
+    </data>
+    <data name="UnexpectedErrorSubmittingMaintenanceRequest" xml:space="preserve">
+        <value>Ocurrió un error inesperado al enviar la solicitud de mantenimiento.</value>
+    </data>
+    <data name="GenerateReportSummary" xml:space="preserve">
+        <value>Generar un reporte</value>
+    </data>
+    <data name="GenerateReportDescription" xml:space="preserve">
+        <value>Genera un reporte de consumo de combustible o de costos de mantenimiento de la flota de un dueño en un rango de fechas y almacena sus metadatos. Si no hay registros en el periodo, el reporte incluye un mensaje informativo.</value>
+    </data>
+    <data name="GenerateReportSchema" xml:space="preserve">
+        <value>Datos de la solicitud para generar un reporte.</value>
+    </data>
+    <data name="GeneratedReportSchema" xml:space="preserve">
+        <value>Un reporte generado con las cifras de cada vehículo y los totales de la flota.</value>
+    </data>
+    <data name="ReportLineSchema" xml:space="preserve">
+        <value>Cifras de un vehículo en un reporte generado.</value>
+    </data>
+    <data name="ReportFrom" xml:space="preserve">
+        <value>El primer día del periodo (inclusive).</value>
+    </data>
+    <data name="ReportTo" xml:space="preserve">
+        <value>El último día del periodo (inclusive).</value>
+    </data>
+    <data name="ReportLines" xml:space="preserve">
+        <value>Las cifras de cada vehículo con registros en el periodo.</value>
+    </data>
+    <data name="ReportTotalRecords" xml:space="preserve">
+        <value>La cantidad total de registros de la flota en el periodo.</value>
+    </data>
+    <data name="ReportTotalQuantity" xml:space="preserve">
+        <value>El total de litros (reporte de combustible) o de reparaciones completadas (reporte de mantenimiento).</value>
+    </data>
+    <data name="ReportTotalCost" xml:space="preserve">
+        <value>El costo total de combustible (reporte de combustible) o de presupuestos aprobados (reporte de mantenimiento).</value>
+    </data>
+    <data name="ReportMessage" xml:space="preserve">
+        <value>Un mensaje informativo cuando no hay registros en el periodo.</value>
+    </data>
+    <data name="ReportLineVehicleId" xml:space="preserve">
+        <value>El identificador del vehículo.</value>
+    </data>
+    <data name="ReportLineLicensePlate" xml:space="preserve">
+        <value>La placa del vehículo.</value>
+    </data>
+    <data name="ReportLineRecords" xml:space="preserve">
+        <value>La cantidad de recargas (reporte de combustible) o de solicitudes de mantenimiento (reporte de mantenimiento) en el periodo.</value>
+    </data>
+    <data name="ReportLineQuantity" xml:space="preserve">
+        <value>Los litros cargados (reporte de combustible) o las reparaciones completadas (reporte de mantenimiento).</value>
+    </data>
+    <data name="ReportLineTotalCost" xml:space="preserve">
+        <value>El costo de combustible (reporte de combustible) o de los presupuestos aprobados (reporte de mantenimiento).</value>
+    </data>
+    <data name="NoRecordsForReport" xml:space="preserve">
+        <value>No existen registros en el rango solicitado.</value>
+    </data>
+    <data name="UnexpectedErrorGeneratingReport" xml:space="preserve">
+        <value>Ocurrió un error inesperado al generar el reporte.</value>
+    </data>
+</root>
