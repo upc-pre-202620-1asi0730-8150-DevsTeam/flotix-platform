@@ -27,6 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Notifications\" />
       <Folder Include="Shared\Infrastructure\Interfaces\" />
     </ItemGroup>
 
