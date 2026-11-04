@@ -1,4 +1,4 @@
-namespace FlotixPlatform.Api.Fuel.Interfaces.Acl;
+namespace FlotixPlatform.Api.Fuel.Interfaces.ACL;
 
 /// <summary>
 ///     Facade (anti-corruption layer) that exposes the Fuel Control data other bounded contexts need.
