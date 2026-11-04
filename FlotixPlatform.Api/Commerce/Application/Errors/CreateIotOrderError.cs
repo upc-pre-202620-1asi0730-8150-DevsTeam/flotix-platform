@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Commerce.Application.Errors;
+namespace FlotixPlatform.Api.Commerce.Application.Errors;
 
 /// <summary>
 /// Represents errors that can occur when creating an IoT order.

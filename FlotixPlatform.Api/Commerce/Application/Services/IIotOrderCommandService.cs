@@ -1,9 +1,9 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Commerce.Domain.Model.Commands;
-using FlotixPlatform.API.Commerce.Application.Errors;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Commerce.Domain.Model.Commands;
+using FlotixPlatform.Api.Commerce.Application.Errors;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 
-namespace FlotixPlatform.API.Commerce.Application.Services;
+namespace FlotixPlatform.Api.Commerce.Application.Services;
 
 /// <summary>
 ///     Command service interface for IoT order operations.

@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Commerce.Domain.Model.Commands;
+namespace FlotixPlatform.Api.Commerce.Domain.Model.Commands;
 
 /// <summary>
 ///     Command to create an IoT order

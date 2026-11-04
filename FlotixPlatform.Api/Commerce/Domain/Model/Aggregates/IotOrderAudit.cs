@@ -1,6 +1,6 @@
-using FlotixPlatform.API.Shared.Domain.Model;
+using FlotixPlatform.Api.Shared.Domain.Model;
 
-namespace FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Audit extension for IotOrder aggregate.

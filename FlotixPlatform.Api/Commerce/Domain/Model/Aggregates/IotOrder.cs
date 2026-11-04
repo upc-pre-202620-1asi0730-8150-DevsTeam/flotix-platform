@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Commands;
-using FlotixPlatform.API.Commerce.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Commerce.Domain.Model.Commands;
+using FlotixPlatform.Api.Commerce.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Represents an order of IoT devices placed by an owner.

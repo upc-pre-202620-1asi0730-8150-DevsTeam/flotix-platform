@@ -1,6 +1,6 @@
-using FlotixPlatform.API.Commerce.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Commerce.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Commerce.Interfaces.Rest.Resources;
+namespace FlotixPlatform.Api.Commerce.Interfaces.Rest.Resources;
 
 /// <summary>
 ///     Represents the data required to update an IoT order.

@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Commerce.Domain.Model.Queries;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Commerce.Domain.Model.Queries;
 
-namespace FlotixPlatform.API.Commerce.Application.Services;
+namespace FlotixPlatform.Api.Commerce.Application.Services;
 
 /// <summary>
 ///     Query service interface for IoT order operations.
