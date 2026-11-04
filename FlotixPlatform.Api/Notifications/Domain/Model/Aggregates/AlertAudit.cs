@@ -1,6 +1,6 @@
 using FlotixPlatform.Api.Shared.Domain.Model;
 
-namespace FlotixPlatform.API.Notifications.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Notifications.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Audit extension for Alert aggregate.
