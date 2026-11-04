@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Commands;
-using FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
+using FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles an ApproveOrRejectBudgetCommand from an ApproveOrRejectBudgetResource.

@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Maintenance.Domain.Repositories;
-using FlotixPlatform.API.Maintenance.Interfaces.ACL;
+using FlotixPlatform.Api.Maintenance.Domain.Repositories;
+using FlotixPlatform.Api.Maintenance.Interfaces.Acl;
 
-namespace FlotixPlatform.API.Maintenance.Application.ACL;
+namespace FlotixPlatform.Api.Maintenance.Application.Acl;
 
 /// <summary>
 ///     Implementation of the Maintenance Management context facade.
