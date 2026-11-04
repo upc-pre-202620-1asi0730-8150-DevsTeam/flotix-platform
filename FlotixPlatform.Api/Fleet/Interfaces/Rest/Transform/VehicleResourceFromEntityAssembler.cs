@@ -1,7 +1,7 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Fleet.Interfaces.Rest.Resources;
 
-namespace FlotixPlatform.API.Fleet.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Fleet.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles a VehicleResource from a Vehicle.

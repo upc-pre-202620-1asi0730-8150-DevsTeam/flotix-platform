@@ -1,7 +1,7 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Repositories;
-using FlotixPlatform.Api.Fleet.Interfaces.ACL;
+using FlotixPlatform.Api.Fleet.Interfaces.Acl;
 
-namespace FlotixPlatform.API.Fleet.Application.ACL;
+namespace FlotixPlatform.Api.Fleet.Application.Acl;
 
 /// <summary>
 ///     Implementation of the Vehicle &amp; Fleet Management context facade.

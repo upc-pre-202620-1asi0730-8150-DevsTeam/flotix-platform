@@ -7,7 +7,7 @@ using FlotixPlatform.Api.Shared.Domain.Repositories;
 using FlotixPlatform.Api.Shared.Application.Patterns;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Fleet.Application.Internal.CommandServices;
+namespace FlotixPlatform.Api.Fleet.Application.Internal.CommandServices;
 
 /// <summary>
 ///     Application service for handling vehicle commands.

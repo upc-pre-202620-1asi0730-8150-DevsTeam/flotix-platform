@@ -8,7 +8,7 @@ using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Fleet.Interfaces.Rest;
+namespace FlotixPlatform.Api.Fleet.Interfaces.Rest;
 
 /// <summary>
 ///     Vehicles' controller.
