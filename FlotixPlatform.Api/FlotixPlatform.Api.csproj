@@ -18,4 +18,18 @@
         <PackageReference Include="Scalar.AspNetCore" Version="2.18.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Analytics\" />
+      <Folder Include="Incidents\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Incidents\Application\.DS_Store" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Notifications\" />
+      <Folder Include="Shared\Infrastructure\Interfaces\" />
+    </ItemGroup>
+
 </Project>
