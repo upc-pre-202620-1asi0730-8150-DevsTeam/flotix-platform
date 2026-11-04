@@ -1,5 +1,4 @@
 using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
-// using FlotixPlatform.Api.IAM.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Maintenance.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
@@ -35,11 +34,6 @@ public static class ModelBuilderExtensions
             .WithMany()
             .HasForeignKey(m => m.VehicleId)
             .OnDelete(DeleteBehavior.Restrict);
-        builder.Entity<MaintenanceRequest>();
-            //.HasOne<User>()
-            //.WithMany()
-            //.HasForeignKey(m => m.MechanicId)
-            //.OnDelete(DeleteBehavior.Restrict);
         builder.Entity<MaintenanceRequest>().HasIndex(m => m.VehicleId);
         builder.Entity<MaintenanceRequest>().HasIndex(m => m.MechanicId);
     }

@@ -1,4 +1,3 @@
-// using FlotixPlatform.Api.IAM.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Commerce.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
@@ -28,11 +27,6 @@ public static class ModelBuilderExtensions
         builder.Entity<IotOrder>().Property(i => i.TotalAmount).IsRequired();
         builder.Entity<IotOrder>().Property(i => i.Status).HasConversion<string>().HasMaxLength(50).IsRequired();
         builder.Entity<IotOrder>().Property(i => i.OrderDate).IsRequired();
-        builder.Entity<IotOrder>();
-            // .HasOne<User>()
-            // .WithMany()
-            // .HasForeignKey(i => i.OwnerId)
-            // .OnDelete(DeleteBehavior.Restrict);
         builder.Entity<IotOrder>().HasIndex(i => i.OwnerId);
     }
 }

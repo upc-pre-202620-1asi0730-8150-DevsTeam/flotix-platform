@@ -26,13 +26,10 @@ Guidelines for maintaining this log:
 | [ADR-009](#adr-009--use-lowercase-kebab-case-routes) | Use lowercase kebab-case routes | Accepted |
 | [ADR-010](#adr-010--report-errors-as-rfc-7807-problemdetails) | Report errors as RFC 7807 `ProblemDetails` | Accepted |
 | [ADR-011](#adr-011--localize-user-facing-text-with-resx-resources) | Localize user-facing text with `.resx` resources | Accepted |
-| [ADR-012](#adr-012--keep-the-jwt-signing-secret-out-of-source-control) | Keep the JWT signing secret out of source control | Accepted |
 | [ADR-013](#adr-013--use-built-in-openapi-and-scalar-instead-of-swashbuckle) | Use built-in OpenAPI and Scalar instead of Swashbuckle | Accepted |
 | [ADR-014](#adr-014--use-one-database-schema-per-bounded-context-and-foreign-keys-with-restricted-deletes) | Use one database schema per bounded context and foreign keys with restricted deletes | Accepted |
 | [ADR-015](#adr-015--use-uuid-identifiers-and-the-column-names-of-the-report) | Use UUID identifiers and the column names of the report | Accepted |
-| [ADR-016](#adr-016--store-users-with-table-per-hierarchy-inheritance) | Store users with table-per-hierarchy inheritance | Accepted |
 | [ADR-017](#adr-017--use-the-spanish-status-values-of-the-report-on-the-wire) | Use the Spanish status values of the report on the wire | Accepted |
-| [ADR-018](#adr-018--authorize-requests-with-role-based-jwt-through-an-iam-middleware-disconnected-by-default) | Authorize requests with role-based JWT through an IAM middleware, disconnected by default | Accepted |
 | [ADR-019](#adr-019--process-iot-telemetry-in-the-background) | Process IoT telemetry in the background | Accepted |
 | [ADR-020](#adr-020--push-real-time-events-with-signalr) | Push real-time events with SignalR | Accepted |
 | [ADR-021](#adr-021--model-the-maintenance-lifecycle-with-explicit-commands) | Model the maintenance lifecycle with explicit commands | Accepted |
@@ -46,10 +43,10 @@ Guidelines for maintaining this log:
 - **Date:** 2026-10-28
 
 ### Context
-The API covers the nine bounded contexts of the project report (Identity, Profiles & Security; Vehicle & Fleet Management; Fuel Control; Maintenance Management; Incident Management; Real-Time Monitoring / Fleet Tracking; Alerts & Notifications; Digital Experience / IoT Commerce; Reporting & Analytics). We need a structure that keeps domain rules independent from frameworks and prevents unrelated features from becoming entangled.
+The API covers the eight bounded contexts of the project report (Vehicle & Fleet Management; Fuel Control; Maintenance Management; Incident Management; Real-Time Monitoring / Fleet Tracking; Alerts & Notifications; Digital Experience / IoT Commerce; Reporting & Analytics). We need a structure that keeps domain rules independent from frameworks and prevents unrelated features from becoming entangled.
 
 ### Decision
-Use a single deployable project organized first by bounded context (`IAM`, `Fleet`, `Fuel`, `Maintenance`, `Incidents`, `Monitoring`, `Notifications`, `Commerce`, `Analytics`, `Shared`) and then by layer:
+Use a single deployable project organized first by bounded context (`Fleet`, `Fuel`, `Maintenance`, `Incidents`, `Monitoring`, `Notifications`, `Commerce`, `Analytics`, `Shared`) and then by layer:
 
 - `Domain` — aggregates, value objects, commands, queries, repository contracts.
 - `Application` — service contracts (`Services`), implementations (`Internal`), outbound services, context facades (`ACL`), and application errors.
@@ -250,24 +247,6 @@ Internal log messages and exception messages are intentionally **not** localized
 
 ---
 
-## ADR-012 — Keep the JWT signing secret out of source control
-
-- **Status:** Accepted
-- **Date:** 2026-10-28
-
-### Context
-Tokens are signed with a symmetric secret. Committing it would let anyone with access to the repository forge tokens.
-
-### Decision
-Read the secret from `TokenSettings:Secret`. Only `appsettings.Development.json` holds a development secret; production provides it through configuration (e.g. the `TokenSettings__Secret` environment variable). `TokenSettings` is validated on startup and the application does not start when the secret is missing or shorter than 32 bytes.
-
-### Consequences
-- (+) Production secrets never reach the repository.
-- (+) A misconfigured deployment fails fast instead of issuing weak tokens.
-- (−) Every environment must provide the secret before the first start.
-
----
-
 ## ADR-013 — Use built-in OpenAPI and Scalar instead of Swashbuckle
 
 - **Status:** Accepted
@@ -298,11 +277,11 @@ The document and UI are mapped in all environments.
 The database design of the project report groups the tables by bounded context and relates them with foreign keys (e.g. `vehicles.owner_id → users.id`, `fuel_records.vehicle_id → vehicles.id`, `notifications.alert_id → alerts.id`). The report also justifies the history tables by traceability.
 
 ### Decision
-Each bounded context owns a PostgreSQL schema (`iam`, `fleet`, `fuel`, `maintenance`, `incidents`, `monitoring`, `notifications`, `commerce`, `analytics`). The relations of the report are foreign keys with `ON DELETE RESTRICT`, configured without navigation properties (`HasOne<Vehicle>().WithMany().HasForeignKey(...)`), so aggregates still reference other contexts by identifier only. A foreign key violation (SQLSTATE `23503`) is mapped to `404 Not Found` when creating or updating and to `409 Conflict` when deleting a referenced row.
+Each bounded context owns a PostgreSQL schema (`fleet`, `fuel`, `maintenance`, `incidents`, `monitoring`, `notifications`, `commerce`, `analytics`). The relations of the report are foreign keys with `ON DELETE RESTRICT`, configured without navigation properties (`HasOne<Vehicle>().WithMany().HasForeignKey(...)`), so aggregates still reference other contexts by identifier only. A foreign key violation (SQLSTATE `23503`) is mapped to `404 Not Found` when creating or updating and to `409 Conflict` when deleting a referenced row.
 
 ### Consequences
 - (+) The schema matches the report and the database guarantees referential integrity.
-- (+) Deleting a vehicle or user with history is rejected instead of losing records.
+- (+) Deleting a vehicle with history is rejected instead of losing records.
 - (−) Contexts are coupled at the database level; extracting one requires removing its foreign keys.
 - (−) Rows with dependents must be removed explicitly before deletion.
 
@@ -325,23 +304,6 @@ Aggregates use `Guid` identifiers generated on insert and properties named after
 
 ---
 
-## ADR-016 — Store users with table-per-hierarchy inheritance
-
-- **Status:** Accepted
-- **Date:** 2026-10-28
-
-### Context
-The class diagram of the project report models `User` as an abstract class specialized by `Owner`, `Driver`, and `Mechanic`, and the database design stores them in a single `users` table with a `role_type` column.
-
-### Decision
-`User` is an abstract aggregate with the `Owner` (`CompanyName`), `Driver` (`LicenseNumber`, `LicenseExpiration`), and `Mechanic` (`WorkshopName`) subclasses, mapped with table-per-hierarchy inheritance and `role_type` as discriminator. The `User.Create` factory method builds the subclass for the requested role; a driver requires a license number and expiration.
-
-### Consequences
-- (+) One table as in the report; role-specific rules live in each subclass.
-- (−) Role-specific columns are nullable at the database level.
-
----
-
 ## ADR-017 — Use the Spanish status values of the report on the wire
 
 - **Status:** Accepted
@@ -356,23 +318,6 @@ Enums are English in code, persisted by member name, and serialized with `JsonSt
 ### Consequences
 - (+) The API speaks the language of the report and the frontend.
 - (−) Renaming a wire value is a breaking API change.
-
----
-
-## ADR-018 — Authorize requests with role-based JWT through an IAM middleware, disconnected by default
-
-- **Status:** Accepted
-- **Date:** 2026-10-28
-
-### Context
-The Auth Service of the project report issues JSON Web Tokens with role-based authorization for owners, drivers, and mechanics, while the frontend still runs against open endpoints.
-
-### Decision
-Hash passwords with the ASP.NET Core Identity password hasher (`HashingService`) and issue HS256 JWTs with the user id and role through `TokenService` (`Microsoft.AspNetCore.Authentication.JwtBearer`). `RequestAuthorizationMiddleware` enforces `[AllowAnonymous]` and `[Authorize(Role...)]` and is registered but commented out in `Program.cs` (`// app.UseRequestAuthorization();`) until the frontend sends tokens.
-
-### Consequences
-- (+) Stateless tokens as described in the report; enabling protection is a one-line change.
-- (−) While disconnected, every endpoint is public.
 
 ---
 
@@ -402,11 +347,10 @@ Telemetry packets must be stored, update the vehicle location in real time, and 
 Vehicle locations, alerts, and notifications must reach dashboards without polling.
 
 ### Decision
-Use ASP.NET Core SignalR with strongly typed hubs per bounded context: `MonitoringHub` (`/hubs/monitoring`) sends `VehicleLocationUpdated`, and `NotificationsHub` (`/hubs/notifications`) sends `AlertActivated` and `NotificationReceived`, the latter only to its recipient.
+Use ASP.NET Core SignalR with strongly typed hubs per bounded context: `MonitoringHub` (`/hubs/monitoring`) sends `VehicleLocationUpdated`, and `NotificationsHub` (`/hubs/notifications`) sends `AlertActivated` and `NotificationReceived`.
 
 ### Consequences
 - (+) Built into ASP.NET Core, no extra dependency.
-- (−) Per-user delivery requires the IAM middleware to identify connections.
 
 ---
 
