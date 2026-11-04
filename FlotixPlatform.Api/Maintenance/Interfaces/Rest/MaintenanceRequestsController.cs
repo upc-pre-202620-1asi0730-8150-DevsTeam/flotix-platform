@@ -1,14 +1,14 @@
 using System.Net.Mime;
-using FlotixPlatform.API.Maintenance.Application.Services;
-using FlotixPlatform.API.Maintenance.Domain.Model.Commands;
-using FlotixPlatform.API.Maintenance.Domain.Model.Queries;
-using FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
-using FlotixPlatform.API.Maintenance.Interfaces.Rest.Transform;
-using FlotixPlatform.API.Resources;
+using FlotixPlatform.Api.Maintenance.Application.Services;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Queries;
+using FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Maintenance.Interfaces.Rest.Transform;
+using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest;
 
 /// <summary>
 ///     Maintenance requests' controller: lifecycle of the maintenance requests between owners and workshops.

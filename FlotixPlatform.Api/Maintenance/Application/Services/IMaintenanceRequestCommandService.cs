@@ -1,9 +1,9 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Domain.Model.Commands;
-using FlotixPlatform.API.Maintenance.Application.Errors;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
+using FlotixPlatform.Api.Maintenance.Application.Errors;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 
-namespace FlotixPlatform.API.Maintenance.Application.Services;
+namespace FlotixPlatform.Api.Maintenance.Application.Services;
 
 /// <summary>
 ///     Command service interface for maintenance request operations.

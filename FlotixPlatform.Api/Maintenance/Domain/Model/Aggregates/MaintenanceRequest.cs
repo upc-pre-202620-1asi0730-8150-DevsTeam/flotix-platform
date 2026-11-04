@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Commands;
-using FlotixPlatform.API.Maintenance.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
+using FlotixPlatform.Api.Maintenance.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Represents a request to repair a vehicle, attended by a mechanic.

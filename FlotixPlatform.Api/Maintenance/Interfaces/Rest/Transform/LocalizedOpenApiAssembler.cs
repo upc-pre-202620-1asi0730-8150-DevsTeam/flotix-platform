@@ -1,5 +1,5 @@
-using FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
-using FlotixPlatform.API.Resources;
+using FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.Extensions.Localization;

@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles a MaintenanceRequestResource from a MaintenanceRequest.

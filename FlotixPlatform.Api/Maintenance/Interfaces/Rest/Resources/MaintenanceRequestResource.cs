@@ -1,6 +1,6 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Maintenance.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
 
 /// <summary>
 ///     Represents the data provided by the server about a maintenance request.

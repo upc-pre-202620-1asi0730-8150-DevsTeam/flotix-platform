@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Maintenance.Domain.Model.Commands;
+namespace FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
 
 /// <summary>
 ///     Command to register the diagnostic and quote of a maintenance request

@@ -1,13 +1,13 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Application.Errors;
-using FlotixPlatform.API.Maintenance.Application.Services;
-using FlotixPlatform.API.Maintenance.Domain.Model.Commands;
-using FlotixPlatform.API.Maintenance.Domain.Repositories;
-using FlotixPlatform.API.Shared.Domain.Repositories;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Application.Errors;
+using FlotixPlatform.Api.Maintenance.Application.Services;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
+using FlotixPlatform.Api.Maintenance.Domain.Repositories;
+using FlotixPlatform.Api.Shared.Domain.Repositories;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Maintenance.Application.Internal.CommandServices;
+namespace FlotixPlatform.Api.Maintenance.Application.Internal.CommandServices;
 
 /// <summary>
 ///     Application service for handling maintenance request commands.

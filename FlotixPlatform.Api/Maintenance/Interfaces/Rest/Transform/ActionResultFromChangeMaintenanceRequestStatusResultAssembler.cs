@@ -1,11 +1,11 @@
-using FlotixPlatform.API.Maintenance.Application.Errors;
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Resources;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Maintenance.Application.Errors;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Resources;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles an HTTP action result from the result of the command handling to move a maintenance request through its

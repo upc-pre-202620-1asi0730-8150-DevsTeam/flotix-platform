@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace FlotixPlatform.API.Maintenance.Domain.Model.ValueObjects;
+namespace FlotixPlatform.Api.Maintenance.Domain.Model.ValueObjects;
 
 /// <summary>
 ///     Represents the lifecycle status of a maintenance request.

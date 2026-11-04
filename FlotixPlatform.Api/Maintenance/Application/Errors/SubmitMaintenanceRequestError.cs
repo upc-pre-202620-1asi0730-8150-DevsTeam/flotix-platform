@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Maintenance.Application.Errors;
+namespace FlotixPlatform.Api.Maintenance.Application.Errors;
 
 /// <summary>
 /// Represents errors that can occur when submitting a maintenance request.
