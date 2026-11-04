@@ -10,7 +10,7 @@ using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.C
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Interceptors;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
+namespace FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 
 /// <summary>
 ///     Application database context shared by every bounded context.
