@@ -8,7 +8,7 @@ using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Analytics.Interfaces.Rest;
+namespace FlotixPlatform.Api.Analytics.Interfaces.Rest;
 
 /// <summary>
 ///     Reports' controller.
