@@ -12,11 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - IoT telemetry ingestion with background processing and real-time vehicle locations through SignalR.
 - Maintenance request flow between owners and mechanics, including diagnostic and quote, budget decision, repair start, and completion.
 - Fuel consumption and maintenance cost reports by date range, built from the fleet, fuel, and maintenance data.
-- Role-based JWT tokens for signed-in users.
 
 ### Changed
 
-- Persistence model aligned with the database design of the project report, including UUID identifiers, one schema per bounded context, foreign keys with restricted deletes, and a single users table for owners, drivers, and mechanics.
+- Persistence model aligned with the database design of the project report, including UUID identifiers, one schema per bounded context, foreign keys with restricted deletes.
 
 
 ### Documentation
