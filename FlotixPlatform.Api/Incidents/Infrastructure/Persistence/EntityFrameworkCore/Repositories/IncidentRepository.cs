@@ -1,7 +1,7 @@
 using FlotixPlatform.Api.Incidents.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Incidents.Domain.Repositories;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
-using FlotixPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
+using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlotixPlatform.Api.Incidents.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
