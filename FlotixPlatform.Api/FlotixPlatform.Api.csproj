@@ -28,7 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Monitoring\" />
       <Folder Include="Notifications\" />
       <Folder Include="Shared\Infrastructure\Interfaces\" />
     </ItemGroup>
