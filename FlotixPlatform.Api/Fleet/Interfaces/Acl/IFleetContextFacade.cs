@@ -1,4 +1,4 @@
-﻿namespace FlotixPlatform.Api.Fleet.Interfaces.ACL;
+﻿namespace FlotixPlatform.Api.Fleet.Interfaces.Acl;
 
 /// <summary>
 ///     Facade (anti-corruption layer) that exposes the Vehicle &amp; Fleet Management data other bounded contexts need.

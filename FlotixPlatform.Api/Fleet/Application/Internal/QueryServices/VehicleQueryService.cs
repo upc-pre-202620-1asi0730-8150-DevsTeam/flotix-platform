@@ -3,7 +3,7 @@ using FlotixPlatform.Api.Fleet.Application.Services;
 using FlotixPlatform.Api.Fleet.Domain.Model.Queries;
 using FlotixPlatform.Api.Fleet.Domain.Repositories;
 
-namespace FlotixPlatform.API.Fleet.Application.Internal.QueryServices;
+namespace FlotixPlatform.Api.Fleet.Application.Internal.QueryServices;
 
 /// <summary>
 ///     Application service for querying vehicles.

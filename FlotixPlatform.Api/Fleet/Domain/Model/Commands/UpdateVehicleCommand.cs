@@ -1,5 +1,5 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
-namespace FlotixPlatform.API.Fleet.Domain.Model.Commands;
+namespace FlotixPlatform.Api.Fleet.Domain.Model.Commands;
 
 /// <summary>
 ///     Command to update a vehicle

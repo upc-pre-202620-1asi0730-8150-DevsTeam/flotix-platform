@@ -2,7 +2,7 @@
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
+namespace FlotixPlatform.Api.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 
 /// <summary>
 ///     Entity Framework Core model configuration of the Vehicle & Fleet Management bounded context.
