@@ -2,7 +2,7 @@ using System.Threading.Channels;
 using FlotixPlatform.Api.Monitoring.Application.Internal.OutboundServices;
 using FlotixPlatform.Api.Monitoring.Domain.Model.Commands;
 
-namespace FlotixPlatform.API.Monitoring.Infrastructure.Queues.Channels;
+namespace FlotixPlatform.Api.Monitoring.Infrastructure.Queues.Channels;
 
 public class TelemetryDataQueue : ITelemetryDataQueue
 {

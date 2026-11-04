@@ -1,11 +1,11 @@
 ﻿using FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Monitoring.Domain.Model.ValueObjects;
 using FlotixPlatform.Api.Monitoring.Domain.Repositories;
-using FlotixPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
+using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Monitoring.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
+namespace FlotixPlatform.Api.Monitoring.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 
 public class IotDeviceRepository(AppDbContext context)
     : BaseRepository<IotDevice>(context), IIotDeviceRepository

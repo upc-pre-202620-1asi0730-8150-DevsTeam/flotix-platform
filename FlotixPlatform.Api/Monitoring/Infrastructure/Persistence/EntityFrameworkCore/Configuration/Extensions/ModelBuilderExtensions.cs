@@ -3,7 +3,7 @@ using FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Monitoring.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Monitoring.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
+namespace FlotixPlatform.Api.Monitoring.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 
 public static class ModelBuilderExtensions
 {

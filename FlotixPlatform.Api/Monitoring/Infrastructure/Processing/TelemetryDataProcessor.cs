@@ -1,7 +1,7 @@
 using FlotixPlatform.Api.Monitoring.Application.Internal.OutboundServices;
 using FlotixPlatform.Api.Monitoring.Application.Services;
 
-namespace FlotixPlatform.API.Monitoring.Infrastructure.Processing;
+namespace FlotixPlatform.Api.Monitoring.Infrastructure.Processing;
 
 public class TelemetryDataProcessor(
     ITelemetryDataQueue telemetryDataQueue,
