@@ -1,7 +1,7 @@
 using FlotixPlatform.Api.Fuel.Domain.Repositories;
-using FlotixPlatform.Api.Fuel.Interfaces.ACL;
+using FlotixPlatform.Api.Fuel.Interfaces.Acl;
 
-namespace FlotixPlatform.Api.Fuel.Application.ACL;
+namespace FlotixPlatform.Api.Fuel.Application.Acl;
 
 /// <summary>
 ///     Implementation of the Fuel Control context facade.
