@@ -1,15 +1,15 @@
 using System.Net.Mime;
-using FlotixPlatform.API.Commerce.Application.Services;
-using FlotixPlatform.API.Commerce.Domain.Model.Queries;
-using FlotixPlatform.API.Commerce.Interfaces.Rest.Resources;
-using FlotixPlatform.API.Commerce.Interfaces.Rest.Transform;
-using FlotixPlatform.API.IAM.Domain.Model.ValueObjects;
-using FlotixPlatform.API.IAM.Infrastructure.Pipeline.Middleware.Attributes;
-using FlotixPlatform.API.Resources;
+using FlotixPlatform.Api.Commerce.Application.Services;
+using FlotixPlatform.Api.Commerce.Domain.Model.Queries;
+using FlotixPlatform.Api.Commerce.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Commerce.Interfaces.Rest.Transform;
+// using FlotixPlatform.Api.IAM.Domain.Model.ValueObjects;
+// using FlotixPlatform.Api.IAM.Infrastructure.Pipeline.Middleware.Attributes;
+using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Commerce.Interfaces.Rest;
+namespace FlotixPlatform.Api.Commerce.Interfaces.Rest;
 
 /// <summary>
 ///     IoT orders' controller.
@@ -22,7 +22,7 @@ namespace FlotixPlatform.API.Commerce.Interfaces.Rest;
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
 [Tags("IoT Orders")]
-[Authorize(Role.Owner)]
+// [Authorize(Role.Owner)]
 public class IotOrdersController(
     IIotOrderCommandService iotOrderCommandService,
     IIotOrderQueryService iotOrderQueryService,

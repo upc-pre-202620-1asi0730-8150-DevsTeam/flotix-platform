@@ -1,13 +1,13 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Commerce.Application.Errors;
-using FlotixPlatform.API.Commerce.Application.Services;
-using FlotixPlatform.API.Commerce.Domain.Model.Commands;
-using FlotixPlatform.API.Commerce.Domain.Repositories;
-using FlotixPlatform.API.Shared.Domain.Repositories;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Commerce.Application.Errors;
+using FlotixPlatform.Api.Commerce.Application.Services;
+using FlotixPlatform.Api.Commerce.Domain.Model.Commands;
+using FlotixPlatform.Api.Commerce.Domain.Repositories;
+using FlotixPlatform.Api.Shared.Domain.Repositories;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Commerce.Application.Internal.CommandServices;
+namespace FlotixPlatform.Api.Commerce.Application.Internal.CommandServices;
 
 /// <summary>
 ///     Application service for handling IoT order commands.

@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Shared.Domain.Repositories;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Shared.Domain.Repositories;
 
-namespace FlotixPlatform.API.Commerce.Domain.Repositories;
+namespace FlotixPlatform.Api.Commerce.Domain.Repositories;
 
 /// <summary>
 ///     The IoT order repository contract.

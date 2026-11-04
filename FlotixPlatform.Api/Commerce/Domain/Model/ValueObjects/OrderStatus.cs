@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace FlotixPlatform.API.Commerce.Domain.Model.ValueObjects;
+namespace FlotixPlatform.Api.Commerce.Domain.Model.ValueObjects;
 
 /// <summary>
 ///     Represents the fulfillment status of an IoT order.

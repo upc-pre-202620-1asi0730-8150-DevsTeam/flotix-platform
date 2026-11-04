@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Commands;
-using FlotixPlatform.API.Commerce.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Commerce.Domain.Model.Commands;
+using FlotixPlatform.Api.Commerce.Interfaces.Rest.Resources;
 
-namespace FlotixPlatform.API.Commerce.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Commerce.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles an UpdateIotOrderCommand from an UpdateIotOrderResource.

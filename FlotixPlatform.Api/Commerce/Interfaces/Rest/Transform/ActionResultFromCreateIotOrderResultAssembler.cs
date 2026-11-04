@@ -1,11 +1,11 @@
-using FlotixPlatform.API.Commerce.Application.Errors;
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Resources;
-using FlotixPlatform.API.Shared.Application.Patterns;
+using FlotixPlatform.Api.Commerce.Application.Errors;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Resources;
+using FlotixPlatform.Api.Shared.Application.Patterns;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Commerce.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Commerce.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles an HTTP action result from the result of the command handling to create an IoT order in the application layer.

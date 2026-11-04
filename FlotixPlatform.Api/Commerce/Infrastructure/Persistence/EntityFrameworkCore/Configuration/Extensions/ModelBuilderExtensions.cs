@@ -1,9 +1,9 @@
-using FlotixPlatform.API.IAM.Domain.Model.Aggregates;
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Commerce.Domain.Model.ValueObjects;
+// using FlotixPlatform.Api.IAM.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Commerce.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Commerce.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
+namespace FlotixPlatform.Api.Commerce.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 
 /// <summary>
 ///     Entity Framework Core model configuration of the Digital Experience / IoT Commerce bounded context.
@@ -28,11 +28,11 @@ public static class ModelBuilderExtensions
         builder.Entity<IotOrder>().Property(i => i.TotalAmount).IsRequired();
         builder.Entity<IotOrder>().Property(i => i.Status).HasConversion<string>().HasMaxLength(50).IsRequired();
         builder.Entity<IotOrder>().Property(i => i.OrderDate).IsRequired();
-        builder.Entity<IotOrder>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(i => i.OwnerId)
-            .OnDelete(DeleteBehavior.Restrict);
+        builder.Entity<IotOrder>();
+            // .HasOne<User>()
+            // .WithMany()
+            // .HasForeignKey(i => i.OwnerId)
+            // .OnDelete(DeleteBehavior.Restrict);
         builder.Entity<IotOrder>().HasIndex(i => i.OwnerId);
     }
 }

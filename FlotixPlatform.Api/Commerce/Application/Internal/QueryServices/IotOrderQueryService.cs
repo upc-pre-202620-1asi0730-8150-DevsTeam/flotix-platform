@@ -1,9 +1,9 @@
-using FlotixPlatform.API.Commerce.Domain.Model.Aggregates;
-using FlotixPlatform.API.Commerce.Application.Services;
-using FlotixPlatform.API.Commerce.Domain.Model.Queries;
-using FlotixPlatform.API.Commerce.Domain.Repositories;
+using FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Commerce.Application.Services;
+using FlotixPlatform.Api.Commerce.Domain.Model.Queries;
+using FlotixPlatform.Api.Commerce.Domain.Repositories;
 
-namespace FlotixPlatform.API.Commerce.Application.Internal.QueryServices;
+namespace FlotixPlatform.Api.Commerce.Application.Internal.QueryServices;
 
 /// <summary>
 ///     Application service for querying IoT orders.

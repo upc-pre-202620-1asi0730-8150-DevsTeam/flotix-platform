@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Commerce.Domain.Model.Queries;
+namespace FlotixPlatform.Api.Commerce.Domain.Model.Queries;
 
 /// <summary>
 ///     Query to get an IoT order by ID

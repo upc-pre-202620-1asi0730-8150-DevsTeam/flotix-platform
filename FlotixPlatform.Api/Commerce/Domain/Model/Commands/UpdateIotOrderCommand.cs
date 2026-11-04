@@ -1,6 +1,6 @@
-using FlotixPlatform.API.Commerce.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Commerce.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Commerce.Domain.Model.Commands;
+namespace FlotixPlatform.Api.Commerce.Domain.Model.Commands;
 
 /// <summary>
 ///     Command to update an IoT order
