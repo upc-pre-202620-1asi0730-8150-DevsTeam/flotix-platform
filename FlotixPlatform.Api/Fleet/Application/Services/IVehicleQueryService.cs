@@ -1,7 +1,5 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Fleet.Domain.Model.Queries;
-using FlotixPlatform.Api.Fleet.Domain.Model.Queries;
-using FlotixPlatform.Api.Fleet.Domain.Queries;
 
 namespace FlotixPlatform.Api.Fleet.Application.Services;
 

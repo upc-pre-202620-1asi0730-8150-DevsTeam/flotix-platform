@@ -1,4 +1,4 @@
-﻿namespace FlotixPlatform.Api.Fleet.Domain.Queries;
+﻿namespace FlotixPlatform.Api.Fleet.Domain.Model.Queries;
 
 /// <summary>
 ///     Query to get all vehicles by owner ID

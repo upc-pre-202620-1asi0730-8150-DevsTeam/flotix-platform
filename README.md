@@ -84,30 +84,18 @@ dotnet restore flotix-platform.sln
 
 ### 2) Configure connection string
 
-By default, development uses `FlotixPlatform.API/appsettings.Development.json`, which matches `docker-compose.yml`:
-
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5432;Database=flotix;Username=flotix;Password=flotix"
-}
-```
-
-Start the PostgreSQL container with:
-
-```bash
-docker compose up -d
-```
+Copy `.env.example` to `.env` and fill in the `DATABASE_*` values (see [Connecting to Neon](#connecting-to-neon-postgresql-and-keeping-secrets-out-of-git)). For a local PostgreSQL, use `DATABASE_HOST=localhost` and its credentials, and change `SSL Mode`/`Channel Binding` in your own `ConnectionStrings:DefaultConnection` user-secret.
 
 ### 3) Run the API
 
 ```bash
-dotnet run --project FlotixPlatform.API
+dotnet run --project FlotixPlatform.Api
 ```
 
 Or from the API folder:
 
 ```bash
-cd FlotixPlatform.API
+cd FlotixPlatform.Api
 dotnet run
 ```
 
@@ -118,17 +106,17 @@ dotnet run
 Restore the EF Core tools and add a migration when the data model changes:
 ```bash
 dotnet tool restore
-cd FlotixPlatform.API
+cd FlotixPlatform.Api
 dotnet ef migrations add <MigrationName>
 dotnet ef database update
 ```
 
 The application automatically applies pending EF Core migrations on startup via `Database.Migrate()`.
 
-Note: The database must exist before running the application. The `docker-compose.yml` container creates the `flotix` database.
+Note: The database must exist before running the application. On Neon it already exists; with a local PostgreSQL create it first.
 
 - **Development**: Applies the current schema to the configured PostgreSQL database.
-- **First-time setup**: Ensure PostgreSQL is running and the connection string points to an existing (empty or non-empty) database.
+- **First-time setup**: Ensure the Neon database exists (the default `neondb` is created with the project) and the connection string points to it. Create the first migration with `dotnet ef migrations add InitialCreate` and commit it.
 - **Schemas**: Each bounded context owns a schema (`fleet`, `fuel`, `maintenance`, `incidents`, `monitoring`, `notifications`, `commerce`, `analytics`).
 - **Constraints**: Unique indexes are enforced on `license_plate`, `serial_number`, and the `vehicle_id` of IoT devices; foreign keys use `ON DELETE RESTRICT`.
 - **Schema changes**: Add and commit EF Core migrations when the data model changes.
@@ -142,18 +130,34 @@ With the included launch profiles, Scalar is commonly available at:
 
 The generated OpenAPI document is available at `/openapi/v1.json`.
 
-### Production-style configuration
+### Connecting to Neon (PostgreSQL) and keeping secrets out of Git
 
-`FlotixPlatform.API/appsettings.Production.json` supports environment variable expansion:
+`appsettings.json`, `appsettings.Development.json` and `appsettings.Production.json` only contain `%PLACEHOLDERS%`, expanded at startup with `Environment.ExpandEnvironmentVariables`:
 
-- `%DATABASE_HOST%`
-- `%DATABASE_PORT%`
-- `%DATABASE_NAME%`
-- `%DATABASE_USER%`
-- `%DATABASE_PASSWORD%`
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Host=%DATABASE_HOST%;Port=5432;Database=%DATABASE_NAME%;Username=%DATABASE_USER%;Password=%DATABASE_PASSWORD%;SSL Mode=Require;Channel Binding=Require;Timeout=30",
+  "MigrationsConnection": "Host=%DATABASE_HOST_DIRECT%;Port=5432;..."
+}
+```
 
+| Variable | Description |
+|---|---|
+| `DATABASE_HOST` | Neon **pooled** host (contains `-pooler`), used at runtime |
+| `DATABASE_NAME` | Database name (e.g. `neondb`) |
+| `DATABASE_USER` | Role (e.g. `neondb_owner`) |
+| `DATABASE_PASSWORD` | Role password (**secret**) |
+| `DATABASE_HOST_DIRECT` | Optional. Neon **direct** host (same host without `-pooler`), used only to apply migrations |
+| `DATABASE_URL` | Optional alternative: the full Neon URL (`postgresql://...`), takes precedence over the variables above |
+| `Cors__Origins__0`, ... | Allowed frontend origins |
 
-Set `ASPNETCORE_ENVIRONMENT=Production` before running with production settings.
+**Local development:** copy `.env.example` to `.env` (git-ignored, loaded automatically in Development) and fill in the values. Another option is `dotnet user-secrets set "ConnectionStrings:DefaultConnection" "<connection string>"` from the `FlotixPlatform.Api` folder.
+
+**Production (Render, Railway, Azure, Docker):** define the same variables as environment variables in the platform. Nothing secret is baked into the image (`.env` is excluded by `.dockerignore`).
+
+Check the connection with `GET /health/db`. Set `Database__MigrateOnStartup=false` to skip migrations on startup.
+
+Never put real values in `appsettings*.json`, `.env.example` or `launchSettings.json`. `.env`, `secrets.json`, keys and certificates are in `.gitignore`. Any future API key (payments, maps, email, etc.) must follow the same rule: read it from configuration and provide it through an environment variable or user-secrets.
 
 ## Error responses
 

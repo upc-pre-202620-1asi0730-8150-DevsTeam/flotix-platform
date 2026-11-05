@@ -10,5 +10,5 @@ namespace FlotixPlatform.Api.Fleet.Domain.Model.Commands;
 /// <param name="VehicleType">The type of the vehicle (e.g. Camión de carga).</param>
 /// <param name="CurrentMileage">The current mileage of the vehicle in kilometers.</param>
 /// <param name="Status">The current status of the vehicle.</param>
-public abstract record UpdateVehicleCommand(Guid VehicleId, Guid? DriverId, 
+public record UpdateVehicleCommand(Guid VehicleId, Guid? DriverId, 
     LicensePlate LicensePlate, string VehicleType, decimal CurrentMileage, VehicleStatus Status);

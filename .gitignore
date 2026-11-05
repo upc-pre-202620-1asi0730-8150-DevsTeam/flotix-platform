@@ -1,5 +1,30 @@
+# Build output
 bin/
 obj/
 /packages/
+*.user
+*.suo
+
+# IDE
+.idea/
+.vs/
+.vscode/
 riderModule.iml
 /_ReSharper.Caches/
+*.DotSettings.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ── Secrets: NEVER commit these ───────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+appsettings.Local.json
+appsettings.*.Local.json
+*.pfx
+*.pem
+*.key

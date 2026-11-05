@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+.git
+.gitignore
+.env
+.env.*
+**/appsettings.Local.json
+**/secrets.json
+*.md
+docs/
