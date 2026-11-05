@@ -1,0 +1,897 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="UnexpectedServerError" xml:space="preserve">
+        <value>Unexpected server error</value>
+    </data>
+    <data name="UnexpectedErrorProcessingRequest" xml:space="preserve">
+        <value>An unexpected error occurred while processing your request.</value>
+    </data>
+    <data name="InvalidModelStateTitle" xml:space="preserve">
+        <value>The request contains invalid values.</value>
+    </data>
+    <data name="RangeField" xml:space="preserve">
+        <value>The field {0} must be between {1} and {2}.</value>
+    </data>
+    <data name="StringLengthField" xml:space="preserve">
+        <value>The field {0} must be a string with a maximum length of {1}.</value>
+    </data>
+    <data name="MaxLengthField" xml:space="preserve">
+        <value>The field {0} must have at most {1} items.</value>
+    </data>
+    <data name="EmailAddressField" xml:space="preserve">
+        <value>The field {0} is not a valid email address.</value>
+    </data>
+    <data name="MinLengthField" xml:space="preserve">
+        <value>The field {0} must have at least {1} characters.</value>
+    </data>
+    <data name="Response200" xml:space="preserve">
+        <value>The request succeeded.</value>
+    </data>
+    <data name="Response201" xml:space="preserve">
+        <value>The resource was created.</value>
+    </data>
+    <data name="Response204" xml:space="preserve">
+        <value>The resource was deleted.</value>
+    </data>
+    <data name="Response400" xml:space="preserve">
+        <value>The request contains invalid values.</value>
+    </data>
+    <data name="Response401" xml:space="preserve">
+        <value>The credentials or the token are not valid.</value>
+    </data>
+    <data name="Response404" xml:space="preserve">
+        <value>The resource was not found.</value>
+    </data>
+    <data name="Response409" xml:space="preserve">
+        <value>The request conflicts with the current state of the resource.</value>
+    </data>
+    <data name="Response500" xml:space="preserve">
+        <value>An unexpected server error occurred.</value>
+    </data>
+    <data name="CreateVehicleSummary" xml:space="preserve">
+        <value>Create a vehicle</value>
+    </data>
+    <data name="CreateVehicleDescription" xml:space="preserve">
+        <value>Registers a new vehicle.</value>
+    </data>
+    <data name="GetAllVehiclesSummary" xml:space="preserve">
+        <value>Get all vehicles</value>
+    </data>
+    <data name="GetAllVehiclesDescription" xml:space="preserve">
+        <value>Retrieves all vehicles, optionally filtered by owner ID or driver ID.</value>
+    </data>
+    <data name="GetVehicleByIdSummary" xml:space="preserve">
+        <value>Get a vehicle by ID</value>
+    </data>
+    <data name="GetVehicleByIdDescription" xml:space="preserve">
+        <value>Retrieves a vehicle using its identifier.</value>
+    </data>
+    <data name="UpdateVehicleSummary" xml:space="preserve">
+        <value>Update a vehicle</value>
+    </data>
+    <data name="UpdateVehicleDescription" xml:space="preserve">
+        <value>Updates the data of a vehicle.</value>
+    </data>
+    <data name="DeleteVehicleSummary" xml:space="preserve">
+        <value>Delete a vehicle</value>
+    </data>
+    <data name="DeleteVehicleDescription" xml:space="preserve">
+        <value>Deletes a vehicle using its identifier.</value>
+    </data>
+    <data name="CreateVehicleSchema" xml:space="preserve">
+        <value>Request payload for creating a vehicle.</value>
+    </data>
+    <data name="UpdateVehicleSchema" xml:space="preserve">
+        <value>Request payload for updating a vehicle.</value>
+    </data>
+    <data name="VehicleSchema" xml:space="preserve">
+        <value>A vehicle returned by the API.</value>
+    </data>
+    <data name="VehicleId" xml:space="preserve">
+        <value>The server-generated identifier of the vehicle.</value>
+    </data>
+    <data name="VehicleOwnerId" xml:space="preserve">
+        <value>The identifier of the owner user.</value>
+    </data>
+    <data name="VehicleDriverId" xml:space="preserve">
+        <value>The identifier of the driver user.</value>
+    </data>
+    <data name="VehicleLicensePlate" xml:space="preserve">
+        <value>The license plate of the vehicle.</value>
+    </data>
+    <data name="VehicleVehicleType" xml:space="preserve">
+        <value>The type of the vehicle (e.g. Camión de carga).</value>
+    </data>
+    <data name="VehicleCurrentMileage" xml:space="preserve">
+        <value>The current mileage of the vehicle in kilometers.</value>
+    </data>
+    <data name="VehicleStatus" xml:space="preserve">
+        <value>The current status of the vehicle.</value>
+    </data>
+    <data name="InvalidVehicleRequest" xml:space="preserve">
+        <value>The vehicle request contains invalid values.</value>
+    </data>
+    <data name="VehicleNotFound" xml:space="preserve">
+        <value>The vehicle was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingVehicle" xml:space="preserve">
+        <value>An unexpected error occurred while creating the vehicle.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingVehicle" xml:space="preserve">
+        <value>An unexpected error occurred while updating the vehicle.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingVehicle" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the vehicle.</value>
+    </data>
+    <data name="DuplicateVehicleLicensePlate" xml:space="preserve">
+        <value>A vehicle with this license plate already exists.</value>
+    </data>
+    <data name="MileageCannotDecrease" xml:space="preserve">
+        <value>The mileage of a vehicle cannot decrease.</value>
+    </data>
+    <data name="VehicleReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the vehicle does not exist.</value>
+    </data>
+    <data name="VehicleHasDependents" xml:space="preserve">
+        <value>The vehicle has related records and cannot be deleted.</value>
+    </data>
+    <data name="RequiredLicensePlate" xml:space="preserve">
+        <value>License plate is required.</value>
+    </data>
+    <data name="RequiredVehicleType" xml:space="preserve">
+        <value>Vehicle type is required.</value>
+    </data>
+    <data name="CreateFuelRecordSummary" xml:space="preserve">
+        <value>Create a fuel record</value>
+    </data>
+    <data name="CreateFuelRecordDescription" xml:space="preserve">
+        <value>Registers a new fuel record.</value>
+    </data>
+    <data name="GetAllFuelRecordsSummary" xml:space="preserve">
+        <value>Get all fuel records</value>
+    </data>
+    <data name="GetAllFuelRecordsDescription" xml:space="preserve">
+        <value>Retrieves all fuel records, optionally filtered by vehicle ID or driver ID.</value>
+    </data>
+    <data name="GetFuelRecordByIdSummary" xml:space="preserve">
+        <value>Get a fuel record by ID</value>
+    </data>
+    <data name="GetFuelRecordByIdDescription" xml:space="preserve">
+        <value>Retrieves a fuel record using its identifier.</value>
+    </data>
+    <data name="UpdateFuelRecordSummary" xml:space="preserve">
+        <value>Update a fuel record</value>
+    </data>
+    <data name="UpdateFuelRecordDescription" xml:space="preserve">
+        <value>Updates the data of a fuel record.</value>
+    </data>
+    <data name="DeleteFuelRecordSummary" xml:space="preserve">
+        <value>Delete a fuel record</value>
+    </data>
+    <data name="DeleteFuelRecordDescription" xml:space="preserve">
+        <value>Deletes a fuel record using its identifier.</value>
+    </data>
+    <data name="CreateFuelRecordSchema" xml:space="preserve">
+        <value>Request payload for creating a fuel record.</value>
+    </data>
+    <data name="UpdateFuelRecordSchema" xml:space="preserve">
+        <value>Request payload for updating a fuel record.</value>
+    </data>
+    <data name="FuelRecordSchema" xml:space="preserve">
+        <value>A fuel record returned by the API.</value>
+    </data>
+    <data name="FuelRecordId" xml:space="preserve">
+        <value>The server-generated identifier of the fuel record.</value>
+    </data>
+    <data name="FuelRecordVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="FuelRecordDriverId" xml:space="preserve">
+        <value>The identifier of the driver user.</value>
+    </data>
+    <data name="FuelRecordLiters" xml:space="preserve">
+        <value>The refueled amount in liters.</value>
+    </data>
+    <data name="FuelRecordCost" xml:space="preserve">
+        <value>The total cost of the refuel.</value>
+    </data>
+    <data name="FuelRecordMileageAtRefill" xml:space="preserve">
+        <value>The vehicle mileage when refueling.</value>
+    </data>
+    <data name="FuelRecordRecordedDate" xml:space="preserve">
+        <value>The date and time of the refuel.</value>
+    </data>
+    <data name="InvalidFuelRecordRequest" xml:space="preserve">
+        <value>The fuel record request contains invalid values.</value>
+    </data>
+    <data name="FuelRecordNotFound" xml:space="preserve">
+        <value>The fuel record was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingFuelRecord" xml:space="preserve">
+        <value>An unexpected error occurred while creating the fuel record.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingFuelRecord" xml:space="preserve">
+        <value>An unexpected error occurred while updating the fuel record.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingFuelRecord" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the fuel record.</value>
+    </data>
+    <data name="FuelRecordReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the fuel record does not exist.</value>
+    </data>
+    <data name="GetAllMaintenanceRequestsSummary" xml:space="preserve">
+        <value>Get all maintenance requests</value>
+    </data>
+    <data name="GetAllMaintenanceRequestsDescription" xml:space="preserve">
+        <value>Retrieves all maintenance requests, optionally filtered by vehicle ID or mechanic ID.</value>
+    </data>
+    <data name="GetMaintenanceRequestByIdSummary" xml:space="preserve">
+        <value>Get a maintenance request by ID</value>
+    </data>
+    <data name="GetMaintenanceRequestByIdDescription" xml:space="preserve">
+        <value>Retrieves a maintenance request using its identifier.</value>
+    </data>
+    <data name="DeleteMaintenanceRequestSummary" xml:space="preserve">
+        <value>Delete a maintenance request</value>
+    </data>
+    <data name="DeleteMaintenanceRequestDescription" xml:space="preserve">
+        <value>Deletes a maintenance request using its identifier.</value>
+    </data>
+    <data name="MaintenanceRequestSchema" xml:space="preserve">
+        <value>A maintenance request returned by the API.</value>
+    </data>
+    <data name="MaintenanceRequestId" xml:space="preserve">
+        <value>The server-generated identifier of the maintenance request.</value>
+    </data>
+    <data name="MaintenanceRequestVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="MaintenanceRequestMechanicId" xml:space="preserve">
+        <value>The identifier of the mechanic user.</value>
+    </data>
+    <data name="MaintenanceRequestDescription" xml:space="preserve">
+        <value>The description of the fault to repair.</value>
+    </data>
+    <data name="MaintenanceRequestEstimatedCost" xml:space="preserve">
+        <value>The estimated cost quoted by the workshop.</value>
+    </data>
+    <data name="MaintenanceRequestStatus" xml:space="preserve">
+        <value>The current status of the maintenance request.</value>
+    </data>
+    <data name="MaintenanceRequestRequestDate" xml:space="preserve">
+        <value>The moment the maintenance was requested.</value>
+    </data>
+    <data name="InvalidMaintenanceRequestRequest" xml:space="preserve">
+        <value>The maintenance request request contains invalid values.</value>
+    </data>
+    <data name="MaintenanceRequestNotFound" xml:space="preserve">
+        <value>The maintenance request was not found.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingMaintenanceRequest" xml:space="preserve">
+        <value>An unexpected error occurred while updating the maintenance request.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingMaintenanceRequest" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the maintenance request.</value>
+    </data>
+    <data name="MaintenanceRequestReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the maintenance request does not exist.</value>
+    </data>
+    <data name="RequiredDescription" xml:space="preserve">
+        <value>Description is required.</value>
+    </data>
+    <data name="CreateIncidentSummary" xml:space="preserve">
+        <value>Create an incident</value>
+    </data>
+    <data name="CreateIncidentDescription" xml:space="preserve">
+        <value>Registers a new incident.</value>
+    </data>
+    <data name="GetAllIncidentsSummary" xml:space="preserve">
+        <value>Get all incidents</value>
+    </data>
+    <data name="GetAllIncidentsDescription" xml:space="preserve">
+        <value>Retrieves all incidents, optionally filtered by vehicle ID or driver ID.</value>
+    </data>
+    <data name="GetIncidentByIdSummary" xml:space="preserve">
+        <value>Get an incident by ID</value>
+    </data>
+    <data name="GetIncidentByIdDescription" xml:space="preserve">
+        <value>Retrieves an incident using its identifier.</value>
+    </data>
+    <data name="UpdateIncidentSummary" xml:space="preserve">
+        <value>Update an incident</value>
+    </data>
+    <data name="UpdateIncidentDescription" xml:space="preserve">
+        <value>Updates the data of an incident.</value>
+    </data>
+    <data name="DeleteIncidentSummary" xml:space="preserve">
+        <value>Delete an incident</value>
+    </data>
+    <data name="DeleteIncidentDescription" xml:space="preserve">
+        <value>Deletes an incident using its identifier.</value>
+    </data>
+    <data name="CreateIncidentSchema" xml:space="preserve">
+        <value>Request payload for creating an incident.</value>
+    </data>
+    <data name="UpdateIncidentSchema" xml:space="preserve">
+        <value>Request payload for updating an incident.</value>
+    </data>
+    <data name="IncidentSchema" xml:space="preserve">
+        <value>An incident returned by the API.</value>
+    </data>
+    <data name="IncidentId" xml:space="preserve">
+        <value>The server-generated identifier of the incident.</value>
+    </data>
+    <data name="IncidentVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="IncidentDriverId" xml:space="preserve">
+        <value>The identifier of the driver user.</value>
+    </data>
+    <data name="IncidentDescription" xml:space="preserve">
+        <value>The description of the incident.</value>
+    </data>
+    <data name="IncidentStatus" xml:space="preserve">
+        <value>The current status of the incident.</value>
+    </data>
+    <data name="IncidentReportedDate" xml:space="preserve">
+        <value>The moment the incident was reported.</value>
+    </data>
+    <data name="InvalidIncidentRequest" xml:space="preserve">
+        <value>The incident request contains invalid values.</value>
+    </data>
+    <data name="IncidentNotFound" xml:space="preserve">
+        <value>The incident was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingIncident" xml:space="preserve">
+        <value>An unexpected error occurred while creating the incident.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingIncident" xml:space="preserve">
+        <value>An unexpected error occurred while updating the incident.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingIncident" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the incident.</value>
+    </data>
+    <data name="IncidentReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the incident does not exist.</value>
+    </data>
+    <data name="CreateIotDeviceSummary" xml:space="preserve">
+        <value>Create an IoT device</value>
+    </data>
+    <data name="CreateIotDeviceDescription" xml:space="preserve">
+        <value>Registers a new IoT device.</value>
+    </data>
+    <data name="GetAllIotDevicesSummary" xml:space="preserve">
+        <value>Get all IoT devices</value>
+    </data>
+    <data name="GetAllIotDevicesDescription" xml:space="preserve">
+        <value>Retrieves all IoT devices, optionally filtered by vehicle ID.</value>
+    </data>
+    <data name="GetIotDeviceByIdSummary" xml:space="preserve">
+        <value>Get an IoT device by ID</value>
+    </data>
+    <data name="GetIotDeviceByIdDescription" xml:space="preserve">
+        <value>Retrieves an IoT device using its identifier.</value>
+    </data>
+    <data name="UpdateIotDeviceSummary" xml:space="preserve">
+        <value>Update an IoT device</value>
+    </data>
+    <data name="UpdateIotDeviceDescription" xml:space="preserve">
+        <value>Updates the data of an IoT device.</value>
+    </data>
+    <data name="DeleteIotDeviceSummary" xml:space="preserve">
+        <value>Delete an IoT device</value>
+    </data>
+    <data name="DeleteIotDeviceDescription" xml:space="preserve">
+        <value>Deletes an IoT device using its identifier.</value>
+    </data>
+    <data name="GetAllTelemetryDataSummary" xml:space="preserve">
+        <value>Get all telemetry records</value>
+    </data>
+    <data name="GetAllTelemetryDataDescription" xml:space="preserve">
+        <value>Retrieves all telemetry records, optionally filtered by device ID from the most recent reading.</value>
+    </data>
+    <data name="GetTelemetryDataByIdSummary" xml:space="preserve">
+        <value>Get a telemetry record by ID</value>
+    </data>
+    <data name="GetTelemetryDataByIdDescription" xml:space="preserve">
+        <value>Retrieves a telemetry record using its identifier.</value>
+    </data>
+    <data name="CreateIotDeviceSchema" xml:space="preserve">
+        <value>Request payload for creating an IoT device.</value>
+    </data>
+    <data name="UpdateIotDeviceSchema" xml:space="preserve">
+        <value>Request payload for updating an IoT device.</value>
+    </data>
+    <data name="IotDeviceSchema" xml:space="preserve">
+        <value>An IoT device returned by the API.</value>
+    </data>
+    <data name="TelemetryDataSchema" xml:space="preserve">
+        <value>A telemetry record returned by the API.</value>
+    </data>
+    <data name="IotDeviceId" xml:space="preserve">
+        <value>The server-generated identifier of the IoT device.</value>
+    </data>
+    <data name="IotDeviceVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="IotDeviceSerialNumber" xml:space="preserve">
+        <value>The serial number of the IoT device.</value>
+    </data>
+    <data name="IotDeviceIsConnected" xml:space="preserve">
+        <value>Whether the IoT device is connected.</value>
+    </data>
+    <data name="TelemetryDataId" xml:space="preserve">
+        <value>The server-generated identifier of the telemetry record.</value>
+    </data>
+    <data name="TelemetryDataDeviceId" xml:space="preserve">
+        <value>The identifier of the reporting IoT device.</value>
+    </data>
+    <data name="TelemetryDataLatitude" xml:space="preserve">
+        <value>The latitude of the reported position.</value>
+    </data>
+    <data name="TelemetryDataLongitude" xml:space="preserve">
+        <value>The longitude of the reported position.</value>
+    </data>
+    <data name="TelemetryDataSpeed" xml:space="preserve">
+        <value>The reported speed in km/h.</value>
+    </data>
+    <data name="TelemetryDataRecordedAt" xml:space="preserve">
+        <value>The moment the reading was taken by the device.</value>
+    </data>
+    <data name="InvalidIotDeviceRequest" xml:space="preserve">
+        <value>The IoT device request contains invalid values.</value>
+    </data>
+    <data name="IotDeviceNotFound" xml:space="preserve">
+        <value>The IoT device was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingIotDevice" xml:space="preserve">
+        <value>An unexpected error occurred while creating the IoT device.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingIotDevice" xml:space="preserve">
+        <value>An unexpected error occurred while updating the IoT device.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingIotDevice" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the IoT device.</value>
+    </data>
+    <data name="DuplicateIotDeviceVehicleId" xml:space="preserve">
+        <value>An IoT device with this vehicle ID already exists.</value>
+    </data>
+    <data name="DuplicateIotDeviceSerialNumber" xml:space="preserve">
+        <value>An IoT device with this serial number already exists.</value>
+    </data>
+    <data name="IotDeviceReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the IoT device does not exist.</value>
+    </data>
+    <data name="IotDeviceHasDependents" xml:space="preserve">
+        <value>The IoT device has related records and cannot be deleted.</value>
+    </data>
+    <data name="RequiredSerialNumber" xml:space="preserve">
+        <value>Serial number is required.</value>
+    </data>
+    <data name="InvalidTelemetryDataRequest" xml:space="preserve">
+        <value>The telemetry packet does not follow the expected schema and was discarded.</value>
+    </data>
+    <data name="TelemetryDataNotFound" xml:space="preserve">
+        <value>The telemetry record was not found.</value>
+    </data>
+    <data name="CreateAlertSummary" xml:space="preserve">
+        <value>Create an alert</value>
+    </data>
+    <data name="CreateAlertDescription" xml:space="preserve">
+        <value>Registers a new alert.</value>
+    </data>
+    <data name="GetAllAlertsSummary" xml:space="preserve">
+        <value>Get all alerts</value>
+    </data>
+    <data name="GetAllAlertsDescription" xml:space="preserve">
+        <value>Retrieves all alerts, optionally filtered by vehicle ID.</value>
+    </data>
+    <data name="GetAlertByIdSummary" xml:space="preserve">
+        <value>Get an alert by ID</value>
+    </data>
+    <data name="GetAlertByIdDescription" xml:space="preserve">
+        <value>Retrieves an alert using its identifier.</value>
+    </data>
+    <data name="CreateNotificationSummary" xml:space="preserve">
+        <value>Create a notification</value>
+    </data>
+    <data name="CreateNotificationDescription" xml:space="preserve">
+        <value>Registers a new notification.</value>
+    </data>
+    <data name="GetAllNotificationsSummary" xml:space="preserve">
+        <value>Get all notifications</value>
+    </data>
+    <data name="GetAllNotificationsDescription" xml:space="preserve">
+        <value>Retrieves all notifications, optionally filtered by user ID.</value>
+    </data>
+    <data name="GetNotificationByIdSummary" xml:space="preserve">
+        <value>Get a notification by ID</value>
+    </data>
+    <data name="GetNotificationByIdDescription" xml:space="preserve">
+        <value>Retrieves a notification using its identifier.</value>
+    </data>
+    <data name="UpdateNotificationSummary" xml:space="preserve">
+        <value>Update a notification</value>
+    </data>
+    <data name="UpdateNotificationDescription" xml:space="preserve">
+        <value>Updates the data of a notification.</value>
+    </data>
+    <data name="DeleteNotificationSummary" xml:space="preserve">
+        <value>Delete a notification</value>
+    </data>
+    <data name="DeleteNotificationDescription" xml:space="preserve">
+        <value>Deletes a notification using its identifier.</value>
+    </data>
+    <data name="CreateAlertSchema" xml:space="preserve">
+        <value>Request payload for creating an alert.</value>
+    </data>
+    <data name="AlertSchema" xml:space="preserve">
+        <value>An alert returned by the API.</value>
+    </data>
+    <data name="CreateNotificationSchema" xml:space="preserve">
+        <value>Request payload for creating a notification.</value>
+    </data>
+    <data name="UpdateNotificationSchema" xml:space="preserve">
+        <value>Request payload for updating a notification.</value>
+    </data>
+    <data name="NotificationSchema" xml:space="preserve">
+        <value>A notification returned by the API.</value>
+    </data>
+    <data name="AlertId" xml:space="preserve">
+        <value>The server-generated identifier of the alert.</value>
+    </data>
+    <data name="AlertVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="AlertAlertType" xml:space="preserve">
+        <value>The type of the alert (e.g. Exceso de velocidad).</value>
+    </data>
+    <data name="AlertTriggerDate" xml:space="preserve">
+        <value>The moment the alert was triggered.</value>
+    </data>
+    <data name="NotificationId" xml:space="preserve">
+        <value>The server-generated identifier of the notification.</value>
+    </data>
+    <data name="NotificationUserId" xml:space="preserve">
+        <value>The identifier of the recipient user.</value>
+    </data>
+    <data name="NotificationAlertId" xml:space="preserve">
+        <value>The identifier of the related alert, if any.</value>
+    </data>
+    <data name="NotificationMessage" xml:space="preserve">
+        <value>The message of the notification.</value>
+    </data>
+    <data name="NotificationIsRead" xml:space="preserve">
+        <value>Whether the notification has been read.</value>
+    </data>
+    <data name="NotificationSentDate" xml:space="preserve">
+        <value>The moment the notification was sent.</value>
+    </data>
+    <data name="InvalidAlertRequest" xml:space="preserve">
+        <value>The alert request contains invalid values.</value>
+    </data>
+    <data name="AlertNotFound" xml:space="preserve">
+        <value>The alert was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingAlert" xml:space="preserve">
+        <value>An unexpected error occurred while creating the alert.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingAlert" xml:space="preserve">
+        <value>An unexpected error occurred while updating the alert.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingAlert" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the alert.</value>
+    </data>
+    <data name="AlertReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the alert does not exist.</value>
+    </data>
+    <data name="AlertHasDependents" xml:space="preserve">
+        <value>The alert has related records and cannot be deleted.</value>
+    </data>
+    <data name="RequiredAlertType" xml:space="preserve">
+        <value>Alert type is required.</value>
+    </data>
+    <data name="InvalidNotificationRequest" xml:space="preserve">
+        <value>The notification request contains invalid values.</value>
+    </data>
+    <data name="NotificationNotFound" xml:space="preserve">
+        <value>The notification was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingNotification" xml:space="preserve">
+        <value>An unexpected error occurred while creating the notification.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingNotification" xml:space="preserve">
+        <value>An unexpected error occurred while updating the notification.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingNotification" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the notification.</value>
+    </data>
+    <data name="NotificationReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the notification does not exist.</value>
+    </data>
+    <data name="RequiredMessage" xml:space="preserve">
+        <value>Message is required.</value>
+    </data>
+    <data name="CreateIotOrderSummary" xml:space="preserve">
+        <value>Create an IoT order</value>
+    </data>
+    <data name="CreateIotOrderDescription" xml:space="preserve">
+        <value>Registers a new IoT order.</value>
+    </data>
+    <data name="GetAllIotOrdersSummary" xml:space="preserve">
+        <value>Get all IoT orders</value>
+    </data>
+    <data name="GetAllIotOrdersDescription" xml:space="preserve">
+        <value>Retrieves all IoT orders, optionally filtered by owner ID.</value>
+    </data>
+    <data name="GetIotOrderByIdSummary" xml:space="preserve">
+        <value>Get an IoT order by ID</value>
+    </data>
+    <data name="GetIotOrderByIdDescription" xml:space="preserve">
+        <value>Retrieves an IoT order using its identifier.</value>
+    </data>
+    <data name="UpdateIotOrderSummary" xml:space="preserve">
+        <value>Update an IoT order</value>
+    </data>
+    <data name="UpdateIotOrderDescription" xml:space="preserve">
+        <value>Updates the data of an IoT order.</value>
+    </data>
+    <data name="CreateIotOrderSchema" xml:space="preserve">
+        <value>Request payload for creating an IoT order.</value>
+    </data>
+    <data name="UpdateIotOrderSchema" xml:space="preserve">
+        <value>Request payload for updating an IoT order.</value>
+    </data>
+    <data name="IotOrderSchema" xml:space="preserve">
+        <value>An IoT order returned by the API.</value>
+    </data>
+    <data name="IotOrderId" xml:space="preserve">
+        <value>The server-generated identifier of the IoT order.</value>
+    </data>
+    <data name="IotOrderOwnerId" xml:space="preserve">
+        <value>The identifier of the owner user.</value>
+    </data>
+    <data name="IotOrderQuantity" xml:space="preserve">
+        <value>The number of devices ordered.</value>
+    </data>
+    <data name="IotOrderTotalAmount" xml:space="preserve">
+        <value>The total amount, priced from the catalog.</value>
+    </data>
+    <data name="IotOrderStatus" xml:space="preserve">
+        <value>The current status of the IoT order.</value>
+    </data>
+    <data name="IotOrderOrderDate" xml:space="preserve">
+        <value>The date the order was placed.</value>
+    </data>
+    <data name="InvalidIotOrderRequest" xml:space="preserve">
+        <value>The IoT order request contains invalid values.</value>
+    </data>
+    <data name="IotOrderNotFound" xml:space="preserve">
+        <value>The IoT order was not found.</value>
+    </data>
+    <data name="UnexpectedErrorCreatingIotOrder" xml:space="preserve">
+        <value>An unexpected error occurred while creating the IoT order.</value>
+    </data>
+    <data name="UnexpectedErrorUpdatingIotOrder" xml:space="preserve">
+        <value>An unexpected error occurred while updating the IoT order.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingIotOrder" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the IoT order.</value>
+    </data>
+    <data name="IotOrderAlreadyClosed" xml:space="preserve">
+        <value>A delivered or cancelled order cannot change its status.</value>
+    </data>
+    <data name="IotOrderReferencedResourceNotFound" xml:space="preserve">
+        <value>A vehicle, user or other resource referenced by the IoT order does not exist.</value>
+    </data>
+    <data name="GetAllReportsSummary" xml:space="preserve">
+        <value>Get all reports</value>
+    </data>
+    <data name="GetAllReportsDescription" xml:space="preserve">
+        <value>Retrieves all reports, optionally filtered by owner ID.</value>
+    </data>
+    <data name="GetReportByIdSummary" xml:space="preserve">
+        <value>Get a report by ID</value>
+    </data>
+    <data name="GetReportByIdDescription" xml:space="preserve">
+        <value>Retrieves a report using its identifier.</value>
+    </data>
+    <data name="DeleteReportSummary" xml:space="preserve">
+        <value>Delete a report</value>
+    </data>
+    <data name="DeleteReportDescription" xml:space="preserve">
+        <value>Deletes a report using its identifier.</value>
+    </data>
+    <data name="ReportSchema" xml:space="preserve">
+        <value>A report returned by the API.</value>
+    </data>
+    <data name="ReportId" xml:space="preserve">
+        <value>The server-generated identifier of the report.</value>
+    </data>
+    <data name="ReportOwnerId" xml:space="preserve">
+        <value>The identifier of the owner user.</value>
+    </data>
+    <data name="ReportReportType" xml:space="preserve">
+        <value>The type of the report.</value>
+    </data>
+    <data name="ReportGeneratedDate" xml:space="preserve">
+        <value>The moment the report was generated.</value>
+    </data>
+    <data name="ReportFilterParams" xml:space="preserve">
+        <value>The filters applied to the report (e.g. date range).</value>
+    </data>
+    <data name="InvalidReportRequest" xml:space="preserve">
+        <value>The report type is not supported or the period is invalid.</value>
+    </data>
+    <data name="ReportNotFound" xml:space="preserve">
+        <value>The report was not found.</value>
+    </data>
+    <data name="UnexpectedErrorDeletingReport" xml:space="preserve">
+        <value>An unexpected error occurred while deleting the report.</value>
+    </data>
+    <data name="ReportReferencedResourceNotFound" xml:space="preserve">
+        <value>The owner of the report does not exist.</value>
+    </data>
+    <data name="RequiredReportType" xml:space="preserve">
+        <value>Report type is required.</value>
+    </data>
+    <data name="RequiredFilterParams" xml:space="preserve">
+        <value>Filter params is required.</value>
+    </data>
+    <data name="Response202" xml:space="preserve">
+        <value>The request was accepted for processing.</value>
+    </data>
+    <data name="ReceiveTelemetryDataSummary" xml:space="preserve">
+        <value>Receive a telemetry packet</value>
+    </data>
+    <data name="ReceiveTelemetryDataDescription" xml:space="preserve">
+        <value>Receives a telemetry packet from an IoT device and queues it for the IoT Telemetry Processor, which stores the reading and publishes the vehicle location. Corrupt packets are discarded and recorded in the error log.</value>
+    </data>
+    <data name="UnexpectedErrorReceivingTelemetryData" xml:space="preserve">
+        <value>An unexpected error occurred while receiving the telemetry packet.</value>
+    </data>
+    <data name="ReceiveTelemetryDataSchema" xml:space="preserve">
+        <value>Telemetry packet sent by an IoT device.</value>
+    </data>
+    <data name="VehicleLocationSchema" xml:space="preserve">
+        <value>Latest location of a vehicle, published in real time.</value>
+    </data>
+    <data name="VehicleLocationVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="VehicleLocationDeviceId" xml:space="preserve">
+        <value>The identifier of the reporting IoT device.</value>
+    </data>
+    <data name="VehicleLocationLatitude" xml:space="preserve">
+        <value>The latitude of the vehicle.</value>
+    </data>
+    <data name="VehicleLocationLongitude" xml:space="preserve">
+        <value>The longitude of the vehicle.</value>
+    </data>
+    <data name="VehicleLocationSpeed" xml:space="preserve">
+        <value>The speed of the vehicle in km/h.</value>
+    </data>
+    <data name="VehicleLocationRecordedAt" xml:space="preserve">
+        <value>The moment the reading was taken by the device.</value>
+    </data>
+    <data name="SubmitMaintenanceRequestSummary" xml:space="preserve">
+        <value>Submit a maintenance request</value>
+    </data>
+    <data name="SubmitMaintenanceRequestDescription" xml:space="preserve">
+        <value>Submits a maintenance request for a vehicle to a mechanic; the request starts in "Pendiente" status.</value>
+    </data>
+    <data name="RegisterDiagnosticAndQuoteSummary" xml:space="preserve">
+        <value>Register the diagnostic and quote</value>
+    </data>
+    <data name="RegisterDiagnosticAndQuoteDescription" xml:space="preserve">
+        <value>The workshop registers the estimated cost of a pending request, which moves to "Presupuestado".</value>
+    </data>
+    <data name="ApproveOrRejectBudgetSummary" xml:space="preserve">
+        <value>Approve or reject the budget</value>
+    </data>
+    <data name="ApproveOrRejectBudgetDescription" xml:space="preserve">
+        <value>The owner approves or rejects a quoted budget; the request moves to "Aprobado" or "Rechazado".</value>
+    </data>
+    <data name="UpdateRepairStatusSummary" xml:space="preserve">
+        <value>Start the repair</value>
+    </data>
+    <data name="UpdateRepairStatusDescription" xml:space="preserve">
+        <value>The workshop registers the start of an approved repair; the request moves to "En reparación".</value>
+    </data>
+    <data name="CompleteMaintenanceSummary" xml:space="preserve">
+        <value>Complete the maintenance</value>
+    </data>
+    <data name="CompleteMaintenanceDescription" xml:space="preserve">
+        <value>The workshop registers the completion of the repair; the request moves to "Completado".</value>
+    </data>
+    <data name="SubmitMaintenanceRequestSchema" xml:space="preserve">
+        <value>Request payload for submitting a maintenance request.</value>
+    </data>
+    <data name="RegisterDiagnosticAndQuoteSchema" xml:space="preserve">
+        <value>Diagnostic and quote registered by the workshop.</value>
+    </data>
+    <data name="ApproveOrRejectBudgetSchema" xml:space="preserve">
+        <value>Decision of the owner about the quoted budget.</value>
+    </data>
+    <data name="MaintenanceRequestIsApproved" xml:space="preserve">
+        <value>True to approve the budget, false to reject it.</value>
+    </data>
+    <data name="InvalidMaintenanceRequestStatusTransition" xml:space="preserve">
+        <value>The maintenance request is not in the status this step requires, or it is already closed.</value>
+    </data>
+    <data name="UnexpectedErrorSubmittingMaintenanceRequest" xml:space="preserve">
+        <value>An unexpected error occurred while submitting the maintenance request.</value>
+    </data>
+    <data name="GenerateReportSummary" xml:space="preserve">
+        <value>Generate a report</value>
+    </data>
+    <data name="GenerateReportDescription" xml:space="preserve">
+        <value>Generates a fuel consumption or maintenance cost report of the fleet of an owner within a date range and stores its metadata. When there are no records in the period, the report includes an informative message.</value>
+    </data>
+    <data name="GenerateReportSchema" xml:space="preserve">
+        <value>Request payload for generating a report.</value>
+    </data>
+    <data name="GeneratedReportSchema" xml:space="preserve">
+        <value>A generated report with the figures of each vehicle and the totals of the fleet.</value>
+    </data>
+    <data name="ReportLineSchema" xml:space="preserve">
+        <value>Figures of a vehicle in a generated report.</value>
+    </data>
+    <data name="ReportFrom" xml:space="preserve">
+        <value>The first day of the period (inclusive).</value>
+    </data>
+    <data name="ReportTo" xml:space="preserve">
+        <value>The last day of the period (inclusive).</value>
+    </data>
+    <data name="ReportLines" xml:space="preserve">
+        <value>The figures of each vehicle with records in the period.</value>
+    </data>
+    <data name="ReportTotalRecords" xml:space="preserve">
+        <value>The total number of records of the fleet in the period.</value>
+    </data>
+    <data name="ReportTotalQuantity" xml:space="preserve">
+        <value>The total liters (fuel report) or completed repairs (maintenance report).</value>
+    </data>
+    <data name="ReportTotalCost" xml:space="preserve">
+        <value>The total fuel cost (fuel report) or approved budgets (maintenance report).</value>
+    </data>
+    <data name="ReportMessage" xml:space="preserve">
+        <value>An informative message when there are no records in the period.</value>
+    </data>
+    <data name="ReportLineVehicleId" xml:space="preserve">
+        <value>The identifier of the vehicle.</value>
+    </data>
+    <data name="ReportLineLicensePlate" xml:space="preserve">
+        <value>The license plate of the vehicle.</value>
+    </data>
+    <data name="ReportLineRecords" xml:space="preserve">
+        <value>The number of refuels (fuel report) or maintenance requests (maintenance report) in the period.</value>
+    </data>
+    <data name="ReportLineQuantity" xml:space="preserve">
+        <value>The liters loaded (fuel report) or the completed repairs (maintenance report).</value>
+    </data>
+    <data name="ReportLineTotalCost" xml:space="preserve">
+        <value>The fuel cost (fuel report) or the approved budgets (maintenance report).</value>
+    </data>
+    <data name="NoRecordsForReport" xml:space="preserve">
+        <value>There are no records in the requested period.</value>
+    </data>
+    <data name="UnexpectedErrorGeneratingReport" xml:space="preserve">
+        <value>An unexpected error occurred while generating the report.</value>
+    </data>
+</root>

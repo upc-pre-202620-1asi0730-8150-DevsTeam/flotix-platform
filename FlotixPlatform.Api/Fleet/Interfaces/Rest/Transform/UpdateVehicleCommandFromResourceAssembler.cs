@@ -1,7 +1,6 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.Commands;
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 using FlotixPlatform.Api.Fleet.Interfaces.Rest.Resources;
-using FlotixPlatform.Api.Fleet.Interfaces.Rest.Resources;
 
 namespace FlotixPlatform.Api.Fleet.Interfaces.Rest.Transform;
 
