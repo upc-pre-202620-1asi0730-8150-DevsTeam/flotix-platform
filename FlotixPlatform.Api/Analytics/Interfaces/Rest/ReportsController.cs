@@ -8,7 +8,7 @@ using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace FlotixPlatform.API.Analytics.Interfaces.Rest;
+namespace FlotixPlatform.Api.Analytics.Interfaces.Rest;
 
 /// <summary>
 ///     Reports' controller.
@@ -21,7 +21,6 @@ namespace FlotixPlatform.API.Analytics.Interfaces.Rest;
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
 [Tags("Reports")]
-[Authorize(Role.Owner)]
 public class ReportsController(
     IReportCommandService reportCommandService,
     IReportQueryService reportQueryService,

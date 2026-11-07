@@ -1,9 +1,9 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Application.Services;
-using FlotixPlatform.API.Maintenance.Domain.Model.Queries;
-using FlotixPlatform.API.Maintenance.Domain.Repositories;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Application.Services;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Queries;
+using FlotixPlatform.Api.Maintenance.Domain.Repositories;
 
-namespace FlotixPlatform.API.Maintenance.Application.Internal.QueryServices;
+namespace FlotixPlatform.Api.Maintenance.Application.Internal.QueryServices;
 
 /// <summary>
 ///     Application service for querying maintenance requests.

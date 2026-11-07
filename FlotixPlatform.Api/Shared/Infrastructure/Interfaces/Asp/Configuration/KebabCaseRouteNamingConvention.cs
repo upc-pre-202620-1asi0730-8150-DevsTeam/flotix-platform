@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ApplicationModels;
+﻿using FlotixPlatform.Api.Shared.Infrastructure.Interfaces.Asp.Configuration.Extensions;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace FlotixPlatform.Api.Shared.Infrastructure.Interfaces.Asp.Configuration;
 

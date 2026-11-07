@@ -1,11 +1,11 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
-using FlotixPlatform.API.Fleet.Domain.Repositories;
+using FlotixPlatform.Api.Fleet.Domain.Repositories;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
+namespace FlotixPlatform.Api.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 
 /// <summary>
 ///     Entity Framework repository for vehicle persistence.

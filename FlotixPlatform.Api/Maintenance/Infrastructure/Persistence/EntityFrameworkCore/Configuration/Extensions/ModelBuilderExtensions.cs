@@ -1,10 +1,9 @@
-using FlotixPlatform.API.Fleet.Domain.Model.Aggregates;
-using FlotixPlatform.API.IAM.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Domain.Model.ValueObjects;
+using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Maintenance.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
+namespace FlotixPlatform.Api.Maintenance.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 
 /// <summary>
 ///     Entity Framework Core model configuration of the Maintenance Management bounded context.
@@ -34,11 +33,6 @@ public static class ModelBuilderExtensions
             .HasOne<Vehicle>()
             .WithMany()
             .HasForeignKey(m => m.VehicleId)
-            .OnDelete(DeleteBehavior.Restrict);
-        builder.Entity<MaintenanceRequest>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(m => m.MechanicId)
             .OnDelete(DeleteBehavior.Restrict);
         builder.Entity<MaintenanceRequest>().HasIndex(m => m.VehicleId);
         builder.Entity<MaintenanceRequest>().HasIndex(m => m.MechanicId);

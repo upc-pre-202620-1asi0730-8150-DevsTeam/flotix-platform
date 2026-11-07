@@ -1,10 +1,10 @@
-using FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
-using FlotixPlatform.API.Maintenance.Domain.Repositories;
-using FlotixPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
-using FlotixPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
+using FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Maintenance.Domain.Repositories;
+using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
+using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Maintenance.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
+namespace FlotixPlatform.Api.Maintenance.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 
 /// <summary>
 ///     Entity Framework repository for maintenance request persistence.

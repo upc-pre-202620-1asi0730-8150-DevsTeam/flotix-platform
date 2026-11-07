@@ -1,6 +1,6 @@
 ﻿using FlotixPlatform.Api.Fleet.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Fleet.Application.Errors;
-using FlotixPlatform.API.Fleet.Domain.Model.Commands;
+using FlotixPlatform.Api.Fleet.Domain.Model.Commands;
 using FlotixPlatform.Api.Shared.Application.Patterns;
 
 namespace FlotixPlatform.Api.Fleet.Application.Services;

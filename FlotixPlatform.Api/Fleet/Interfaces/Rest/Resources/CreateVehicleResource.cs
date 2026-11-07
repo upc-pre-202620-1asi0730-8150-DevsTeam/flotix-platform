@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 
-namespace FlotixPlatform.API.Fleet.Interfaces.Rest.Resources;
+namespace FlotixPlatform.Api.Fleet.Interfaces.Rest.Resources;
 
 /// <summary>
 ///     Represents the data required to create a vehicle.

@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Maintenance.Domain.Model.Queries;
+namespace FlotixPlatform.Api.Maintenance.Domain.Model.Queries;
 
 /// <summary>
 ///     Query to get all maintenance requests

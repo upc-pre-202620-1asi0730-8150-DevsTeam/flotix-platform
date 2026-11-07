@@ -1,11 +1,11 @@
-using FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
-using FlotixPlatform.API.Resources;
+using FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
+using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.Extensions.Localization;
 using Microsoft.OpenApi;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest.Transform;
 
 /// <summary>
 ///     Assembles localized OpenAPI metadata (summaries, descriptions, and response texts)

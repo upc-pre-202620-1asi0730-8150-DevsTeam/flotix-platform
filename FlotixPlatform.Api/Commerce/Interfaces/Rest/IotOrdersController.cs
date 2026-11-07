@@ -3,8 +3,6 @@ using FlotixPlatform.Api.Commerce.Application.Services;
 using FlotixPlatform.Api.Commerce.Domain.Model.Queries;
 using FlotixPlatform.Api.Commerce.Interfaces.Rest.Resources;
 using FlotixPlatform.Api.Commerce.Interfaces.Rest.Transform;
-// using FlotixPlatform.Api.IAM.Domain.Model.ValueObjects;
-// using FlotixPlatform.Api.IAM.Infrastructure.Pipeline.Middleware.Attributes;
 using FlotixPlatform.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
@@ -22,7 +20,6 @@ namespace FlotixPlatform.Api.Commerce.Interfaces.Rest;
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
 [Tags("IoT Orders")]
-// [Authorize(Role.Owner)]
 public class IotOrdersController(
     IIotOrderCommandService iotOrderCommandService,
     IIotOrderQueryService iotOrderQueryService,

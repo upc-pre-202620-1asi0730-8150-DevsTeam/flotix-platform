@@ -1,4 +1,4 @@
-﻿namespace FlotixPlatform.API.Fleet.Domain.Model.Commands;
+﻿namespace FlotixPlatform.Api.Fleet.Domain.Model.Commands;
 
 /// <summary>
 ///     Command to delete a vehicle

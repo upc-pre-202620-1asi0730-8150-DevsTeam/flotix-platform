@@ -33,11 +33,6 @@ public static class ModelBuilderExtensions
             .WithMany()
             .HasForeignKey(f => f.VehicleId)
             .OnDelete(DeleteBehavior.Restrict);
-        builder.Entity<FuelRecord>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(f => f.DriverId)
-            .OnDelete(DeleteBehavior.Restrict);
         builder.Entity<FuelRecord>().HasIndex(f => f.VehicleId);
         builder.Entity<FuelRecord>().HasIndex(f => f.DriverId);
     }

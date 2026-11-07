@@ -20,7 +20,7 @@ The codebase applies a lightweight Domain-Driven Design style to keep each busin
     - `Shared`: owns cross-cutting abstractions used by multiple contexts, such as repository contracts, unit of work, auditing, naming conventions, and reusable application patterns.
 - **Domain layer**
     - Contains the core business concepts: aggregates such as `Vehicle`, `FuelRecord`, `MaintenanceRequest`, and `TelemetryData`, value objects such as `LicensePlate`, `SerialNumber`, and `EmailAddress`, and command/query records.
-    - Keeps business rules close to the model, including value-object validation, the `Owner`/`Driver`/`Mechanic` user hierarchy created by `User.Create`, and the maintenance request lifecycle.
+    - Keeps business rules close to the model, including value-object validation and the maintenance request lifecycle.
 - **Application layer**
     - Coordinates use cases through command/query services.
     - Returns explicit outcomes with a shared `Result<TValue, TError>` pattern for command handling.
@@ -32,20 +32,18 @@ The codebase applies a lightweight Domain-Driven Design style to keep each busin
 - **Infrastructure layer**
     - Persists aggregates with Entity Framework Core and PostgreSQL, with one schema per bounded context and foreign keys with restricted deletes.
     - Maps value objects to database columns, applies migrations on startup, and manages audit timestamps through a save-changes interceptor.
-    - Hashes passwords, issues JWT tokens, and processes IoT telemetry in a background service.
+    - Processes IoT telemetry in a background service.
 
 This structure keeps HTTP concerns, persistence concerns, and business rules separated while still allowing the API to stay simple to consume.
 
 ## Features
 
 - API base route: `/api/v1/{resource}` (kebab-case route naming convention), e.g. `/api/v1/vehicles`, `/api/v1/fuel-records`, `/api/v1/maintenance-requests`
-- Sign up and sign in users with the `Owner`, `Driver`, or `Mechanic` role; sign-in returns a JWT
-- Create, list (with filters such as `?vehicleId=`), retrieve, update, and delete vehicles, fuel records, incidents, IoT devices, notifications, IoT orders, and users
+- Create, list (with filters such as `?vehicleId=`), retrieve, update, and delete vehicles, fuel records, incidents, IoT devices, notifications, and IoT orders
 - Receive IoT telemetry with `202 Accepted`, processed in the background and published as `VehicleLocationUpdated` on `/hubs/monitoring`
 - Maintenance request flow: diagnostic and quote, budget decision, repair start, and completion
 - Fuel consumption and maintenance cost reports by date range
 - Alerts and per-user notifications in real time on `/hubs/notifications`
-- IAM request authorization middleware with `[AllowAnonymous]` and `[Authorize(Role...)]`, commented out in `Program.cs` (`// app.UseRequestAuthorization();`)
 - Duplicate detection enforced at application and database level (returns `409 Conflict`)
 - Localized validation responses (`400 Bad Request`)
 - Unexpected errors returned as `ProblemDetails` (`500 Internal Server Error`)
@@ -59,7 +57,6 @@ This structure keeps HTTP concerns, persistence concerns, and business rules sep
 - Scalar.AspNetCore for interactive API documentation
 - Entity Framework Core 10 + PostgreSQL provider (`Npgsql.EntityFrameworkCore.PostgreSQL`)
 - Humanizer for plural table names
-- `Microsoft.AspNetCore.Authentication.JwtBearer` for JWT tokens
 - Localization with `.resx` resources (`en`, `en-US`, `es`, `es-PE`)
 - Structured logging with `ILogger<T>`
 - PlantUML (architecture diagrams in `docs/`)
@@ -87,30 +84,18 @@ dotnet restore flotix-platform.sln
 
 ### 2) Configure connection string
 
-By default, development uses `FlotixPlatform.API/appsettings.Development.json`, which matches `docker-compose.yml`:
-
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5432;Database=flotix;Username=flotix;Password=flotix"
-}
-```
-
-Start the PostgreSQL container with:
-
-```bash
-docker compose up -d
-```
+Copy `.env.example` to `.env` and fill in the `DATABASE_*` values (see [Connecting to Neon](#connecting-to-neon-postgresql-and-keeping-secrets-out-of-git)). For a local PostgreSQL, use `DATABASE_HOST=localhost` and its credentials, and change `SSL Mode`/`Channel Binding` in your own `ConnectionStrings:DefaultConnection` user-secret.
 
 ### 3) Run the API
 
 ```bash
-dotnet run --project FlotixPlatform.API
+dotnet run --project FlotixPlatform.Api
 ```
 
 Or from the API folder:
 
 ```bash
-cd FlotixPlatform.API
+cd FlotixPlatform.Api
 dotnet run
 ```
 
@@ -121,19 +106,19 @@ dotnet run
 Restore the EF Core tools and add a migration when the data model changes:
 ```bash
 dotnet tool restore
-cd FlotixPlatform.API
+cd FlotixPlatform.Api
 dotnet ef migrations add <MigrationName>
 dotnet ef database update
 ```
 
 The application automatically applies pending EF Core migrations on startup via `Database.Migrate()`.
 
-Note: The database must exist before running the application. The `docker-compose.yml` container creates the `flotix` database.
+Note: The database must exist before running the application. On Neon it already exists; with a local PostgreSQL create it first.
 
 - **Development**: Applies the current schema to the configured PostgreSQL database.
-- **First-time setup**: Ensure PostgreSQL is running and the connection string points to an existing (empty or non-empty) database.
-- **Schemas**: Each bounded context owns a schema (`iam`, `fleet`, `fuel`, `maintenance`, `incidents`, `monitoring`, `notifications`, `commerce`, `analytics`).
-- **Constraints**: Unique indexes are enforced on `license_plate`, `serial_number`, `email`, and the `vehicle_id` of IoT devices; foreign keys use `ON DELETE RESTRICT`.
+- **First-time setup**: Ensure the Neon database exists (the default `neondb` is created with the project) and the connection string points to it. Create the first migration with `dotnet ef migrations add InitialCreate` and commit it.
+- **Schemas**: Each bounded context owns a schema (`fleet`, `fuel`, `maintenance`, `incidents`, `monitoring`, `notifications`, `commerce`, `analytics`).
+- **Constraints**: Unique indexes are enforced on `license_plate`, `serial_number`, and the `vehicle_id` of IoT devices; foreign keys use `ON DELETE RESTRICT`.
 - **Schema changes**: Add and commit EF Core migrations when the data model changes.
 
 ### 4) Explore the API with Scalar
@@ -145,26 +130,40 @@ With the included launch profiles, Scalar is commonly available at:
 
 The generated OpenAPI document is available at `/openapi/v1.json`.
 
-### Production-style configuration
+### Connecting to Neon (PostgreSQL) and keeping secrets out of Git
 
-`FlotixPlatform.API/appsettings.Production.json` supports environment variable expansion:
+`appsettings.json`, `appsettings.Development.json` and `appsettings.Production.json` only contain `%PLACEHOLDERS%`, expanded at startup with `Environment.ExpandEnvironmentVariables`:
 
-- `%DATABASE_HOST%`
-- `%DATABASE_PORT%`
-- `%DATABASE_NAME%`
-- `%DATABASE_USER%`
-- `%DATABASE_PASSWORD%`
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Host=%DATABASE_HOST%;Port=5432;Database=%DATABASE_NAME%;Username=%DATABASE_USER%;Password=%DATABASE_PASSWORD%;SSL Mode=Require;Channel Binding=Require;Timeout=30",
+  "MigrationsConnection": "Host=%DATABASE_HOST_DIRECT%;Port=5432;..."
+}
+```
 
-Provide the JWT signing secret (at least 32 bytes) with the `TokenSettings__Secret` environment variable and the allowed frontend origins in `Cors:Origins`.
+| Variable | Description |
+|---|---|
+| `DATABASE_HOST` | Neon **pooled** host (contains `-pooler`), used at runtime |
+| `DATABASE_NAME` | Database name (e.g. `neondb`) |
+| `DATABASE_USER` | Role (e.g. `neondb_owner`) |
+| `DATABASE_PASSWORD` | Role password (**secret**) |
+| `DATABASE_HOST_DIRECT` | Optional. Neon **direct** host (same host without `-pooler`), used only to apply migrations |
+| `DATABASE_URL` | Optional alternative: the full Neon URL (`postgresql://...`), takes precedence over the variables above |
+| `Cors__Origins__0`, ... | Allowed frontend origins |
 
-Set `ASPNETCORE_ENVIRONMENT=Production` before running with production settings.
+**Local development:** copy `.env.example` to `.env` (git-ignored, loaded automatically in Development) and fill in the values. Another option is `dotnet user-secrets set "ConnectionStrings:DefaultConnection" "<connection string>"` from the `FlotixPlatform.Api` folder.
+
+**Production (Render, Railway, Azure, Docker):** define the same variables as environment variables in the platform. Nothing secret is baked into the image (`.env` is excluded by `.dockerignore`).
+
+Check the connection with `GET /health/db`. Set `Database__MigrateOnStartup=false` to skip migrations on startup.
+
+Never put real values in `appsettings*.json`, `.env.example` or `launchSettings.json`. `.env`, `secrets.json`, keys and certificates are in `.gitignore`. Any future API key (payments, maps, email, etc.) must follow the same rule: read it from configuration and provide it through an environment variable or user-secrets.
 
 ## Error responses
 
 The API returns standardized error responses:
 
 - **400 Bad Request**: Request validation failed or a business rule rejected the data, and returns a localized error message.
-- **401 Unauthorized**: Invalid credentials, or a missing or invalid token when the IAM middleware is enabled.
 - **404 Not Found**: Resource not found, or a referenced resource does not exist.
 - **409 Conflict**: Duplicate values, invalid status transitions, or deletion of a resource that is still referenced.
 - **500 Internal Server Error**: Unexpected server error (RFC7807 `ProblemDetails` format).

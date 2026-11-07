@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.OpenApi;
 using Microsoft.Extensions.Localization;
 using Microsoft.OpenApi;
 
-namespace FlotixPlatform.API.Monitoring.Interfaces.Rest.Transform;
+namespace FlotixPlatform.Api.Monitoring.Interfaces.Rest.Transform;
 
 public static class LocalizedOpenApiAssembler
 {

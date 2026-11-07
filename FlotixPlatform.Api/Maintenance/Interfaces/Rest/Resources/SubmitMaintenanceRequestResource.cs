@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FlotixPlatform.API.Maintenance.Interfaces.Rest.Resources;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Rest.Resources;
 
 /// <summary>
 ///     Represents the data required to submit a maintenance request to a mechanic.

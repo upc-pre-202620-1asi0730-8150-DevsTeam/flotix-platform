@@ -32,7 +32,6 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     {
         base.OnModelCreating(builder);
 
-        builder.ApplyIAMConfiguration();
         builder.ApplyFleetConfiguration();
         builder.ApplyFuelConfiguration();
         builder.ApplyMaintenanceConfiguration();

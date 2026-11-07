@@ -2,7 +2,7 @@
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
-namespace FlotixPlatform.API.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
+namespace FlotixPlatform.Api.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 
 /// <summary>
 ///     Entity Framework Core model configuration of the Vehicle & Fleet Management bounded context.
@@ -31,16 +31,6 @@ public static class ModelBuilderExtensions
         builder.Entity<Vehicle>().Property(v => v.VehicleType).IsRequired().HasMaxLength(50);
         builder.Entity<Vehicle>().Property(v => v.CurrentMileage).IsRequired();
         builder.Entity<Vehicle>().Property(v => v.Status).HasConversion<string>().HasMaxLength(50).IsRequired();
-        builder.Entity<Vehicle>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(v => v.OwnerId)
-            .OnDelete(DeleteBehavior.Restrict);
-        builder.Entity<Vehicle>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(v => v.DriverId)
-            .OnDelete(DeleteBehavior.Restrict);
         builder.Entity<Vehicle>().HasIndex(v => v.OwnerId);
         builder.Entity<Vehicle>().HasIndex(v => v.DriverId);
         builder.Entity<Vehicle>().HasIndex(v => v.LicensePlate).IsUnique();

@@ -1,4 +1,4 @@
-﻿namespace FlotixPlatform.API.Fleet.Domain.Model.Queries;
+﻿namespace FlotixPlatform.Api.Fleet.Domain.Model.Queries;
 
 /// <summary>
 ///     Query to get all vehicles by driver ID

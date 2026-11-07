@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Maintenance.Interfaces.ACL;
+namespace FlotixPlatform.Api.Maintenance.Interfaces.Acl;
 
 /// <summary>
 ///     Facade (anti-corruption layer) that exposes the Maintenance Management data other bounded contexts need.

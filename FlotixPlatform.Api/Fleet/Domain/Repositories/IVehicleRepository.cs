@@ -2,7 +2,7 @@
 using FlotixPlatform.Api.Fleet.Domain.Model.ValueObjects;
 using FlotixPlatform.Api.Shared.Domain.Repositories;
 
-namespace FlotixPlatform.API.Fleet.Domain.Repositories;
+namespace FlotixPlatform.Api.Fleet.Domain.Repositories;
 
 /// <summary>
 ///     The vehicle repository contract.

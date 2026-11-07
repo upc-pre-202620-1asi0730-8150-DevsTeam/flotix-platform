@@ -1,4 +1,4 @@
-namespace FlotixPlatform.API.Maintenance.Domain.Model.Commands;
+namespace FlotixPlatform.Api.Maintenance.Domain.Model.Commands;
 
 /// <summary>
 ///     Command to submit a maintenance request for a vehicle to a mechanic

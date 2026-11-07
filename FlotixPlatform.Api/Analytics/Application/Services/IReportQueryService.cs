@@ -1,7 +1,7 @@
-using FlotixPlatform.API.Analytics.Domain.Model.Aggregates;
-using FlotixPlatform.API.Analytics.Domain.Model.Queries;
+using FlotixPlatform.Api.Analytics.Domain.Model.Aggregates;
+using FlotixPlatform.Api.Analytics.Domain.Model.Queries;
 
-namespace FlotixPlatform.API.Analytics.Application.Services;
+namespace FlotixPlatform.Api.Analytics.Application.Services;
 
 /// <summary>
 ///     Query service interface for report operations.

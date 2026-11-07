@@ -1,6 +1,6 @@
-using FlotixPlatform.API.Shared.Domain.Model;
+using FlotixPlatform.Api.Shared.Domain.Model;
 
-namespace FlotixPlatform.API.Maintenance.Domain.Model.Aggregates;
+namespace FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates;
 
 /// <summary>
 ///     Audit extension for MaintenanceRequest aggregate.
