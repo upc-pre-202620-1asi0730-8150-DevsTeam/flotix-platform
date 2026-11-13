@@ -18,12 +18,12 @@ namespace FlotixPlatform.Api.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.14")
+                .HasAnnotation("ProductVersion", "10.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("FlotixPlatform.API.Analytics.Domain.Model.Aggregates.Report", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Analytics.Domain.Model.Aggregates.Report", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,7 +66,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("reports", "analytics");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Commerce.Domain.Model.Aggregates.IotOrder", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Commerce.Domain.Model.Aggregates.IotOrder", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -112,7 +112,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("iot_orders", "commerce");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Fleet.Domain.Model.Aggregates.Vehicle", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -173,7 +173,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("vehicles", "fleet");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Fuel.Domain.Model.Aggregates.FuelRecord", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Fuel.Domain.Model.Aggregates.FuelRecord", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -224,63 +224,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("fuel_records", "fuel");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<DateTimeOffset?>("CreatedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("character varying(150)")
-                        .HasColumnName("email");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("name");
-
-                    b.Property<string>("PasswordHash")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("password_hash");
-
-                    b.Property<string>("RoleType")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("role_type");
-
-                    b.Property<DateTimeOffset?>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("updated_at");
-
-                    b.HasKey("Id")
-                        .HasName("p_k__user");
-
-                    b.HasIndex("Email")
-                        .IsUnique()
-                        .HasDatabaseName("i_x_users_email");
-
-                    b.HasIndex("RoleType")
-                        .HasDatabaseName("i_x_users_role_type");
-
-                    b.ToTable("users", "iam");
-
-                    b.HasDiscriminator<string>("RoleType");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.Incidents.Domain.Model.Aggregates.Incident", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Incidents.Domain.Model.Aggregates.Incident", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -330,7 +274,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("incidents", "incidents");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Maintenance.Domain.Model.Aggregates.MaintenanceRequest", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates.MaintenanceRequest", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -384,7 +328,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("maintenance_requests", "maintenance");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Monitoring.Domain.Model.Aggregates.IotDevice", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates.IotDevice", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -427,7 +371,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("iot_devices", "monitoring");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Monitoring.Domain.Model.Aggregates.TelemetryData", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates.TelemetryData", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -471,7 +415,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("telemetry_data", "monitoring");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Notifications.Domain.Model.Aggregates.Alert", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Notifications.Domain.Model.Aggregates.Alert", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -509,7 +453,7 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("alerts", "notifications");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Notifications.Domain.Model.Aggregates.Notification", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Notifications.Domain.Model.Aggregates.Notification", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -557,98 +501,9 @@ namespace FlotixPlatform.Api.Migrations
                     b.ToTable("notifications", "notifications");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.IAM.Domain.Model.Aggregates.Driver", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Fuel.Domain.Model.Aggregates.FuelRecord", b =>
                 {
-                    b.HasBaseType("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User");
-
-                    b.Property<DateOnly?>("LicenseExpiration")
-                        .HasColumnType("date")
-                        .HasColumnName("license_expiration");
-
-                    b.Property<string>("LicenseNumber")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("license_number");
-
-                    b.ToTable("users", "iam");
-
-                    b.HasDiscriminator().HasValue("Driver");
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.IAM.Domain.Model.Aggregates.Mechanic", b =>
-                {
-                    b.HasBaseType("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User");
-
-                    b.Property<string>("WorkshopName")
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("workshop_name");
-
-                    b.ToTable("users", "iam");
-
-                    b.HasDiscriminator().HasValue("Mechanic");
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.IAM.Domain.Model.Aggregates.Owner", b =>
-                {
-                    b.HasBaseType("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User");
-
-                    b.Property<string>("CompanyName")
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("company_name");
-
-                    b.ToTable("users", "iam");
-
-                    b.HasDiscriminator().HasValue("Owner");
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.Analytics.Domain.Model.Aggregates.Report", b =>
-                {
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_reports__user_owner_id");
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.Commerce.Domain.Model.Aggregates.IotOrder", b =>
-                {
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_iot_orders__user_owner_id");
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", b =>
-                {
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("DriverId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .HasConstraintName("f_k_vehicles__user_driver_id");
-
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_vehicles__user_owner_id");
-                });
-
-            modelBuilder.Entity("FlotixPlatform.API.Fuel.Domain.Model.Aggregates.FuelRecord", b =>
-                {
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("DriverId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_fuel_records__user_driver_id");
-
-                    b.HasOne("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", null)
+                    b.HasOne("FlotixPlatform.Api.Fleet.Domain.Model.Aggregates.Vehicle", null)
                         .WithMany()
                         .HasForeignKey("VehicleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -656,16 +511,9 @@ namespace FlotixPlatform.Api.Migrations
                         .HasConstraintName("f_k_fuel_records_vehicles_vehicle_id");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Incidents.Domain.Model.Aggregates.Incident", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Incidents.Domain.Model.Aggregates.Incident", b =>
                 {
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("DriverId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_incidents_users_driver_id");
-
-                    b.HasOne("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", null)
+                    b.HasOne("FlotixPlatform.Api.Fleet.Domain.Model.Aggregates.Vehicle", null)
                         .WithMany()
                         .HasForeignKey("VehicleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -673,16 +521,9 @@ namespace FlotixPlatform.Api.Migrations
                         .HasConstraintName("f_k_incidents_vehicles_vehicle_id");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Maintenance.Domain.Model.Aggregates.MaintenanceRequest", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Maintenance.Domain.Model.Aggregates.MaintenanceRequest", b =>
                 {
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("MechanicId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_maintenance_requests_users_mechanic_id");
-
-                    b.HasOne("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", null)
+                    b.HasOne("FlotixPlatform.Api.Fleet.Domain.Model.Aggregates.Vehicle", null)
                         .WithMany()
                         .HasForeignKey("VehicleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -690,9 +531,9 @@ namespace FlotixPlatform.Api.Migrations
                         .HasConstraintName("f_k_maintenance_requests_vehicles_vehicle_id");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Monitoring.Domain.Model.Aggregates.IotDevice", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates.IotDevice", b =>
                 {
-                    b.HasOne("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", null)
+                    b.HasOne("FlotixPlatform.Api.Fleet.Domain.Model.Aggregates.Vehicle", null)
                         .WithMany()
                         .HasForeignKey("VehicleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -700,9 +541,9 @@ namespace FlotixPlatform.Api.Migrations
                         .HasConstraintName("f_k_iot_devices_vehicles_vehicle_id");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Monitoring.Domain.Model.Aggregates.TelemetryData", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates.TelemetryData", b =>
                 {
-                    b.HasOne("FlotixPlatform.API.Monitoring.Domain.Model.Aggregates.IotDevice", null)
+                    b.HasOne("FlotixPlatform.Api.Monitoring.Domain.Model.Aggregates.IotDevice", null)
                         .WithMany()
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -710,9 +551,9 @@ namespace FlotixPlatform.Api.Migrations
                         .HasConstraintName("f_k_telemetry_data_iot_devices_device_id");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Notifications.Domain.Model.Aggregates.Alert", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Notifications.Domain.Model.Aggregates.Alert", b =>
                 {
-                    b.HasOne("FlotixPlatform.API.Fleet.Domain.Model.Aggregates.Vehicle", null)
+                    b.HasOne("FlotixPlatform.Api.Fleet.Domain.Model.Aggregates.Vehicle", null)
                         .WithMany()
                         .HasForeignKey("VehicleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -720,20 +561,13 @@ namespace FlotixPlatform.Api.Migrations
                         .HasConstraintName("f_k_alerts_vehicles_vehicle_id");
                 });
 
-            modelBuilder.Entity("FlotixPlatform.API.Notifications.Domain.Model.Aggregates.Notification", b =>
+            modelBuilder.Entity("FlotixPlatform.Api.Notifications.Domain.Model.Aggregates.Notification", b =>
                 {
-                    b.HasOne("FlotixPlatform.API.Notifications.Domain.Model.Aggregates.Alert", null)
+                    b.HasOne("FlotixPlatform.Api.Notifications.Domain.Model.Aggregates.Alert", null)
                         .WithMany()
                         .HasForeignKey("AlertId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .HasConstraintName("f_k_notifications_alerts_alert_id");
-
-                    b.HasOne("FlotixPlatform.API.IAM.Domain.Model.Aggregates.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
-                        .HasConstraintName("f_k_notifications_users_user_id");
                 });
 #pragma warning restore 612, 618
         }
