@@ -31,32 +31,7 @@ namespace FlotixPlatform.Api.Migrations
                 name: "analytics");
 
             migrationBuilder.EnsureSchema(
-                name: "iam");
-
-            migrationBuilder.EnsureSchema(
                 name: "fleet");
-
-            migrationBuilder.CreateTable(
-                name: "users",
-                schema: "iam",
-                columns: table => new
-                {
-                    id = table.Column<Guid>(type: "uuid", nullable: false),
-                    name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    email = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
-                    password_hash = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false),
-                    role_type = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    created_at = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: true),
-                    updated_at = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: true),
-                    license_number = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: true),
-                    license_expiration = table.Column<DateOnly>(type: "date", nullable: true),
-                    workshop_name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true),
-                    company_name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("p_k__user", x => x.id);
-                });
 
             migrationBuilder.CreateTable(
                 name: "iot_orders",
@@ -75,13 +50,6 @@ namespace FlotixPlatform.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("p_k_iot_orders", x => x.id);
-                    table.ForeignKey(
-                        name: "f_k_iot_orders__user_owner_id",
-                        column: x => x.owner_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -100,13 +68,6 @@ namespace FlotixPlatform.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("p_k_reports", x => x.id);
-                    table.ForeignKey(
-                        name: "f_k_reports__user_owner_id",
-                        column: x => x.owner_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -127,20 +88,6 @@ namespace FlotixPlatform.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("p_k_vehicles", x => x.id);
-                    table.ForeignKey(
-                        name: "f_k_vehicles__user_driver_id",
-                        column: x => x.driver_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "f_k_vehicles__user_owner_id",
-                        column: x => x.owner_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -186,13 +133,6 @@ namespace FlotixPlatform.Api.Migrations
                 {
                     table.PrimaryKey("p_k_fuel_records", x => x.id);
                     table.ForeignKey(
-                        name: "f_k_fuel_records__user_driver_id",
-                        column: x => x.driver_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
                         name: "f_k_fuel_records_vehicles_vehicle_id",
                         column: x => x.vehicle_id,
                         principalSchema: "fleet",
@@ -218,13 +158,6 @@ namespace FlotixPlatform.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("p_k_incidents", x => x.id);
-                    table.ForeignKey(
-                        name: "f_k_incidents_users_driver_id",
-                        column: x => x.driver_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "f_k_incidents_vehicles_vehicle_id",
                         column: x => x.vehicle_id,
@@ -277,13 +210,6 @@ namespace FlotixPlatform.Api.Migrations
                 {
                     table.PrimaryKey("p_k_maintenance_requests", x => x.id);
                     table.ForeignKey(
-                        name: "f_k_maintenance_requests_users_mechanic_id",
-                        column: x => x.mechanic_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
                         name: "f_k_maintenance_requests_vehicles_vehicle_id",
                         column: x => x.vehicle_id,
                         principalSchema: "fleet",
@@ -314,13 +240,6 @@ namespace FlotixPlatform.Api.Migrations
                         column: x => x.alert_id,
                         principalSchema: "notifications",
                         principalTable: "alerts",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "f_k_notifications_users_user_id",
-                        column: x => x.user_id,
-                        principalSchema: "iam",
-                        principalTable: "users",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -438,19 +357,6 @@ namespace FlotixPlatform.Api.Migrations
                 column: "device_id");
 
             migrationBuilder.CreateIndex(
-                name: "i_x_users_email",
-                schema: "iam",
-                table: "users",
-                column: "email",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "i_x_users_role_type",
-                schema: "iam",
-                table: "users",
-                column: "role_type");
-
-            migrationBuilder.CreateIndex(
                 name: "i_x_vehicles_driver_id",
                 schema: "fleet",
                 table: "vehicles",
@@ -511,10 +417,6 @@ namespace FlotixPlatform.Api.Migrations
             migrationBuilder.DropTable(
                 name: "vehicles",
                 schema: "fleet");
-
-            migrationBuilder.DropTable(
-                name: "users",
-                schema: "iam");
         }
     }
 }
