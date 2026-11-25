@@ -1,14 +1,14 @@
-﻿namespace FlotixPlatform.Api.Shared.Domain.Repositories;
+namespace FlotixPlatform.Api.Shared.Domain.Repositories;
 
 /// <summary>
-///     Defines a unit of work for committing changes made through repositories.
+///     Unit of work interface for all repositories
 /// </summary>
 public interface IUnitOfWork
 {
     /// <summary>
-    ///     Commits the pending changes in the unit of work.
+    ///     Save changes to the repository
     /// </summary>
-    /// <param name="cancellationToken">Token to cancel the asynchronous operation.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
+    /// <param name="cancellationToken">The cancellation token</param>
+    /// <returns></returns>
     Task CompleteAsync(CancellationToken cancellationToken = default);
 }

@@ -1,43 +1,75 @@
-﻿namespace FlotixPlatform.Api.Shared.Domain.Repositories;
+namespace FlotixPlatform.Api.Shared.Domain.Repositories;
 
 /// <summary>
-///     Defines the common repository operations for an entity type.
+///     Base repository interface for all repositories
 /// </summary>
-/// <typeparam name="TEntity">The entity type managed by the repository.</typeparam>
+/// <remarks>
+///     This interface is used to define the basic CRUD operations for all repositories
+/// </remarks>
+/// <typeparam name="TEntity">
+///     The entity type for the repository
+/// </typeparam>
 public interface IBaseRepository<TEntity>
 {
     /// <summary>
-    ///     Adds an entity to the repository.
+    ///     Add an entity to the repository
     /// </summary>
-    /// <param name="entity">The entity to add.</param>
-    /// <param name="cancellationToken">Token to cancel the asynchronous operation.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
+    /// <param name="entity">
+    ///     The entity to add
+    /// </param>
+    /// <param name="cancellationToken">The cancellation token</param>
+    /// <returns></returns>
     Task AddAsync(TEntity entity, CancellationToken cancellationToken = default);
 
     /// <summary>
-    ///     Finds an entity by its identifier.
+    ///     Find an entity by its id
     /// </summary>
-    /// <param name="id">The identifier of the entity to find.</param>
-    /// <param name="cancellationToken">Token to cancel the asynchronous operation.</param>
-    /// <returns>A task containing the entity if found, or null otherwise.</returns>
-    Task<TEntity?> FindByIdAsync(Guid id, CancellationToken cancellationToken = default);
+    /// <param name="id">
+    ///     The id of the entity to find
+    /// </param>
+    /// <param name="cancellationToken">The cancellation token</param>
+    /// <returns>
+    ///     The entity if found, otherwise null
+    /// </returns>
+    Task<TEntity?> FindByIdAsync(int id, CancellationToken cancellationToken = default);
 
     /// <summary>
-    ///     Marks an entity for update.
+    ///     Find an entity by its id without change tracking
     /// </summary>
-    /// <param name="entity">The entity to update.</param>
+    /// <param name="id">
+    ///     The id of the entity to find
+    /// </param>
+    /// <param name="cancellationToken">The cancellation token</param>
+    /// <returns>
+    ///     The entity if found, otherwise null
+    /// </returns>
+    Task<TEntity?> FindByIdAsNoTrackingAsync(int id, CancellationToken cancellationToken = default);
+
     void Update(TEntity entity);
 
     /// <summary>
-    ///     Removes an entity from the repository.
+    ///     Remove an entity from the repository
     /// </summary>
-    /// <param name="entity">The entity to remove.</param>
+    /// <param name="entity">
+    ///     The entity to remove
+    /// </param>
     void Remove(TEntity entity);
 
     /// <summary>
-    ///     Lists all entities in the repository.
+    ///     List all entities in the repository
     /// </summary>
-    /// <param name="cancellationToken">Token to cancel the asynchronous operation.</param>
-    /// <returns>A task containing the collection of entities.</returns>
+    /// <param name="cancellationToken">The cancellation token</param>
+    /// <returns>
+    ///     A list of all entities in the repository
+    /// </returns>
     Task<IEnumerable<TEntity>> ListAsync(CancellationToken cancellationToken = default);
+
+    /// <summary>
+    ///     List all entities in the repository without change tracking
+    /// </summary>
+    /// <param name="cancellationToken">The cancellation token</param>
+    /// <returns>
+    ///     A list of all entities in the repository
+    /// </returns>
+    Task<IEnumerable<TEntity>> ListAsNoTrackingAsync(CancellationToken cancellationToken = default);
 }
