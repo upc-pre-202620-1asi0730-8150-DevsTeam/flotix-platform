@@ -31,7 +31,7 @@ public interface IBaseRepository<TEntity>
     /// <returns>
     ///     The entity if found, otherwise null
     /// </returns>
-    Task<TEntity?> FindByIdAsync(int id, CancellationToken cancellationToken = default);
+    Task<TEntity?> FindByIdAsync(Guid id, CancellationToken cancellationToken = default);
 
     /// <summary>
     ///     Find an entity by its id without change tracking
@@ -43,7 +43,7 @@ public interface IBaseRepository<TEntity>
     /// <returns>
     ///     The entity if found, otherwise null
     /// </returns>
-    Task<TEntity?> FindByIdAsNoTrackingAsync(int id, CancellationToken cancellationToken = default);
+    Task<TEntity?> FindByIdAsNoTrackingAsync(Guid id, CancellationToken cancellationToken = default);
 
     void Update(TEntity entity);
 

@@ -1,4 +1,4 @@
-using FlotixPlatform.Api.Shared.Domain.Model;
+using FlotixPlatform.Api.Shared.Domain.Model.Entities;
 
 namespace FlotixPlatform.Api.Commerce.Domain.Model.Aggregates;
 

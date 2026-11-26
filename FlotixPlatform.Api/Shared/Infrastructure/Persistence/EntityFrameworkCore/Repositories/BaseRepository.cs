@@ -33,26 +33,17 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
     }
 
     // inheritedDoc
-    public virtual async Task<TEntity?> FindByIdAsync(int id, CancellationToken cancellationToken = default)
+    public virtual async Task<TEntity?> FindByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await Context.Set<TEntity>().FindAsync(new[] { ToKeyValue(id) }, cancellationToken);
-    }
-
-    /// <summary>
-    ///     Converts an integer id into the CLR type of the entity's primary key (e.g. a strongly typed id).
-    /// </summary>
-    private object ToKeyValue(int id)
-    {
-        var keyType = Context.Model.FindEntityType(typeof(TEntity))!.FindPrimaryKey()!.Properties[0].ClrType;
-        return keyType == typeof(int) ? id : Activator.CreateInstance(keyType, id)!;
+        return await Context.Set<TEntity>().FindAsync(new object[] { id }, cancellationToken);
     }
 
     // inheritedDoc
-    public virtual async Task<TEntity?> FindByIdAsNoTrackingAsync(int id, CancellationToken cancellationToken = default)
+    public virtual async Task<TEntity?> FindByIdAsNoTrackingAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await Context.Set<TEntity>()
             .AsNoTracking()
-            .FirstOrDefaultAsync(e => EF.Property<int>(e, "Id") == id, cancellationToken);
+            .FirstOrDefaultAsync(e => EF.Property<Guid>(e, "Id") == id, cancellationToken);
     }
 
     // inheritedDoc
