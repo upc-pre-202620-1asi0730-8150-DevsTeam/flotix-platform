@@ -1,9 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 
+/// <summary>
+///     Model builder extensions for the database context
+/// </summary>
 public static class ModelBuilderExtensions
 {
+    /// <summary>
+    ///     Use snake case naming convention for the database context
+    /// </summary>
+    /// <param name="builder">
+    ///     The model builder for the database context
+    /// </param>
     public static void UseSnakeCaseNamingConvention(this ModelBuilder builder)
     {
         foreach (var entity in builder.Model.GetEntityTypes())
@@ -19,7 +28,7 @@ public static class ModelBuilderExtensions
                 var keyName = key.GetName();
                 if (!string.IsNullOrEmpty(keyName)) key.SetName(keyName.ToSnakeCase());
             }
-            
+
             foreach (var foreignKey in entity.GetForeignKeys())
             {
                 var foreignKeyName = foreignKey.GetConstraintName();
@@ -28,8 +37,8 @@ public static class ModelBuilderExtensions
 
             foreach (var index in entity.GetIndexes())
             {
-                var indexName = index.GetDatabaseName();
-                if (!string.IsNullOrEmpty(indexName)) index.SetDatabaseName(indexName.ToSnakeCase());
+                var indexDatabaseName = index.GetDatabaseName();
+                if (!string.IsNullOrEmpty(indexDatabaseName)) index.SetDatabaseName(indexDatabaseName.ToSnakeCase());
             }
         }
     }
