@@ -1,3 +1,4 @@
+using FlotixPlatform.Api.Iam.Infrastructure.Pipeline.Middleware.Extensions;
 using FlotixPlatform.Api.Monitoring.Interfaces.Hubs;
 using FlotixPlatform.Api.Notifications.Interfaces.Hubs;
 using FlotixPlatform.Api.Shared.Infrastructure.Interfaces.Asp.Configuration.Extensions;
@@ -12,6 +13,11 @@ if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development
     DotEnvLoader.Load(Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..")));
 }
 
+// TOKEN_SECRET is the single secret used to sign IAM JWTs; expose it to configuration as TokenSettings__Secret.
+var tokenSecret = Environment.GetEnvironmentVariable("TOKEN_SECRET");
+if (!string.IsNullOrWhiteSpace(tokenSecret))
+    Environment.SetEnvironmentVariable("TokenSettings__Secret", tokenSecret);
+
 var builder = WebApplication.CreateBuilder(args);
 
 // ── Database (Neon PostgreSQL) ────────────────────────────────────────────────
@@ -23,6 +29,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // ── Bounded contexts, controllers, OpenAPI and localization ───────────────────
 builder.Services.AddFlotixBoundedContexts();
+builder.Services.AddFlotixIam(builder.Configuration);
 builder.Services.AddFlotixWebApi();
 
 // ── CORS (allowed frontend origins come from configuration: Cors:Origins) ─────
@@ -70,6 +77,10 @@ app.UseRequestLocalization(new RequestLocalizationOptions()
     .AddSupportedUICultures("en", "en-US", "es", "es-PE"));
 
 app.UseCors("AllowFrontend");
+
+// The request authorization middleware resolves the IAM user from the bearer token and
+// exposes it in HttpContext.Items["User"]. It stays opt-in to preserve existing public endpoints.
+if (app.Configuration.GetValue("Authorization:Enabled", false)) app.UseRequestAuthorization();
 
 app.MapOpenApi();
 app.MapScalarApiReference();
