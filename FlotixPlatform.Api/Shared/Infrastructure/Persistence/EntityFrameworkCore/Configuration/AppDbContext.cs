@@ -7,7 +7,6 @@ using FlotixPlatform.Api.Incidents.Infrastructure.Persistence.EntityFrameworkCor
 using FlotixPlatform.Api.Maintenance.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using FlotixPlatform.Api.Monitoring.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using FlotixPlatform.Api.Notifications.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
-using FlotixPlatform.Api.Profiles.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Interceptors;
 using Microsoft.EntityFrameworkCore;
@@ -45,9 +44,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
 
         // IAM Context
         builder.ApplyIamConfiguration();
-
-        // Profiles Context
-        builder.ApplyProfilesConfiguration();
 
         // Fleet Context
         builder.ApplyFleetConfiguration();
