@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Demo data for every new account: sign-up generates a ready-to-present fleet (vehicles, IoT devices, fuel records, maintenance,
+  incidents, GPS telemetry, alerts, notifications, IoT orders and reports) with ~130 days of history, through PL/pgSQL functions
+  installed by the `AddDemoDataFunctions` migration. `ownerId` is now returned by the user and token resources.
+  Configurable with `DemoData:SeedOnSignUp`; helper scripts in `scripts/demo-data`.
 - IoT telemetry ingestion with background processing and real-time vehicle locations through SignalR.
 - Maintenance request flow between owners and mechanics, including diagnostic and quote, budget decision, repair start, and completion.
 - Fuel consumption and maintenance cost reports by date range, built from the fleet, fuel, and maintenance data.
