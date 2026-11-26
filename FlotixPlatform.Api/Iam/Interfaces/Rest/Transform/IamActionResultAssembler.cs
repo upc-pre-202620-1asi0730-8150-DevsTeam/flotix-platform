@@ -20,6 +20,7 @@ public static class IamActionResultAssembler
     {
         return error switch
         {
+            IamError.UserNotFound => StatusCodes.Status404NotFound,
             IamError.InvalidCredentials => StatusCodes.Status400BadRequest,
             IamError.UsernameAlreadyTaken => StatusCodes.Status409Conflict,
             IamError.OperationCancelled => StatusCodes.Status409Conflict,

@@ -17,6 +17,7 @@ public static class ModelBuilderExtensions
             .IsRequired()
             .ValueGeneratedOnAdd();
         builder.Entity<User>().Property(u => u.Username).IsRequired();
+        builder.Entity<User>().HasIndex(u => u.Username).IsUnique();
         builder.Entity<User>().Property(u => u.PasswordHash).IsRequired();
     }
 }

@@ -21,6 +21,11 @@ public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
 {
     private readonly TokenSettings _tokenSettings = tokenSettings.Value;
 
+    private string Secret => string.IsNullOrWhiteSpace(_tokenSettings.Secret)
+        ? throw new InvalidOperationException(
+            "TokenSettings:Secret is not configured. Set the TOKEN_SECRET environment variable or the TokenSettings__Secret configuration key.")
+        : _tokenSettings.Secret;
+
     /**
      * <summary>
      *     Generate token
@@ -30,8 +35,7 @@ public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
      */
     public string GenerateToken(User user)
     {
-        var secret = _tokenSettings.Secret;
-        var key = Encoding.ASCII.GetBytes(secret);
+        var key = Encoding.ASCII.GetBytes(Secret);
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[]
@@ -64,7 +68,7 @@ public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
             return null;
         // Otherwise, perform validation
         var tokenHandler = new JsonWebTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_tokenSettings.Secret);
+        var key = Encoding.ASCII.GetBytes(Secret);
         try
         {
             var tokenValidationResult = await tokenHandler.ValidateTokenAsync(token, new TokenValidationParameters
