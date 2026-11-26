@@ -33,4 +33,8 @@
       <Folder Include="Notifications\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="FlotixPlatform.Api\FlotixPlatform.Api.csproj" />
+    </ItemGroup>
+
 </Project>
