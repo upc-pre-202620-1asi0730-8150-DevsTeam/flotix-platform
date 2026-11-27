@@ -45,6 +45,12 @@ public static class ServiceCollectionExtensions
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+        // ── Profiles
+        services.AddScoped<FlotixPlatform.Api.Profiles.Domain.Repositories.IProfileRepository, FlotixPlatform.Api.Profiles.Infrastructure.Persistence.EntityFrameworkCore.Repositories.ProfileRepository>();
+        services.AddScoped<FlotixPlatform.Api.Profiles.Application.CommandServices.IProfileCommandService, FlotixPlatform.Api.Profiles.Application.Internal.CommandServices.ProfileCommandService>();
+        services.AddScoped<FlotixPlatform.Api.Profiles.Application.QueryServices.IProfileQueryService, FlotixPlatform.Api.Profiles.Application.Internal.QueryServices.ProfileQueryService>();
+        services.AddScoped<FlotixPlatform.Api.Profiles.Interfaces.Acl.IProfilesContextFacade, FlotixPlatform.Api.Profiles.Application.Acl.ProfilesContextFacade>();
+
         // ── Fleet
         services.AddScoped<FlotixPlatform.Api.Fleet.Domain.Repositories.IVehicleRepository, FlotixPlatform.Api.Fleet.Infrastructure.Persistence.EntityFrameworkCore.Repositories.VehicleRepository>();
         services.AddScoped<FlotixPlatform.Api.Fleet.Application.Services.IVehicleCommandService, FlotixPlatform.Api.Fleet.Application.Internal.CommandServices.VehicleCommandService>();
