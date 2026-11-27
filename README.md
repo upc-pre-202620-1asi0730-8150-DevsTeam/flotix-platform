@@ -159,6 +159,38 @@ Check the connection with `GET /health/db`. Set `Database__MigrateOnStartup=fals
 
 Never put real values in `appsettings*.json`, `.env.example` or `launchSettings.json`. `.env`, `secrets.json`, keys and certificates are in `.gitignore`. Any future API key (payments, maps, email, etc.) must follow the same rule: read it from configuration and provide it through an environment variable or user-secrets.
 
+## Demo data (3 months of history for every account)
+
+Every account comes with a ready-to-present fleet, **for demonstration only**, with about **90 days (3 months)** of
+history that ends at the moment it is generated:
+
+| Data | Per account |
+|---|---|
+| Vehicles (`FX<userId>-01` … `-08`: available, in maintenance and inactive) | 8 |
+| IoT devices (`FLX-DEMO-<userId>-NN`) | 7 |
+| Fuel records (every 2–5 days, mileage always increasing) | ~170 |
+| GPS telemetry (every 6 hours + live readings every 10 minutes for the last 3 hours, around Lima) | ~2,600 |
+| Maintenance requests (every status: pending, quoted, approved, rejected, in repair, completed) | 15 |
+| Incidents (open, in review, resolved) | 10 |
+| Alerts / notifications to the owner | 22 / 31 |
+| IoT orders / reports (monthly + whole period) | 5 / 6 |
+
+- **Existing accounts:** the `AddDemoDataFunctions` migration installs the PL/pgSQL functions
+  (`FlotixPlatform.Api/DemoData/Scripts/flotix_demo_data.sql`) and generates the data for every account when the API
+  starts and applies the migration (production included). A failure in one account is logged as a warning and never
+  stops the migration.
+- **New accounts:** `POST /api/v1/users` (sign-up) generates it right after the user is saved (about 70 ms). A failure is
+  logged and never prevents the account from being created. Disable it with `DemoData__SeedOnSignUp=false`; change the
+  history length with `DemoData__HistoryDays` (default `90`).
+- **Owner id:** the data is stored under the owner UUID of the account, returned as `ownerId` by `POST /api/v1/users`,
+  `GET /api/v1/users/{id}` and `POST /api/v1/tokens` (`md5('flotix:owner:' || users.id)`). Use it to filter, e.g.
+  `GET /api/v1/vehicles?ownerId=...` or `GET /api/v1/notifications?userId=...`.
+- **Idempotent and reversible:** an account is never seeded twice. Every generated row is registered in
+  `public.demo_data_rows`, so it can be removed without touching real data:
+  `SELECT public.flotix_clear_demo_data(<users.id>);` (one account) or `scripts/demo-data/clear-demo-data.sql` (all).
+  Rows that users attached to demo vehicles are removed with them. To seed again, run
+  `scripts/demo-data/backfill-existing-users.sql`.
+
 ## Error responses
 
 The API returns standardized error responses:
