@@ -1,3 +1,4 @@
+using FlotixPlatform.Api.DemoData.Application.Services;
 using FlotixPlatform.Api.Iam.Application.CommandServices;
 using FlotixPlatform.Api.Iam.Application.Internal.OutboundServices;
 using FlotixPlatform.Api.Iam.Domain.Model;
@@ -22,7 +23,9 @@ public class UserCommandService(
     IUserRepository userRepository,
     ITokenService tokenService,
     IHashingService hashingService,
-    IUnitOfWork unitOfWork)
+    IUnitOfWork unitOfWork,
+    IDemoDataSeeder demoDataSeeder,
+    ILogger<UserCommandService> logger)
     : IUserCommandService
 {
     /**
@@ -64,6 +67,29 @@ public class UserCommandService(
 
         await userRepository.AddAsync(user, cancellationToken);
         await unitOfWork.CompleteAsync(cancellationToken);
+        await SeedDemoDataAsync(user, cancellationToken);
         return Result<User>.Success(user);
+    }
+
+    /**
+     * <summary>
+     *     Generate the demo fleet (about three months of history) of a new account
+     * </summary>
+     * <remarks>
+     *     A failure is logged and never prevents the account from being created.
+     * </remarks>
+     * <param name="user">The created user</param>
+     * <param name="cancellationToken">The cancellation token</param>
+     */
+    private async Task SeedDemoDataAsync(User user, CancellationToken cancellationToken)
+    {
+        try
+        {
+            await demoDataSeeder.SeedForUserAsync(user.Id.Value, cancellationToken);
+        }
+        catch (Exception exception) when (exception is not OperationCanceledException)
+        {
+            logger.LogError(exception, "Demo data could not be generated for user {UserId}", user.Id.Value);
+        }
     }
 }

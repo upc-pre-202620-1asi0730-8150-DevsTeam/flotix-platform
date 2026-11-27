@@ -1,3 +1,4 @@
+using FlotixPlatform.Api.DemoData.Domain.Model.ValueObjects;
 using FlotixPlatform.Api.Iam.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Iam.Interfaces.Rest.Resources;
 
@@ -24,6 +25,6 @@ public static class UserResourceFromEntityAssembler
     {
         if (user == null)
             throw new ArgumentNullException(nameof(user), "User aggregate cannot be null when converting to resource.");
-        return new UserResource(user.Id, user.Username);
+        return new UserResource(user.Id, user.Username, DemoDataOwner.ForUser(user.Id));
     }
 }
