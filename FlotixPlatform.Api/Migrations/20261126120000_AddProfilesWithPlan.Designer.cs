@@ -641,12 +641,6 @@ namespace FlotixPlatform.Api.Migrations
                                 .HasForeignKey("Id")
                                 .HasConstraintName("f_k_profiles_profiles_id");
                         });
-
-                    b.Navigation("Email")
-                        .IsRequired();
-
-                    b.Navigation("Name")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("FlotixPlatform.Api.Fuel.Domain.Model.Aggregates.FuelRecord", b =>
