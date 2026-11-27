@@ -1,3 +1,4 @@
+using FlotixPlatform.Api.DemoData.Domain.Model.ValueObjects;
 using FlotixPlatform.Api.Iam.Domain.Model.Aggregates;
 using FlotixPlatform.Api.Iam.Interfaces.Rest.Resources;
 
@@ -37,6 +38,6 @@ public static class AuthenticatedUserResourceFromEntityAssembler
         if (string.IsNullOrEmpty(token))
             throw new ArgumentException("Token cannot be null or empty when creating authenticated user resource.",
                 nameof(token));
-        return new AuthenticatedUserResource(user.Id, user.Username, token);
+        return new AuthenticatedUserResource(user.Id, user.Username, token, DemoDataOwner.ForUser(user.Id));
     }
 }

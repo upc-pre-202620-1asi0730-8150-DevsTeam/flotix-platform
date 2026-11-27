@@ -34,6 +34,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="DemoData\Scripts\flotix_demo_data.sql" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Content Include="flotix-platform.sln" />
       <Content Include="FlotixPlatform.Api\FlotixPlatform.Api.csproj" />
     </ItemGroup>

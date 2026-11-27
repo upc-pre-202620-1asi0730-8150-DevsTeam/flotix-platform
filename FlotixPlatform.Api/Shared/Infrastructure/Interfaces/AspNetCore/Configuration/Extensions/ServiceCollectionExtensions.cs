@@ -1,4 +1,7 @@
 using System.Text.Json.Serialization;
+using FlotixPlatform.Api.DemoData.Application.Services;
+using FlotixPlatform.Api.DemoData.Infrastructure.Configuration;
+using FlotixPlatform.Api.DemoData.Infrastructure.Persistence.EntityFrameworkCore.Services;
 using FlotixPlatform.Api.Iam.Application.Acl;
 using FlotixPlatform.Api.Iam.Application.CommandServices;
 using FlotixPlatform.Api.Iam.Application.Internal.CommandServices;
@@ -125,6 +128,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ITokenService, TokenService>();
         services.AddScoped<ProblemDetailsFactory>();
         services.Configure<TokenSettings>(configuration.GetSection("TokenSettings"));
+        
+        // Demo data generated for every new account (DemoData:SeedOnSignUp, DemoData:HistoryDays)
+        services.Configure<DemoDataSettings>(configuration.GetSection("DemoData"));
+        services.AddScoped<IDemoDataSeeder, DemoDataSeeder>();
 
         return services;
     }
