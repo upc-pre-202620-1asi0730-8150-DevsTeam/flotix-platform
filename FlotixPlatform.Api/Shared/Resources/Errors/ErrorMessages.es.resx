@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="GenericError" xml:space="preserve">
+        <value>Ocurrió un error.</value>
+    </data>
+    <data name="OperationCancelled" xml:space="preserve">
+        <value>La operación fue cancelada.</value>
+    </data>
+    <data name="DatabaseError" xml:space="preserve">
+        <value>Ocurrió un error de base de datos.</value>
+    </data>
+    <data name="InternalServerError" xml:space="preserve">
+        <value>Ocurrió un error interno inesperado.</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>Usuario no encontrado.</value>
+    </data>
+    <data name="UsernameAlreadyTaken" xml:space="preserve">
+        <value>El nombre de usuario ya está en uso.</value>
+    </data>
+    <data name="InvalidCredentials" xml:space="preserve">
+        <value>Nombre de usuario o contraseña inválidos.</value>
+    </data>
+    <data name="ExternalServiceError" xml:space="preserve">
+        <value>Ocurrió un error de servicio externo.</value>
+    </data>
+    <data name="ProfileNotFound" xml:space="preserve">
+        <value>Perfil no encontrado.</value>
+    </data>
+    <data name="EmailAlreadyRegistered" xml:space="preserve">
+        <value>La dirección de correo electrónico ya está registrada.</value>
+    </data>
+    <data name="InvalidProfileData" xml:space="preserve">
+        <value>Datos de perfil inválidos.</value>
+    </data>
+    <data name="VehicleNotFound" xml:space="preserve">
+        <value>Vehículo no encontrado.</value>
+    </data>
+    <data name="DriverNotFound" xml:space="preserve">
+        <value>Conductor no encontrado.</value>
+    </data>
+    <data name="OwnerNotFound" xml:space="preserve">
+        <value>Dueño no encontrado.</value>
+    </data>
+    <data name="DuplicateLicensePlate" xml:space="preserve">
+        <value>Ya existe un vehículo con la misma placa.</value>
+    </data>
+    <data name="DuplicateDriverLicense" xml:space="preserve">
+        <value>Ya existe un conductor con el mismo número de licencia.</value>
+    </data>
+    <data name="MileageCannotDecrease" xml:space="preserve">
+        <value>El kilometraje de un vehículo no puede disminuir.</value>
+    </data>
+    <data name="VehicleHasRelatedRecords" xml:space="preserve">
+        <value>El vehículo aún tiene registros relacionados.</value>
+    </data>
+    <data name="FuelRecordNotFound" xml:space="preserve">
+        <value>Registro de combustible no encontrado.</value>
+    </data>
+    <data name="InconsistentMileage" xml:space="preserve">
+        <value>El kilometraje de la recarga es menor que el de la última recarga.</value>
+    </data>
+    <data name="MaintenanceRequestNotFound" xml:space="preserve">
+        <value>Solicitud de mantenimiento no encontrada.</value>
+    </data>
+    <data name="WorkshopNotFound" xml:space="preserve">
+        <value>Taller no encontrado.</value>
+    </data>
+    <data name="WorkshopRequired" xml:space="preserve">
+        <value>Se requiere un taller.</value>
+    </data>
+    <data name="InvalidStatusTransition" xml:space="preserve">
+        <value>La transición de estado no está permitida.</value>
+    </data>
+    <data name="IncidentNotFound" xml:space="preserve">
+        <value>Incidencia no encontrada.</value>
+    </data>
+    <data name="IotDeviceNotFound" xml:space="preserve">
+        <value>Dispositivo IoT no encontrado.</value>
+    </data>
+    <data name="TelemetryDataNotFound" xml:space="preserve">
+        <value>Registro de telemetría no encontrado.</value>
+    </data>
+    <data name="VehicleAlreadyEquipped" xml:space="preserve">
+        <value>El vehículo ya tiene un dispositivo IoT.</value>
+    </data>
+    <data name="DuplicateSerialNumber" xml:space="preserve">
+        <value>Ya existe un dispositivo IoT con el mismo número de serie.</value>
+    </data>
+    <data name="IotDeviceHasTelemetryData" xml:space="preserve">
+        <value>El dispositivo IoT aún tiene datos de telemetría.</value>
+    </data>
+    <data name="AlertNotFound" xml:space="preserve">
+        <value>Alerta no encontrada.</value>
+    </data>
+    <data name="NotificationNotFound" xml:space="preserve">
+        <value>Notificación no encontrada.</value>
+    </data>
+    <data name="IotOrderNotFound" xml:space="preserve">
+        <value>Pedido IoT no encontrado.</value>
+    </data>
+    <data name="IotProductNotFound" xml:space="preserve">
+        <value>Producto IoT no encontrado.</value>
+    </data>
+    <data name="ReportNotFound" xml:space="preserve">
+        <value>Reporte no encontrado.</value>
+    </data>
+    <data name="InvalidReportPeriod" xml:space="preserve">
+        <value>El inicio del periodo no puede ser posterior a su fin.</value>
+    </data>
+</root>
