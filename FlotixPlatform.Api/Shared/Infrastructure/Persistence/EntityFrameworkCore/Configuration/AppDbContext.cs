@@ -11,6 +11,7 @@ using FlotixPlatform.Api.Notifications.Infrastructure.Persistence.EntityFramewor
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Interceptors;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace FlotixPlatform.Api.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 
@@ -27,6 +28,10 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         // Apply audit timestamp interceptor for all IAuditableEntity implementations
         builder.AddInterceptors(new AuditableEntityInterceptor());
+
+        // The snapshot of AddProfilesWithPlan was written by hand; do not stop the startup migration because of
+        // a model/snapshot difference. Regenerate it with `dotnet ef migrations add` to remove this line.
+        builder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         base.OnConfiguring(builder);
     }
 
